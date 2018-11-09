@@ -1,0 +1,17 @@
+{
+    "license": "Apache-2.0",
+    "scripts": {
+        "start": "gulp watch",
+        "build": "gulp build --gulpfile ./semantic/gulpfile.js"
+    },
+    "keywords": [
+        "semantic-ui"
+    ],
+    "devDependencies": {
+        "browser-sync": "2.26.3",
+        "gulp": "3.9.1",
+        "gulp-help": "1.6.1",
+        "require-dir": "1.1.0",
+        "semantic-ui": "2.4.2"
+    }
+}
