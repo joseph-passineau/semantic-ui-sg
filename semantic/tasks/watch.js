@@ -23,6 +23,7 @@ var
   uglify       = require('gulp-uglify'),
   replaceExt   = require('replace-ext'),
   watch        = require('gulp-watch'),
+  runSequence  = require('run-sequence'),
 
   // user config
   config       = require('./config/user'),
@@ -157,7 +158,7 @@ module.exports = function(callback) {
         uncompressedStream = stream.pipe(clone());
         compressedStream   = stream.pipe(clone());
 
-        const tasksCompleted = 0;
+        let tasksCompleted = 0;
         const maybeCallback  = function() {
           tasksCompleted++;
           if(tasksCompleted === 2) {
