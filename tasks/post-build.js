@@ -1,5 +1,8 @@
 var fs = require("fs-extra");
 
+fs.removeSync("publish");
+console.log("** Cleared publish folder **");
+
 fs.copySync("semantic/dist/components", "publish");
 console.log("** Copied Semantic UI dist files **");
 
