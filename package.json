@@ -5,9 +5,9 @@
     "scripts": {
         "start": "gulp watch",
         "build": "gulp build --gulpfile ./semantic/gulpfile.js",
-        "version": "npm run build && git add -A && git commit -m \"Bumped package version\"",
+        "version": "git add -A && git commit -m \"Bumped package version\"",
         "postversion": "git push && git push --tags && cd publish && npm publish",
-        "prepack": "node tasks/pre-pack.js"
+        "prepack": "node ../tasks/pre-pack.js"
     },
     "publishConfig": {
         "access": "public"
