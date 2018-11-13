@@ -5,6 +5,7 @@
 
 # build
 semantic/dist
+publish
 
 # misc
 npm-debug.log*

@@ -10,7 +10,32 @@ N/A
 
 ## Publish
 
-N/A
+First thing first... make sure you are logged in to NPM.
+
+If you're not, run the follow command in a terminal
+
+```
+npm login
+```
+
+and follow the instructions.
+
+When it's done, build Semantic UI by running the following command in a terminal
+
+```
+npm run build
+```
+
+Make sure you see the following logs in your terminal output
+
+```
+** Copied Semantic UI dist files **
+** Copied package.json **
+** Copied LICENCE **
+** Copied README.md **
+```
+
+
 
 ## License
 
