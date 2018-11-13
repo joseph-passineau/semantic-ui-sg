@@ -1,7 +1,7 @@
 {
     "name": "@sharegate/semantic-ui-sg",
     "description": "Semantic UI customized to follow Sharegate Design Guidelines",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "scripts": {
         "start": "gulp watch",
         "build": "gulp build --gulpfile ./semantic/gulpfile.js && node tasks/post-build.js",
