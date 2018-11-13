@@ -4,10 +4,10 @@
     "version": "1.0.8",
     "scripts": {
         "start": "gulp watch",
-        "build": "gulp build --gulpfile ./semantic/gulpfile.js && node tasks/post-build.js",
-        "version": "npm run build && git add -A && git commit -m \"Bump package version\"",
+        "build": "gulp build --gulpfile ./semantic/gulpfile.js",
+        "version": "npm run build && git add -A && git commit -m \"Bumped package version\"",
         "postversion": "git push && git push --tags && cd publish && npm publish",
-        "postpublish": "cd.. && node tasks/post-publish.js"
+        "prepack": "node tasks/pre-pack.js"
     },
     "publishConfig": {
         "access": "public"
