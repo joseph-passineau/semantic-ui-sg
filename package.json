@@ -7,7 +7,7 @@
         "build": "gulp build --gulpfile ./semantic/gulpfile.js && node tasks/post-build.js",
         "version": "npm run build && git add -A && git commit -m \"Bump package version\" && git push && git push --tags",
         "postversion": "cd publish && npm publish",
-        "postpublish": "rm -rf publish"
+        "postpublish": "node tasks/post-publish.js"
     },
     "publishConfig": {
         "access": "public"
