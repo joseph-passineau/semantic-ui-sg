@@ -80,6 +80,8 @@ Before you override a selector, you should answer **no** to all the following qu
 - Does my modification fix a use case specific to my current project? 
 - Does my modification belong in the source code of my Sharegate project?
 
+Finally ...
+
 You should never do the followings:
 - Update code in `semantic/src/definitions`
 - Update code in `semantic/tasks`
