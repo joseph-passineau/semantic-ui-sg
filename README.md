@@ -10,7 +10,7 @@ N/A
 
 ## Publish
 
-First thing first... make sure you are logged in to NPM.
+First thing first... make sure you're logged in to NPM.
 
 If you're not, run the follow command in a terminal
 
@@ -26,7 +26,7 @@ When it's run the following command and let the magic happen
 npm version major | minor | patch
 ```
 
-If you have the following errors
+If you have the following error
 
 ```bash
 npm ERR! Git working directory not clean.
@@ -36,9 +36,9 @@ Make sure you've push your changes to Git prior to running the command.
 
 ### What the magic does
 
-It's based on recipe described in the [npm-version documentation](https://docs.npmjs.com/cli/version).
+The version script is based on the recipe described in the [npm-version documentation](https://docs.npmjs.com/cli/version).
 
-It will execute the following in order
+The following steps will be executed in order
 
 1. Bump the version of the package
 2. Build Semantic UI
