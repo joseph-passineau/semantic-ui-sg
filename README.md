@@ -73,14 +73,14 @@ In the `sharegate` theme folder, You will find 2 types of files: `.overrides` an
 
 The `.variables` files are used to override the value of existing variables or introduce new variables.
 
-The `.overrides` files provide the ability to override existing Semantic UI CSS selectors. **Before you override a selector, make sure this is the only to achieve your goal**.
+The `.overrides` files provide the ability to override existing Semantic UI CSS selectors. **Before you override a selector, make sure this is your last resort**.
 
-Make sure you answer **no** to all those questions before you override a selector:
+Before you override a selector, you should answer **no** to all the following questions:
 - Can I use an existing Semantic UI variable to make my modification?
 - Does my modification fix a use case specific to my current project? 
 - Does my modification belong in the source code of my Sharegate project?
 
-You shouldn't do the followings:
+You should never do the followings:
 - Update code in `semantic/src/definitions`
 - Update code in `semantic/tasks`
 - Update Semantic UI `default` theme in `semantic/src/themes/default`
