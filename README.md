@@ -42,7 +42,7 @@ The following steps will be executed in order
 
 1. Bump the version of the package
 2. Build Semantic UI
-3. Copy Semantic UI distribution file to the `publish` folder
+3. Copy Semantic UI distribution files to the `publish` folder
 4. Copy `package.json`, `LICENCE` and `README.md` files from the root to the `publish` folder
 5. Commit + push the package changes and the tags
 6. Publish the packages to `NPM`
