@@ -1,3 +1,113 @@
 /*******************************
-    User Variable Overrides
+            Checkbox
 *******************************/
+
+@checkboxSize: 16px;
+@checkboxColor: @textColor;
+@checkboxLineHeight: @checkboxSize;
+
+
+/* Label */
+@labelDistance: 1.85714em; /* 26px @ 14/em */
+
+/* Checkbox */
+@checkboxBackground: @white;
+@checkboxBorder: 1px solid @solidBorderColor;
+@checkboxBorderRadius: @3px;
+@checkboxTransition:
+  border @defaultDuration @defaultEasing,
+  opacity @defaultDuration @defaultEasing,
+  transform @defaultDuration @defaultEasing,
+  box-shadow @defaultDuration @defaultEasing
+;
+
+/* Checkmark */
+@checkboxCheckFontSize: 16px;
+
+/* Label */
+
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+
+/* Pressed */
+
+/* Focus */
+
+/* Active */
+@checkboxActiveCheckColor: @teal;
+
+/* Active Focus */
+@checkboxActiveFocusCheckColor: @lightTeal;
+
+/* Indeterminate */
+
+/* Disabled */
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Radio */
+/* Uses px to avoid rounding issues with circles */
+
+@radioSize: 16px;
+
+/* Slider & Toggle Handle */
+
+/* Slider */
+
+/* Slider States */
+
+
+
+/* Toggle */
+@toggleLaneWidth: 2.5rem;
+@toggleHandleSize: 1.25rem;
+@toggleTransitionDuration: 0.2s;
+
+@toggleWidth: @toggleLaneWidth;
+@toggleHeight: @toggleHandleSize;
+
+@toggleHandleRadius: @circularRadius;
+@toggleHandleOffset: 0rem;
+@toggleHandleTransition:
+  background @sliderTransitionDuration @defaultEasing,
+  left @sliderTransitionDuration @defaultEasing
+;
+
+@toggleLaneBackground: #A8AFBD;
+/* cloud-dark */
+@toggleLaneHeight: @toggleHandleSize;
+@toggleLaneBoxShadow: none;
+@toggleLaneVerticalOffset: 0rem;
+@toggleOffOffset: -0.05rem;
+@toggleOnOffset: (@toggleLaneWidth - @toggleHandleSize) + 0.15rem;
+
+@toggleLabelDistance: @toggleLaneWidth + 1rem;
+@toggleLabelLineHeight: 1.5rem;
+@toggleLabelOffset: 0.15em;
+
+
+@toggleFocusColor: @veryStrongTransparentBlack;
+@toggleHoverColor: @toggleFocusColor;
+
+@toggleOffLabelColor: @checkboxColor;
+@toggleOffHandleBoxShadow: @handleBoxShadow;
+
+@toggleOnLabelColor: @selectedTextColor;
+@toggleOnLaneColor: @primaryColor;
+
+@toggleOnHandleBoxShadow: @handleBoxShadow;
+
+@toggleOnFocusLaneColor: @primaryColorFocus;
+@toggleOnFocusLabelColor: @toggleOnLabelColor;
+
+
+
+/*-------------------
+      Variations
+--------------------*/
