@@ -25,6 +25,11 @@
 @lightPrimaryColor   : @lightTeal;
 @lightSecondaryColor : @lightPurple;
 
+/*-------------------
+      Borders
+--------------------*/
+@selectedBorderColor       : #A8AFBD;
+
 /*--------------
   Page Heading
 ---------------*/
@@ -102,7 +107,7 @@
 
 /*---  Colors  ---*/
 @red              : #DB2828; // todo
-@orange           : #F47422; // desktop
+@orange           : #F47321; // desktop
 @yellow           : #FCB736; // sunray
 @olive            : #B5CC18; // todo
 @green            : #21BA45; // todo

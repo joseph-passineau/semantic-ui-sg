@@ -9,39 +9,78 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="/semantic/dist/semantic.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
     <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.css" />
     </head>
-    <body>
-        <button class="ui primary button">
-            Button
-        </button>
-        <div class="ui input">
-            <input type="text" placeholder="Search...">
+    <body class="pa3">
+        <div class="flex mb2">
+            <button class="ui primary button">Button</button>
         </div>
-        <div class="ui checkbox">
-            <input type="checkbox" name="example">
-            <label>Make my profile visible</label>
+        <div class="flex mb4">
+            <div class="ui input">
+                <input type="text" placeholder="Search...">
+            </div>
         </div>
-        <div class="ui radio checkbox">
-            <input type="radio" name="radio" checked="checked">
-            <label>Radio choice</label>
+        <div class="flex mb4">
+            <div class="ui checkbox">
+                <input type="checkbox" name="example">
+                <label>Make my profile visible</label>
+            </div>
         </div>
-        <div class="ui toggle checkbox">
-            <input type="checkbox" name="public">
-            <label></label>
+        <div class="flex mb4">
+            <div class="ui radio checkbox">
+                <input type="radio" name="radio" checked="checked">
+                <label>Radio choice</label>
+            </div>
         </div>
-        <div class="ui button">Activator</div>
-        <div class="ui special popup">
-            <div class="header">Custom Header</div>
-            <div class="ui button">Click Me</div>
+        <div class="flex mb4">
+            <div class="ui toggle checkbox">
+                <input type="checkbox" name="public">
+                <label></label>
+            </div>
+        </div>
+        <div class="flex mb4">
+            <div class="ui button activate">People</div>
+            <div class="ui popup">
+                <p>Myrtie Ryan</p>
+                <p>Pauline Wong</p>
+                <p>Gerald Gibson</p>
+            </div>
+        </div>
+        <div class="ui search">
+            <input class="prompt" type="text" placeholder="Github repos...">
+            <div class="results"></div>
         </div>
         <script>
         $(document).ready(function(){
-            $('.button')
+            $('.activate')
                 .popup({
-                    inline: true
+                    delay: {
+                        show: 300,
+                        hide: 300
+                    },
+                    position: 'bottom center'
                 });
             });
+            $('.ui.search')
+                .search({
+                    apiSettings: {
+                        onResponse: function (response) {
+                            $.each(response.items, function (index, item) {
+                                item.avatar_url = item.owner.avatar_url;
+                            });
+                            return response;
+                        },
+                        url: '//api.github.com/search/repositories?q={query}',
+                    },
+                    fields: {
+                        results: 'items',
+                        title: 'name',
+                        image: 'avatar_url',
+                        url: 'html_url'
+                    },
+                    minCharacters: 3,
+                });
         </script>
     </body>
 </html>

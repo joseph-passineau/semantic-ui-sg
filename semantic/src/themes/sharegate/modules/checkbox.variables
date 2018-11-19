@@ -65,15 +65,15 @@
 
 
 /* Toggle */
-@toggleLaneWidth: 2.5rem;
-@toggleHandleSize: 1.25rem;
+@toggleLaneWidth: 2.75rem;
+@toggleHandleSize: 1rem;
 @toggleTransitionDuration: 0.2s;
 
 @toggleWidth: @toggleLaneWidth;
-@toggleHeight: @toggleHandleSize;
+@toggleHeight: 1.25rem;
 
 @toggleHandleRadius: @circularRadius;
-@toggleHandleOffset: 0rem;
+@toggleHandleOffset: .125rem;
 @toggleHandleTransition:
   background @sliderTransitionDuration @defaultEasing,
   left @sliderTransitionDuration @defaultEasing
@@ -81,11 +81,11 @@
 
 @toggleLaneBackground: #A8AFBD;
 /* cloud-dark */
-@toggleLaneHeight: @toggleHandleSize;
+@toggleLaneHeight: 1.25rem;
 @toggleLaneBoxShadow: none;
 @toggleLaneVerticalOffset: 0rem;
-@toggleOffOffset: -0.05rem;
-@toggleOnOffset: (@toggleLaneWidth - @toggleHandleSize) + 0.15rem;
+@toggleOffOffset: 0.25rem;
+@toggleOnOffset: (@toggleLaneWidth - @toggleHandleSize) - 0.25rem;
 
 @toggleLabelDistance: @toggleLaneWidth + 1rem;
 @toggleLabelLineHeight: 1.5rem;
