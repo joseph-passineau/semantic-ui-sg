@@ -12,7 +12,48 @@ npm install @sharegate/semantic-ui-sg --save
 
 ### Usage
 
-N/A
+To create a new React component that wrap a Semantic UI control you can do as you would with any React component.
+
+The only gotchas are:
+
+- Make sure you only import the Semantic UI files required by you're component. That mean, dont import `semantic.js` or `semantic.css` in your component.
+- Use React a ref and initialize you're semantic control with the JavaScript api.
+
+Ex.
+
+```javascript
+import "@sharegate/semantic-ui-sg/checkbox.css";
+import "@sharegate/semantic-ui-sg/checkbox.js";
+
+// ...
+
+export class Radio extends PureComponent {
+    componentRef = createRef();
+    componentElement = () => $(this.componentRef.current);
+
+    handleChange = () => {
+        const { value, onChange } = this.props;
+
+        onChange(value);
+    };
+
+    componentDidMount() {
+        const settings = {
+            onChange: this.handleChange
+        };
+
+        this.componentElement().checkbox(settings);
+    }
+
+    componentWillUnmount() {
+        this.componentElement().checkbox("destroy");
+    }
+
+    render() {
+        ...
+    }
+}
+```
 
 ## Maintainers
 
