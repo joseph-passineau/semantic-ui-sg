@@ -103,7 +103,7 @@ and follow the instructions.
 When it's run the following command and let the magic happen
 
 ```bash
-npm version major | minor | patch
+npm version major | minor | patch --otp=[YOU_AUTHENTICATOR_CODE]
 ```
 
 If you have the following error
