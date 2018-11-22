@@ -8,7 +8,7 @@
 
 
 /* Label */
-@labelDistance: 1.85714em; /* 26px @ 14/em */
+@labelDistance: 1.5em; /* 26px @ 14/em */
 
 /* Checkbox */
 @checkboxBackground: @white;
@@ -41,7 +41,7 @@
 @checkboxActiveCheckColor: @teal;
 
 /* Active Focus */
-@checkboxActiveFocusCheckColor: @lightTeal;
+@checkboxActiveFocusCheckColor: @teal;
 
 /* Indeterminate */
 
@@ -55,6 +55,8 @@
 /* Uses px to avoid rounding issues with circles */
 
 @radioSize: 16px;
+
+@bulletScale: (8 / 16); /* 8px as unitless value from radio size */
 
 /* Slider & Toggle Handle */
 
@@ -77,6 +79,12 @@
 @toggleHandleTransition:
   background @sliderTransitionDuration @defaultEasing,
   left @sliderTransitionDuration @defaultEasing
+;
+
+/* Slider & Toggle Handle */
+@handleBackground: @white;
+@handleBoxShadow:
+  0 0 0 0 @borderColor inset
 ;
 
 @toggleLaneBackground: #A8AFBD;

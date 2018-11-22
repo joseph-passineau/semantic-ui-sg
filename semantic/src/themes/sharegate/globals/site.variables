@@ -76,14 +76,14 @@
   This ensures these "ratios" remain constant despite changes in EM
 */
 
-@miniSize        : (11 / 16);
-@tinySize        : (12 / 16);
-@smallSize       : (13 / 16);
-@mediumSize      : (14 / 16);
-@largeSize       : (16 / 16);
-@bigSize         : (18 / 16);
-@hugeSize        : (20 / 16);
-@massiveSize     : (24 / 16);
+@miniSize        : (11 / 14);
+@tinySize        : (12 / 14);
+@smallSize       : (13 / 14);
+@mediumSize      : (14 / 14);
+@largeSize       : (16 / 14);
+@bigSize         : (18 / 14);
+@hugeSize        : (20 / 14);
+@massiveSize     : (24 / 14);
 
 /*-------------------
         Page
