@@ -6,9 +6,9 @@
 @checkboxColor: @textColor;
 @checkboxLineHeight: @checkboxSize;
 
-
 /* Label */
 @labelDistance: 1.5em; /* 26px @ 14/em */
+@labelColor: inherit;
 
 /* Checkbox */
 @checkboxBackground: @white;
