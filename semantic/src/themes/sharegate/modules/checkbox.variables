@@ -55,7 +55,9 @@
 /* Uses px to avoid rounding issues with circles */
 
 @radioSize: 16px;
+@radioTop: 0px;
 
+@bulletTop: 0px;
 @bulletScale: (8 / 16); /* 8px as unitless value from radio size */
 
 /* Slider & Toggle Handle */
