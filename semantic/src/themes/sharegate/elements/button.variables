@@ -1,3 +1,113 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
+/*******************************
+            Button
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Button */
+
+/* Button defaults to using same height as input globally */
+@horizontalPadding: 3em;
+
+/* Text */
+@borderRadius: 1.25em;
+
+/* Internal Shadow */
+
+/* Box Shadow */
+@boxShadow:
+ none
+;
+
+/* Icon */
+
+/* Loader */
+
+/*
+@willChange: box-shadow, transform, opacity, color, background;
+*/
+
+/*-------------------
+        Group
+--------------------*/
+
+@groupBoxShadow: none;
+/*-------------------
+        States
+--------------------*/
+
+/* Hovered */
+
+
+/* Focused */
+
+
+/* Disabled */
+
+
+/* Pressed Down */
+
+/* Active */
+
+/* Active + Hovered */
+
+/* Loading */
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Or */
+
+/* Icon */
+
+/* Labeled */
+
+/* Labeled Icon */
+
+
+/* Inverted */
+
+/* Basic */
+@basicBackground: @white none;
+
+/* Basic Hover */
+
+/* Basic Focus */
+
+/* Basic Down */
+
+/* Basic Active */
+
+/* Basic Inverted */
+
+
+/* Basic Group */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Colors */
+@coloredBoxShadow: none;
+
+/* Colored */
+
+/* Inverted */
+
+
+/* Ordinality */
+
+/* Compact */
+
+/* Attached */
+
+/* Floated */
+
+/* Animated */

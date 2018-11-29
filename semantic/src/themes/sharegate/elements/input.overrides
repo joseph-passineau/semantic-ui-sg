@@ -1,3 +1,24 @@
 /*******************************
          Site Overrides
 *******************************/
+
+// making sure that the inputs all share the same height
+.input {
+    height: 2.5em;
+}
+
+.input.border input {
+    border: 1px solid @grey;
+}
+
+// inputs shoul always have the same font size
+// lets set the width of the small inputs
+.ui.small.input {
+    font-size: 1em;
+    width: 2.5em;
+}
+
+// can we has colored inputs
+.ui.input.teal input {
+    color: @teal;
+}

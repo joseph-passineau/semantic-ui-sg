@@ -4,6 +4,14 @@
 @importGoogleFonts : false;
 @normal            : 300;
 @bold              : 500;
+@fontName          : 'Calibre';
+
+/*-------------------
+        Paths
+--------------------*/
+
+/* For source only. Modified in gulp for dist */
+@iconsPath : '../../themes/sharegate/assets/icons';
 
 /*-------------------
       Base Sizes
@@ -45,8 +53,8 @@
 
 /* This adjusts the default form input across all elements */
 @inputBackground        : @white;
-@inputVerticalPadding   : @relative14px;
-@inputHorizontalPadding : @relative14px;
+@inputVerticalPadding   : @relative8px;
+@inputHorizontalPadding : @relative8px;
 @inputPadding           : @inputVerticalPadding @inputHorizontalPadding;
 
 /* Input Text Color */
@@ -54,8 +62,8 @@
 @inputPlaceholderColor: lighten(@inputColor, 75);
 @inputPlaceholderFocusColor: lighten(@inputColor, 45);
 
-/* Line Height Default For Inputs in Browser (Descenders are 17px at 14px base em) */
-@inputLineHeight: unit((17 / 16), em);
+/* Line Height Default For Inputs in Browser (Descenders are 16px at 16px base em) */
+@inputLineHeight: unit((16 / 16), em);
 
 /*-------------------
     Focused Input

@@ -8,7 +8,7 @@
 
 /* Search Prompt */
 @promptBorderRadius: @relative4px;
-@promptFontSize: @relativeLarge;
+@promptFontSize: @relativeMedium;
 
 /* Mobile */
 

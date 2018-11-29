@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- Standard Meta -->
     <meta charset="utf-8" />
@@ -10,54 +11,183 @@
     <script src="/semantic/dist/semantic.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
-    <link rel="stylesheet" href="https://assets.sharegate.com/shared/brand/fonts/calibre/Calibre.css" />
+    <!-- <link rel="stylesheet" href="https://assets.sharegate.com/shared/brand/fonts/calibre/Calibre.css" /> -->
     <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.css" />
-    </head>
-    <body class="pa3">
-        <div class="flex mb2">
-            <button class="ui primary button">Button</button>
+    <style>
+        body, html {
+            -webkit-font-smoothing: antialiased;
+        }
+        @font-face {
+            font-family: 'Calibre';
+            font-style: normal;
+            font-weight: 100;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-Thin.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: normal;
+            font-weight: 300;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-Light.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-Regular.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-Medium.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: normal;
+            font-weight: 600;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-Semibold.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: normal;
+            font-weight: 700;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-Bold.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: normal;
+            font-weight: 900;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-Black.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: italic;
+            font-weight: 100;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-ThinItalic.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: italic;
+            font-weight: 300;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-LightItalic.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: italic;
+            font-weight: 400;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-RegularItalic.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: italic;
+            font-weight: 500;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-MediumItalic.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: italic;
+            font-weight: 600;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-SemiboldItalic.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: italic;
+            font-weight: 700;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-BoldItalic.woff) format("woff");
+        }
+
+        @font-face {
+            font-family: 'Calibre';
+            font-style: italic;
+            font-weight: 900;
+            src: url(https://assets.sharegate.com/shared/brand/fonts/calibre/CalibreWeb-BlackItalic.woff) format("woff");
+        }
+    </style>
+</head>
+
+<body class="pa3">
+    <div class="flex mb2">
+        <button class="ui primary button">Manage list</button>
+    </div>
+    <div class="flex mb2">
+        <button class="ui button teal">
+            Customize message
+        </button>
+    </div>
+    <div class="flex mb2">
+        <button class="ui button basic teal">
+            Keep it
+        </button>
+    </div>
+    <div class="flex mb4">
+        <div class="ui input">
+            <input type="text" placeholder="Search...">
         </div>
-        <div class="flex mb4">
-            <div class="ui input">
-                <input type="text" placeholder="Search...">
-            </div>
+    </div>
+    <div class="flex mb4">
+        <div class="ui checkbox">
+            <input type="checkbox" name="example">
+            <label>Make my profile visible</label>
         </div>
-        <div class="flex mb4">
-            <div class="ui checkbox">
-                <input type="checkbox" name="example">
-                <label>Make my profile visible</label>
-            </div>
+    </div>
+    <div class="flex mb4">
+        <div class="ui radio checkbox">
+            <input type="radio" name="radio" checked="checked">
+            <label>Radio choice</label>
         </div>
-        <div class="flex mb4">
-            <div class="ui radio checkbox">
-                <input type="radio" name="radio" checked="checked">
-                <label>Radio choice</label>
-            </div>
-            <div class="ui radio checkbox">
-                <input type="radio" name="joe">
-                <label>Joe choice</label>
-            </div>
+        <div class="ui radio checkbox">
+            <input type="radio" name="joe">
+            <label>Joe choice</label>
         </div>
-        <div class="flex mb4">
-            <div class="ui toggle checkbox">
-                <input type="checkbox" name="public">
-                <label></label>
-            </div>
+    </div>
+    <div class="flex mb4">
+        <div class="ui toggle checkbox">
+            <input type="checkbox" name="public">
+            <label></label>
         </div>
-        <div class="flex mb4">
-            <div class="ui button activate">People</div>
-            <div class="ui popup">
-                <p>Myrtie Ryan</p>
-                <p>Pauline Wong</p>
-                <p>Gerald Gibson</p>
-            </div>
+    </div>
+    <div class="flex mb4">
+        <button class="ui button activate">People</button>
+        <div class="ui popup">
+            <p>Myrtie Ryan</p>
+            <p>Pauline Wong</p>
+            <p>Gerald Gibson</p>
         </div>
-        <div class="ui search">
-            <input class="prompt" type="text" placeholder="Github repos...">
-            <div class="results"></div>
+    </div>
+    <div class="ui search">
+        <input class="prompt" type="text" placeholder="Github repos...">
+        <div class="results"></div>
+    </div>
+    <div class="flex mv3">
+        <div class="ui left icon input">
+            <input type="text" placeholder="Search...">
+            <i class="icon amazon loading"></i>
         </div>
-        <script>
-        $(document).ready(function(){
+    </div>
+    <div class="flex mv3">
+        <div class="ui disabled input">
+            <input type="text" placeholder="Email">
+        </div>
+    </div>
+    <div class="flex mv3">
+        <div class="ui input teal border small">
+            <input type="text" value="3">
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
             $('.activate')
                 .popup({
                     delay: {
@@ -66,26 +196,27 @@
                     },
                     position: 'bottom center'
                 });
+        });
+        $('.ui.search')
+            .search({
+                apiSettings: {
+                    onResponse: function (response) {
+                        $.each(response.items, function (index, item) {
+                            item.avatar_url = item.owner.avatar_url;
+                        });
+                        return response;
+                    },
+                    url: '//api.github.com/search/repositories?q={query}',
+                },
+                fields: {
+                    results: 'items',
+                    title: 'name',
+                    image: 'avatar_url',
+                    url: 'html_url'
+                },
+                minCharacters: 3,
             });
-            $('.ui.search')
-                .search({
-                    apiSettings: {
-                        onResponse: function (response) {
-                            $.each(response.items, function (index, item) {
-                                item.avatar_url = item.owner.avatar_url;
-                            });
-                            return response;
-                        },
-                        url: '//api.github.com/search/repositories?q={query}',
-                    },
-                    fields: {
-                        results: 'items',
-                        title: 'name',
-                        image: 'avatar_url',
-                        url: 'html_url'
-                    },
-                    minCharacters: 3,
-                });
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>

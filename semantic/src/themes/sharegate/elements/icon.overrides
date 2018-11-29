@@ -1,3 +1,32 @@
 /*******************************
          Site Overrides
 *******************************/
+
+i.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i.icon.amazon:before {
+    content: "";
+    height: 16px;
+    width: 16px;
+    top: 0;
+    margin-top: 0;
+    background: url("@{iconsPath}/magnifier.svg") center center no-repeat!important;
+}
+
+i.icon.loading.amazon:before {
+    animation: rotate 2s linear infinite;
+    transform-origin: center center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
