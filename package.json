@@ -26,6 +26,7 @@
     "homepage": "https://github.com/sharegate/semantic-ui-sg",
     "devDependencies": {
         "browser-sync": "2.26.3",
+        "copyfiles": "2.1.0",
         "fs-extra": "7.0.1",
         "gulp": "3.9.1",
         "require-dir": "1.1.0",
