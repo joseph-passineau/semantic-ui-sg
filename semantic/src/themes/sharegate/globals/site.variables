@@ -73,7 +73,7 @@
 @focusedFormBorderColor: @lightTeal;
 
 /* Used on dropdowns, other larger blocks */
-@focusedFormMutedBorderColor: #96C8DA; // todo
+@focusedFormMutedBorderColor: @lightTeal;
 
 /*-------------------
         Sizes
@@ -114,12 +114,14 @@
 --------------------*/
 
 /*---  Colors  ---*/
+@apricot             : #30D1BD; // apricot
+
 @red              : #DB2828; // todo
 @orange           : #F47321; // desktop
 @yellow           : #FCB736; // sunray
 @olive            : #B5CC18; // todo
 @green            : #21BA45; // todo
-@teal             : #30D1BD; // apricot
+@teal             : @apricot;
 @blue             : #2185D0; // todo
 @violet           : #6435C9; // todo
 @purple           : #5A3951; // eggplant

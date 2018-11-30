@@ -2,6 +2,11 @@
          Site Overrides
 *******************************/
 
-.prompt {
+.ui.search {
+    width: 100%;
+}
+
+.ui.search .prompt {
     height: 40px;
+    width: 100%;
 }

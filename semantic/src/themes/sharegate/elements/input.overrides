@@ -5,6 +5,7 @@
 // making sure that the inputs all share the same height
 .input {
     height: 2.5em;
+    width: 100%;
 }
 
 .input.border input {
