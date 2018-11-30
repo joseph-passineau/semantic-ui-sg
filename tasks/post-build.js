@@ -1,27 +1,29 @@
-var fs = require("fs-extra");
+const fs = require("fs-extra");
+const copyfiles = require("copyfiles");
 
 fs.removeSync("publish");
 console.log("** Cleared publish folder **");
 
-function copy(src, dest) {
+function copy(src, dest, options) {
     return {
         src,
-        dest
+        dest,
+        options
     };
 }
 
 const toCopy = [
-    copy("semantic/dist/components", "publish"),
-    copy("semantic/dist/semantic.js", "publish/semantic.js"),
-    copy("semantic/dist/semantic.css", "publish/semantic.css"),
-    copy("semantic/dist/semantic.min.js", "publish/semantic.min.js"),
-    copy("semantic/dist/semantic.min.css", "publish/semantic.min.css"),
-    copy("package.json", "publish/package.json"),
-    copy("LICENSE", "publish/LICENSE"),
-    copy("README.md", "publish/README.md")
+    copy("semantic/dist/components/**/*.css", "publish", { exclude: ["**/*.min.*"], up: 3 }),
+    copy("package.json", "publish"),
+    copy("LICENSE", "publish"),
+    copy("README.md", "publish")
 ]
 
-toCopy.forEach(({ src, dest }) => {
-    fs.copySync(src, dest);
+toCopy.forEach(({ src, dest, options = {} }) => {
+    copyfiles([src, dest], options, err => {
+        if (err) {
+            console.log(err);
+        }
+    });
     console.log(`** Copied ${src} to ${dest} **`);
 });
