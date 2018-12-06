@@ -145,6 +145,22 @@
 @lightGrey        : #EDF0F2; // cloud light
 @lightBlack       : #24242A; // jet dark light
 
+/*--- Darkest Colors ---*/
+@darkestRed         : #FF695E; // todo
+@darkestOrange      : #F8B385; // desktop darkest
+@darkestYellow      : #FDCD72; // sunray darkest
+@darkestOlive       : #D9E778; // todo
+@darkestGreen       : #2ECC40; // todo
+@darkestTeal        : #26A797; // apricot darkest
+@darkestBlue        : #54C8FF; // todo
+@darkestViolet      : #A291FB; // todo
+@darkestPurple      : #9C8897; // eggplant darkest
+@darkestPink        : #FF8EDF; // todo
+@darkestBrown       : #D67C1C; // todo
+@darkestGrey        : #EDF0F2; // cloud darkest
+@darkestBlack       : #24242A; // jet dark darkest
+
+
 /*---   Neutrals  ---*/
 @fullBlack        : #000000; // black
 @offWhite         : #F5F7F8; // cloud-lightest

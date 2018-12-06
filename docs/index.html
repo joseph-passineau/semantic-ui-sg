@@ -21,95 +21,202 @@
 </head>
 
 <body class="pa3">
-    <div class="flex mb2">
-        <button class="ui primary button">Manage list</button>
-    </div>
-    <div class="flex mb2">
-        <button class="ui button primary">
-            Customize message
-        </button>
-    </div>
-    <div class="flex mb2">
-        <button class="ui button basic primary">
-            Keep it
-        </button>
-    </div>
-    <div class="flex mb4">
-        <div class="ui input">
-            <input type="text" placeholder="Search...">
+    <div class="mw8 center">
+        <h2 class="navy bb b--navy ma0 pa0 mb4">Buttons</h2>
+        <h3>Default</h3>
+        <div class="flex mb2">
+            <button class="ui primary button">Archive</button>
+            <button class="ui primary button disabled">Archive</button>
         </div>
-    </div>
-    <div class="flex mb4">
-        <div class="ui checkbox">
-            <input type="checkbox" name="example">
-            <label>Make my profile visible</label>
+        <h3>Default - Tall</h3>
+        <div class="flex mb2">
+            <button class="ui primary button tall">Archive</button>
+            <button class="ui primary button tall disabled">Archive</button>
         </div>
-    </div>
-    <div class="flex mb4">
-        <div class="ui radio checkbox">
-            <input type="radio" name="radio" checked="checked">
-            <label>Radio choice</label>
-        </div>
-        <div class="ui radio checkbox">
-            <input type="radio" name="joe">
-            <label>Joe choice</label>
-        </div>
-    </div>
-    <div class="flex mb4">
-        <div class="ui toggle checkbox">
-            <input type="checkbox" name="public">
-            <label></label>
-        </div>
-    </div>
-    <div class="flex mb4">
-        <button class="ui button activate">People</button>
-        <div class="ui popup">
-            <p>Myrtie Ryan</p>
-            <p>Pauline Wong</p>
-            <p>Gerald Gibson</p>
-        </div>
-    </div>
-    <div class="ui search">
-        <input class="prompt" type="text" placeholder="Github repos...">
-        <div class="results"></div>
-    </div>
-    <div class="flex mv3">
-        <div class="ui left icon input">
-            <input type="text" placeholder="Search...">
-            <i class="icon amazon"></i>
-        </div>
-    </div>
-    <div class="flex mv3">
-        <div class="ui selection dropdown">
-            <input type="hidden" name="gender">
-            <i class="dropdown icon"></i>
-            <div class="default text">Email</div>
-            <div class="menu">
-                <div class="item" data-value="1">Male</div>
-                <div class="item" data-value="0">Female</div>
+        <h3>Basic</h3>
+        <div class="flex mb2 pa2 bg-navy">
+            <button class="ui button basic primary">
+                Keep it
+            </button>
+            <button class="ui button basic primary disabled">
+                Keep it Basic
+            </button>
+            <button class="ui button primary disabled">
+                Full restore
+            </button>
+            <div class="ui toggle checkbox">
+                <input type="checkbox" name="public">
+                <label></label>
             </div>
         </div>
-    </div>
-    <div class="flex mv3">
-        <div class="ui disabled input">
-            <input type="text" placeholder="Email">
+        <h3>Basic - Tall</h3>
+        <div class="flex mb2 pa2 bg-navy">
+            <button class="ui button basic primary tall">
+                Keep it
+            </button>
+            <button class="ui button basic primary tall disabled">
+                Keep it Basic
+            </button>
+            <button class="ui button primary tall disabled">
+                Full restore
+            </button>
         </div>
-    </div>
-    <div class="flex mv3">
-        <div class="ui input border">
-            <input type="text" placeholder="johnsmith@contoso.com">
+        <h3>Basic</h3>
+        <div class="flex mb2">
+            <button class="ui button basic primary">
+                Keep it
+            </button>
+            <button class="ui button basic primary disabled">
+                Keep it
+            </button>
         </div>
-    </div>
-    <div class="flex mv3">
-        <div class="ui input teal border small">
-            <input type="text" value="3">
+        <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Checkbox</h2>
+        <div class="flex mb4">
+            <div class="ui checkbox">
+                <input type="checkbox" name="example">
+                <label>Make my profile visible</label>
+            </div>
         </div>
-    </div>
-    <div class="flex mv3">
-        <div class="ui icon form">
-            <div class="field">
-                <label>Text</label>
-                <textarea></textarea>
+        <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Radio</h2>
+        <div class="flex mb4">
+            <div class="ui form">
+                <div class="inline fields">
+                    <label for="fruit">Select your favorite fruit:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+                            <label>Apples</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>Oranges</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>Pears</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>Grapefruit</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="grouped fields">
+                    <label for="fruit">Select your second favorite fruit:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+                            <label>Apples</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>Oranges</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>Pears</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <label>Grapefruit</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Toggle</h2>
+        <div class="flex mb4">
+            <div class="ui toggle checkbox">
+                <input type="checkbox" name="public">
+                <label></label>
+            </div>
+        </div>
+        <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Tooltip</h2>
+        <div class="flex mb4">
+            <button class="ui button primary activate">People</button>
+            <div class="ui popup">
+                <p>Myrtie Ryan</p>
+                <p>Pauline Wong</p>
+                <p>Gerald Gibson</p>
+            </div>
+        </div>
+        <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Tooltip inverted</h2>
+        <div class="flex mb4">
+            <button class="ui button primary activate">Countries</button>
+            <div class="ui popup" data-variation="inverted">
+                <p>Myrtie Ryan</p>
+                <p>Pauline Wong</p>
+                <p>Gerald Gibson</p>
+            </div>
+        </div>
+        <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Input</h2>
+        <h3 class="ma0 pa0 mb1">Default</h3>
+        <div class="flex mb4">
+            <div class="ui input">
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+        <h3 class="ma0 pa0 mb1">Border</h3>
+        <div class="flex mv3">
+            <div class="ui input border">
+                <input type="text" placeholder="johnsmith@contoso.com">
+            </div>
+        </div>
+        <h3 class="ma0 pa0 mb1">With icon</h3>
+        <div class="flex mv3">
+            <div class="ui left icon input">
+                <input type="text" placeholder="Search...">
+                <i class="icon amazon"></i>
+            </div>
+        </div>
+        <h3 class="ma0 pa0 mb1">Disabled</h3>
+        <div class="flex mv3">
+            <div class="ui disabled input">
+                <input type="text" placeholder="Email">
+            </div>
+        </div>
+        <h3 class="ma0 pa0 mb1">Numeric</h3>
+        <div class="flex mv3">
+            <div class="ui input teal border small">
+                <input type="text" value="3">
+            </div>
+        </div>
+        <h3 class="ma0 pa0 mb1">Textarea</h3>
+        <div class="flex mv3">
+            <div class="ui icon form">
+                <div class="field">
+                    <label>Text</label>
+                    <textarea></textarea>
+                </div>
+            </div>
+        </div>
+        <h3 class="ma0 pa0 mb1">Search</h3>
+        <div class="ui search">
+            <input class="prompt" type="text" placeholder="Github repos...">
+            <div class="results"></div>
+        </div>
+        <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Dropdown</h2>
+        <div class="flex mv3">
+            <div class="ui selection dropdown">
+                <input type="hidden" name="gender">
+                <i class="dropdown icon"></i>
+                <div class="default text">Email</div>
+                <div class="menu">
+                    <div class="item" data-value="1">Male</div>
+                    <div class="item" data-value="0">Female</div>
+                </div>
             </div>
         </div>
     </div>
@@ -121,7 +228,8 @@
                         show: 300,
                         hide: 300
                     },
-                    position: 'bottom center'
+                    position: 'bottom center',
+                    variation: 'inverted'
                 });
         });
         $('.ui.search')
@@ -145,6 +253,9 @@
             });
         $('.ui.dropdown')
             .dropdown()
+            ;
+        $('.ui.radio.checkbox')
+            .checkbox()
             ;
     </script>
 </body>

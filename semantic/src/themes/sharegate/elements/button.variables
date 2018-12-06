@@ -75,9 +75,15 @@
 /* Inverted */
 
 /* Basic */
-@basicBackground: @white none;
+@basicBackground: transparent none;
+@basicFontWeight: @bold;
 
 /* Basic Hover */
+@basicHoverBackground: @darkestTeal!important;
+@basicHoverBoxShadow:
+  0px 0px 0px @basicBorderSize @selectedBorderColor inset,
+  0px 0px 0px 0px @borderColor inset
+;
 
 /* Basic Focus */
 

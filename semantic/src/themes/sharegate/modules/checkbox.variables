@@ -102,8 +102,8 @@
 @toggleLabelOffset: 0.15em;
 
 
-@toggleFocusColor: @veryStrongTransparentBlack;
-@toggleHoverColor: @toggleFocusColor;
+@toggleFocusColor: @darkestTeal;
+@toggleHoverColor: @toggleFocusColor; 
 
 @toggleOffLabelColor: @checkboxColor;
 @toggleOffHandleBoxShadow: @handleBoxShadow;

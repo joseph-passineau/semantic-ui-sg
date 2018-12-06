@@ -3,5 +3,54 @@
 *******************************/
  
 .ui.button {
+    height: 32px;
+}
+
+.ui.button.tall {
     height: 40px;
+}
+
+/* Semantic's opinion is too opiniated */
+.ui.basic.primary.buttons .button:hover,
+.ui.basic.primary.button:hover {
+  background: @darkestTeal !important;
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @darkestTeal inset !important;
+  color: #FFF !important;
+}
+
+.ui.basic.primary.buttons .button:focus,
+.ui.basic.primary.button:focus {
+  background: @darkestTeal !important;
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @darkestTeal inset !important;
+  color: #FFF !important;
+}
+
+.ui.teal.primary.buttons .button:hover,
+.ui.teal.primary.button:hover {
+  background: @darkestTeal !important;
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @darkestTeal inset !important;
+  color: #FFF !important;
+}
+
+.ui.teal.primary.buttons .button:focus,
+.ui.teal.primary.button:focus {
+  background: @darkestTeal !important;
+  box-shadow: 0px 0px 0px @basicColoredBorderSize @darkestTeal inset !important;
+  color: #FFF !important;
+}
+
+/* Disabled  primary button */
+.ui.buttons .disabled.button, .ui.disabled.button, .ui.button:disabled, .ui.disabled.button:hover, .ui.disabled.active.button {
+    background: #263350!important;
+    box-shadow: 0px 0px 0px @basicColoredBorderSize #263350 inset !important;
+    opacity: 1!important;
+    color: #6E778B!important;
+}
+
+/* Disabled basic primary button */
+.ui.buttons .disabled.button.basic, .ui.disabled.basic.button, .ui.button.basic:disabled, .ui.disabled.button.basic:hover, .ui.disabled.active.button.basic {
+    background: transparent!important;
+    box-shadow: 0px 0px 0px @basicColoredBorderSize #263350 inset !important;
+    opacity: 1!important;
+    color: #6E778B!important;
 }
