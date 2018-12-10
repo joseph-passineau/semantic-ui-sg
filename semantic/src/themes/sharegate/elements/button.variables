@@ -113,6 +113,7 @@
 /* Compact */
 
 /* Attached */
+@attachedBoxShadow: 0px 0px 0px 0px @borderColor;
 
 /* Floated */
 

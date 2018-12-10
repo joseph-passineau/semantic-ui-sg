@@ -8,16 +8,16 @@ i.icon {
     justify-content: center;
 }
 
-i.icon.amazon:before {
+i.icon.search:before {
     content: "";
-    height: 16px;
+    height: 17px;
     width: 16px;
     top: 0;
     margin-top: 0;
     background: url("@{iconsPath}/magnifier.svg") center center no-repeat!important;
 }
 
-i.icon.loading.amazon:before {
+i.icon.loading.search:before {
     animation: rotate 2s linear infinite;
     transform-origin: center center;
 }
