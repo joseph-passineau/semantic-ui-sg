@@ -3,11 +3,11 @@
 *******************************/
  
 .ui.button {
-    height: 32px;
+    min-height: 32px;
 }
 
 .ui.button.tall {
-    height: 40px;
+    min-height: 40px;
 }
 
 /* Semantic's opinion is too opiniated */
@@ -61,3 +61,5 @@
     opacity: 1!important;
     color: #6E778B!important;
 }
+
+/* Variation - Squared */
