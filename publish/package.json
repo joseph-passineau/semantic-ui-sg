@@ -1,0 +1,35 @@
+{
+    "name": "@sharegate/semantic-ui-sg",
+    "description": "Semantic UI customized to follow Sharegate Design Guidelines",
+    "version": "2.0.2",
+    "scripts": {
+        "start": "gulp watch",
+        "build": "gulp build --gulpfile ./semantic/gulpfile.js",
+        "version": "npm run build && node tasks/post-build.js && git add -A && git commit -m \"Bump package version\"",
+        "postversion": "git push && git push --tags && cd publish && npm publish"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sharegate/semantic-ui-sg.git"
+    },
+    "keywords": [
+        "semantic-ui"
+    ],
+    "author": "Groupe Sharegate inc.",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/sharegate/semantic-ui-sg/issues"
+    },
+    "homepage": "https://github.com/sharegate/semantic-ui-sg",
+    "devDependencies": {
+        "browser-sync": "2.26.3",
+        "copyfiles": "2.1.0",
+        "fs-extra": "7.0.1",
+        "gulp": "3.9.1",
+        "require-dir": "1.1.0",
+        "semantic-ui": "2.4.2"
+    }
+}
