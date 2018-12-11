@@ -11,7 +11,7 @@
 --------------------*/
 
 /* For source only. Modified in gulp for dist */
-@iconsPath : '../../themes/sharegate/assets/icons';
+@iconsPath : 'themes/sharegate/assets/icons';
 
 /*-------------------
       Base Sizes

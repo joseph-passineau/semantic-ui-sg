@@ -9,9 +9,9 @@
   line-height: 1.5em;
 }
 
-// .ui.dropdown > .dropdown.icon {
-//     background: url("@{iconsPath}/down-arrow-apricot.svg") center center no-repeat!important;
-// }
+.ui.dropdown > .dropdown.icon {
+    background: url("@{iconsPath}/down-arrow-apricot.svg") center center no-repeat!important;
+}
 
 .ui.selection.dropdown > .dropdown.icon {
     height: 100%;

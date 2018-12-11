@@ -1465,6 +1465,9 @@ select.ui.dropdown {
 .ui.selection.dropdown {
   line-height: 1.5em;
 }
+.ui.dropdown > .dropdown.icon {
+  background: url("themes/sharegate/assets/icons/down-arrow-apricot.svg") center center no-repeat !important;
+}
 .ui.selection.dropdown > .dropdown.icon {
   height: 100%;
   width: 32px;

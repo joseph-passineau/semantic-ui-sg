@@ -520,6 +520,14 @@ i.icon {
       -ms-flex-pack: center;
           justify-content: center;
 }
+i.icon.search:before {
+  content: "";
+  height: 17px;
+  width: 16px;
+  top: 0;
+  margin-top: 0;
+  background: url("themes/sharegate/assets/icons/magnifier.svg") center center no-repeat !important;
+}
 i.icon.loading.search:before {
   -webkit-animation: rotate 2s linear infinite;
           animation: rotate 2s linear infinite;
