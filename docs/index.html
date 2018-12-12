@@ -8,110 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Components</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="semantic.js"></script>
+    <script src="/semantic/dist/semantic.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
-    <link rel="stylesheet" type="text/css" href="semantic.css" />
+    <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.css" />
     <style>
-        body, html {
+        body,
+        html {
             -webkit-font-smoothing: antialiased;
         }
-        @font-face {
-            font-family: 'Calibre';
-            font-style: normal;
-            font-weight: 100;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-Thin.woff?raw=true) format("woff");
-        }
-
+    
         @font-face {
             font-family: 'Calibre';
             font-style: normal;
             font-weight: 300;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-Light.woff?raw=true) format("woff");
+            src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Regular.woff2) format("woff");
         }
-
-        @font-face {
-            font-family: 'Calibre';
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-Regular.woff?raw=true) format("woff");
-        }
-
+    
         @font-face {
             font-family: 'Calibre';
             font-style: normal;
             font-weight: 500;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-Medium.woff?raw=true) format("woff");
+            src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Medium.woff2) format("woff");
         }
-
+    
         @font-face {
             font-family: 'Calibre';
             font-style: normal;
             font-weight: 600;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-Semibold.woff?raw=true) format("woff");
-        }
-
-        @font-face {
-            font-family: 'Calibre';
-            font-style: normal;
-            font-weight: 700;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-Bold.woff?raw=true) format("woff");
-        }
-
-        @font-face {
-            font-family: 'Calibre';
-            font-style: normal;
-            font-weight: 900;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-Black.woff?raw=true) format("woff");
-        }
-
-        @font-face {
-            font-family: 'Calibre';
-            font-style: italic;
-            font-weight: 100;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-ThinItalic.woff?raw=true) format("woff");
-        }
-
-        @font-face {
-            font-family: 'Calibre';
-            font-style: italic;
-            font-weight: 300;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-LightItalic.woff?raw=true) format("woff");
-        }
-
-        @font-face {
-            font-family: 'Calibre';
-            font-style: italic;
-            font-weight: 400;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-RegularItalic.woff?raw=true) format("woff");
-        }
-
-        @font-face {
-            font-family: 'Calibre';
-            font-style: italic;
-            font-weight: 500;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-MediumItalic.woff?raw=true) format("woff");
-        }
-
-        @font-face {
-            font-family: 'Calibre';
-            font-style: italic;
-            font-weight: 600;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-SemiboldItalic.woff?raw=true) format("woff");
-        }
-
-        @font-face {
-            font-family: 'Calibre';
-            font-style: italic;
-            font-weight: 700;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-BoldItalic.woff?raw=true) format("woff");
-        }
-
-        @font-face {
-            font-family: 'Calibre';
-            font-style: italic;
-            font-weight: 900;
-            src: url(https://github.com/sharegate/semantic-ui-sg/blob/master/docs/fonts/CalibreWeb-BlackItalic.woff?raw=true) format("woff");
+            src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Semibold.woff2) format("woff");
         }
     </style>
 </head>
@@ -164,6 +89,17 @@
                 Full restore [disabled <em>tall dark</em>]
             </button>
         </div>
+        <!-- <h3>Attached</h3>
+        <button class="right attached ui button primary tall">Search</button>
+        <button class="right attached ui button primary tall disabled">Search</button>
+        <button class="right attached ui button primary tall basic">Search</button>
+        <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Checkbox</h2>
+        <div class="flex mb4">
+            <div class="ui checkbox">
+                <input type="checkbox" name="example">
+                <label>Make my profile visible</label>
+            </div>
+        </div> -->
         <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Radio</h2>
         <div class="flex mb4">
             <div class="ui form">
@@ -195,28 +131,28 @@
                     </div>
                 </div>
                 <div class="grouped fields">
-                    <label for="fruit">Select your second favorite fruit:</label>
+                    <label for="fruitier">Select your second favorite fruitier:</label>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
+                            <input type="radio" name="fruitier" checked="" tabindex="0" class="hidden">
                             <label>Apples</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <input type="radio" name="fruitier" tabindex="0" class="hidden">
                             <label>Oranges</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <input type="radio" name="fruitier" tabindex="0" class="hidden">
                             <label>Pears</label>
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui radio checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
+                            <input type="radio" name="fruitier" tabindex="0" class="hidden">
                             <label>Grapefruit</label>
                         </div>
                     </div>
@@ -327,7 +263,7 @@
         </div>
         <h3 class="ma0 pa0 mb1">Numeric</h3>
         <div class="flex mv3">
-            <div class="ui input teal border small">
+            <div class="ui input teal border small center-text">
                 <input type="text" value="3">
             </div>
         </div>

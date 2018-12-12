@@ -90,7 +90,7 @@
 @bulletTop: 1px;
 @bulletLeft: 0px;
 @bulletScale: (7 / 15); /* 7px as unitless value from radio size */
-@bulletColor: @textColor;
+@bulletColor: @lightTeal;
 @bulletRadius: @circularRadius;
 
 @radioFocusBackground: @checkboxFocusBackground;

@@ -97,12 +97,12 @@
 @toggleOffOffset: 0.25rem;
 @toggleOnOffset: (@toggleLaneWidth - @toggleHandleSize) - 0.25rem;
 
-@toggleLabelDistance: @toggleLaneWidth + 1rem;
+@toggleLabelDistance: @toggleLaneWidth;
 @toggleLabelLineHeight: 1.5rem;
 @toggleLabelOffset: 0.15em;
 
 
-@toggleFocusColor: @darkestTeal;
+@toggleFocusColor: #A8AFBD;
 @toggleHoverColor: @toggleFocusColor; 
 
 @toggleOffLabelColor: @checkboxColor;
@@ -113,7 +113,7 @@
 
 @toggleOnHandleBoxShadow: @handleBoxShadow;
 
-@toggleOnFocusLaneColor: @primaryColorFocus;
+@toggleOnFocusLaneColor: @teal;
 @toggleOnFocusLabelColor: @toggleOnLabelColor;
 
 

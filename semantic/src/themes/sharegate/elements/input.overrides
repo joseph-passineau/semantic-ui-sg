@@ -17,6 +17,12 @@
 .ui.small.input {
     font-size: 1em;
     width: 2.5em;
+    text-align: center;
+}
+
+.ui.small.input.center-text input {
+    text-align: center;
+    line-height: 40px;
 }
 
 // can we has colored inputs
