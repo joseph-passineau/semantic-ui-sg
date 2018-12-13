@@ -28,6 +28,14 @@ You should import them in your `main.css`.
 
 For the behavior of your control (the JavaScript) use the official Semantic UI React library. https://react.semantic-ui.com/
 
+### Documentation
+
+For our customization: https://sharegate.github.io/semantic-ui-sg/index.html
+
+For official Semantic UI documentation: https://semantic-ui.com/
+
+For Semantic UI React documentation: https://react.semantic-ui.com/
+
 ## Maintainers
 
 The following documentation is _only_ for the maintainers of the package.
