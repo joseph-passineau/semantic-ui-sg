@@ -14,7 +14,7 @@ function copy(src, dest, options) {
 
 const toCopy = [
     copy("semantic/dist/components/**/*.css", "publish", { exclude: ["**/*.min.*"], up: 3 }),
-    copy("semantic/dist/themes/sharegate/assets/icons/**/*.svg", "publish/themes/", { exclude: ["**/*.min.*"], up: 3 }),
+    copy("semantic/dist/themes/sharegate/assets/icons/**/*.svg", "publish/themes/", { up: 3 }),
     copy("package.json", "publish"),
     copy("LICENSE", "publish"),
     copy("README.md", "publish")
