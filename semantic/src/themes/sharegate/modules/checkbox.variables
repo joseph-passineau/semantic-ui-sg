@@ -2,7 +2,7 @@
             Checkbox
 *******************************/
 
-@checkboxSize: 16px;
+@checkboxSize: 20px;
 @checkboxColor: @textColor;
 @checkboxLineHeight: @checkboxSize;
 
@@ -12,7 +12,7 @@
 
 /* Checkbox */
 @checkboxBackground: @white;
-@checkboxBorder: 1px solid @solidBorderColor;
+@checkboxBorder: 1px solid #D4D6DB;
 @checkboxBorderRadius: @3px;
 @checkboxTransition:
   border @defaultDuration @defaultEasing,
@@ -20,6 +20,8 @@
   transform @defaultDuration @defaultEasing,
   box-shadow @defaultDuration @defaultEasing
 ;
+
+@checkboxFocusBorderColor: @focusedFormMutedBorderColor;
 
 /* Checkmark */
 @checkboxCheckFontSize: 16px;
