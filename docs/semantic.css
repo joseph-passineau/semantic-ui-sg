@@ -298,7 +298,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   color: rgba(0, 0, 0, 0.6);
   font-family: 'Calibre', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0em 0 0em 0em;
-  padding: 0.5em 3em 0.5em;
+  padding: 0.5em 2em 0.5em;
   text-transform: none;
   text-shadow: none;
   font-weight: 500;
@@ -525,7 +525,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .ui.animated.button .visible.content {
   position: relative;
-  margin-right: 3em;
+  margin-right: 2em;
 }
 
 .ui.animated.button .hidden.content {
@@ -1003,7 +1003,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .ui.compact.buttons .button,
 .ui.compact.button {
-  padding: 0.375em 2.25em 0.375em;
+  padding: 0.375em 1.5em 0.375em;
 }
 
 .ui.compact.icon.buttons .button,
@@ -1013,7 +1013,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .ui.compact.labeled.icon.buttons .button,
 .ui.compact.labeled.icon.button {
-  padding: 0.375em 4.25em 0.375em;
+  padding: 0.375em 3.5em 0.375em;
 }
 
 /*-------------------
@@ -1241,8 +1241,8 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .ui.labeled.icon.buttons .button,
 .ui.labeled.icon.button {
   position: relative;
-  padding-left: 5em !important;
-  padding-right: 3em !important;
+  padding-left: 4em !important;
+  padding-right: 2em !important;
 }
 
 /* Left Labeled */
@@ -1275,8 +1275,8 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 /* Right Labeled */
 
 .ui[class*="right labeled"].icon.button {
-  padding-right: 5em !important;
-  padding-left: 3em !important;
+  padding-right: 4em !important;
+  padding-left: 2em !important;
 }
 
 .ui[class*="right labeled"].icon.button > .icon {
@@ -1330,8 +1330,8 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .ui.fluid[class*="left labeled"].icon.button,
 .ui.fluid[class*="right labeled"].icon.button {
-  padding-left: 3em !important;
-  padding-right: 3em !important;
+  padding-left: 2em !important;
+  padding-right: 2em !important;
 }
 
 /*--------------
@@ -4709,8 +4709,8 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .ui.disabled.button.basic:focus,
 .ui.disabled.active.button.basic {
   background: transparent!important;
-  -webkit-box-shadow: 0px 0px 0px 1px #263350 inset !important;
-  box-shadow: 0px 0px 0px 1px #263350 inset !important;
+  -webkit-box-shadow: 0px 0px 0px 2px #263350 inset !important;
+  box-shadow: 0px 0px 0px 2px #263350 inset !important;
   opacity: 1!important;
   color: #6E778B !important;
 }
@@ -24067,9 +24067,13 @@ a.ui.card:hover,
   cursor: auto;
   position: relative;
   display: block;
-  padding-left: 1.5em;
+  padding-left: 1.75em;
   outline: none;
   font-size: 1em;
+}
+
+.ui.checkbox.radio label {
+  padding-left: 1.5em !important;
 }
 
 .ui.checkbox .box:before,
@@ -24294,7 +24298,7 @@ a.ui.card:hover,
 
 .ui.radio.checkbox .box,
 .ui.radio.checkbox label {
-  padding-left: 1.5em;
+  padding-left: 1.75em;
 }
 
 /* Box */

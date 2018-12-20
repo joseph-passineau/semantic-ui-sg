@@ -7,7 +7,7 @@
 @checkboxLineHeight: @checkboxSize;
 
 /* Label */
-@labelDistance: 1.5em; /* 26px @ 14/em */
+@labelDistance: 1.75em;
 @labelColor: inherit;
 
 /* Checkbox */
