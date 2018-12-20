@@ -1,3 +1,12 @@
 /*******************************
         User Overrides
 *******************************/
+
+.ui.popup.basic {
+    padding: @basicVerticalPadding @basicHorizontalPadding;
+}
+
+.ui.popup.basic p {
+    font-weight: 500;
+    line-height: 1.16;
+}
