@@ -12,7 +12,7 @@
 
 .ui.button.taller {
     min-height: 48px;
-}
+} 
 
 /* Semantic's opinion is too opiniated */
 .ui.basic.primary.buttons .button:hover,
