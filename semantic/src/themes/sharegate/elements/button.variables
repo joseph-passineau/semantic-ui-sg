@@ -17,7 +17,7 @@
 @horizontalPadding: 2em;
 
 /* Text */
-@borderRadius: 1.25em;
+@borderRadius: 2em;
 
 /* Internal Shadow */
 
