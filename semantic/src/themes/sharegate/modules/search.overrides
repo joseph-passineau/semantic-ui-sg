@@ -10,3 +10,7 @@
     height: 40px;
     width: 100%;
 }
+
+.ui.search > .prompt {
+    background-color: #F1F8F8;
+}

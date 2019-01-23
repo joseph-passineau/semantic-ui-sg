@@ -97,7 +97,7 @@
         Page
 --------------------*/
 
-@pageBackground      : #EDF0F2; /* cloud-light */
+@pageBackground      : #FFF; /* cloud-light */
 
 @lineHeight          : 1.4285em;
 @textColor           : rgba(0, 0, 0, 0.87);
