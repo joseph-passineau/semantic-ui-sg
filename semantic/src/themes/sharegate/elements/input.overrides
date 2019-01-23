@@ -28,3 +28,7 @@
 .ui.input.teal input {
     color: @teal;
 }
+
+.ui.form textarea {
+    background: #F1F8F8!important;
+}
