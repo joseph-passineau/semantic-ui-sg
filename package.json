@@ -5,7 +5,6 @@
     "scripts": {
         "start": "gulp watch",
         "build": "gulp build --gulpfile ./semantic/gulpfile.js",
-        "preversion": "npm run build && node tasks/post-build.js && git add -A && git commit -m 'Bump package version'",
         "version": "npm run build && node tasks/post-build.js && git add -A && git commit -m 'Bump package version'",
         "postversion": "git push origin master && git push  origin master --tags && cd publish && npm publish"
     },

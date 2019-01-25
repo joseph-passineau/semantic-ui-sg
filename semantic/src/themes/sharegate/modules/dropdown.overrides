@@ -18,3 +18,11 @@
     height: 100%;
     width: 32px;
 }
+
+.ui.selection.dropdown .menu > .item {
+  background-color: #F1F8F8;
+}
+
+.ui.dropdown.selected, .ui.dropdown .menu .selected.item {
+    background-color: #C8E2E1;
+}

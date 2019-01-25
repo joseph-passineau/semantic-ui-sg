@@ -72,14 +72,14 @@
 
 /* Toggle */
 @toggleLaneWidth: 2.75rem;
-@toggleHandleSize: 1rem;
+@toggleHandleSize: 0.875rem;
 @toggleTransitionDuration: 0.2s;
 
 @toggleWidth: @toggleLaneWidth;
 @toggleHeight: 1.25rem;
 
 @toggleHandleRadius: @circularRadius;
-@toggleHandleOffset: .125rem;
+@toggleHandleOffset: .175rem;
 @toggleHandleTransition:
   background @sliderTransitionDuration @defaultEasing,
   left @sliderTransitionDuration @defaultEasing
@@ -111,14 +111,12 @@
 @toggleOffHandleBoxShadow: @handleBoxShadow;
 
 @toggleOnLabelColor: @selectedTextColor;
-@toggleOnLaneColor: @primaryColor;
+@toggleOnLaneColor: @darkestTeal;
 
 @toggleOnHandleBoxShadow: @handleBoxShadow;
 
-@toggleOnFocusLaneColor: @teal;
+@toggleOnFocusLaneColor: @darkestTeal;
 @toggleOnFocusLabelColor: @toggleOnLabelColor;
-
-
 
 /*-------------------
       Variations
