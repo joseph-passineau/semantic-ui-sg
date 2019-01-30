@@ -2,5 +2,4 @@
     User Variable Overrides
 *******************************/
 
-@background: #F1F8F8;
 @borderColor: transparent;
