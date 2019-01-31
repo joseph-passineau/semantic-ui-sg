@@ -28,3 +28,11 @@
 .ui.input.teal input {
     color: @teal;
 }
+
+.ui.input > input {
+    font-weight: 300;
+}
+
+.ui.form textarea {
+    font-weight: 300;
+}
