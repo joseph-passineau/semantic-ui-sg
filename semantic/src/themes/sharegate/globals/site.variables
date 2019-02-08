@@ -180,3 +180,14 @@
 @purpleBackground : #F6E7FF; // eggplant lightest
 @pinkBackground   : #FFE3FB; // todo
 @brownBackground  : #F1E2D3;
+
+/*-------------------
+       Loader
+--------------------*/
+@loaderSpeed             : 0.6s;
+
+@loaderFillColor         : #D4D6DB;
+@loaderLineColor         : #828A9E;
+
+@invertedLoaderFillColor : #85858A;
+@invertedLoaderLineColor : @white;

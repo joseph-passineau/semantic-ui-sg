@@ -2,14 +2,29 @@
          Site Overrides
 *******************************/
 
-i.icon {
+.input i.icon {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.ui.button {
+    display: flex;
+}
+
+.ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
+    margin: 0 .35em 0 0;
+}
+
+.ui.button > .icon:not(.button) {
+    opacity: 1;
+    height: auto;
+}
+
+// Search icon
 i.icon.search:before {
     content: "";
+    display: block;
     height: 17px;
     width: 16px;
     top: 0;
@@ -17,16 +32,18 @@ i.icon.search:before {
     background: url("@{iconsPath}/magnifier.svg") center center no-repeat!important;
 }
 
-i.icon.loading.search:before {
-    animation: rotate 2s linear infinite;
-    transform-origin: center center;
+// Search icon
+i.icon.handshake {
+    height: 16px;
+    width: 24px;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
+i.icon.handshake:before {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 24px;
+    top: 0;
+    margin-top: 0;
+    background: url("@{iconsPath}/handshake.svg") center center no-repeat!important;
 }
