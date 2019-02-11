@@ -45,6 +45,8 @@
 @promptFocusBorderColor: @primaryColor;
 
 /* Hover */
+@resultHoverBackground: #F5F7F8;
+
 
 /* Loading */
 

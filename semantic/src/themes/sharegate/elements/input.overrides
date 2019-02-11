@@ -29,6 +29,10 @@
     color: @teal;
 }
 
+.ui.input > input {
+    font-weight: 300;
+}
+
 .ui.form textarea {
-    background: #F1F8F8!important;
+    font-weight: 300;
 }
