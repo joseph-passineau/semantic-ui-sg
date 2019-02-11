@@ -2,3 +2,6 @@
     User Variable Overrides
 *******************************/
 @barMinWidth: 0.5em;
+@red: #db012d;
+@yellow: #fcb736;
+@green: #2bbcaa;

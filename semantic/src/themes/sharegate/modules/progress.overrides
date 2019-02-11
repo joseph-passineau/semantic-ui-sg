@@ -1,15 +1,3 @@
 /*******************************
          Site Overrides
 *******************************/
-
-.ui.red.progress .bar {
-    background-color: #db012d;
-}
-
-.ui.yellow.progress .bar {
-    background-color: #fcb736;
-}
-
-.ui.green.progress .bar {
-    background-color: #2bbcaa;
-}
