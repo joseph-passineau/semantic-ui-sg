@@ -1,12 +1,12 @@
 {
     "name": "@sharegate/semantic-ui-sg",
     "description": "Semantic UI customized to follow Sharegate Design Guidelines",
-    "version": "2.7.2",
+    "version": "2.7.1",
     "scripts": {
         "start": "gulp watch",
         "build": "gulp build --gulpfile ./semantic/gulpfile.js",
         "version": "npm run build && node tasks/post-build.js && git add -A && git commit -m \"Bump package version\"",
-        "postversion": "git push origin master && git push  origin master --tags && cd publish && npm publish"
+        "postversion": "git push origin master && git push origin master --tags && cd publish && npm publish"
     },
     "publishConfig": {
         "access": "public"
