@@ -14,7 +14,7 @@ i.icon.search:before {
     width: 16px;
     top: 0;
     margin-top: 0;
-    background: url("@{iconsPath}/magnifier.svg") center center no-repeat!important;
+    background: url("@{iconsPath}/magnifier.svg") center center no-repeat !important;
 }
 
 i.icon.loading.search:before {
@@ -22,11 +22,27 @@ i.icon.loading.search:before {
     transform-origin: center center;
 }
 
+i.icon.handshake {
+    height: 16px;
+    width: 24px;
+}
+
+i.icon.handshake:before {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 24px;
+    top: 0;
+    margin-top: 0;
+    background: url("themes/sharegate/assets/icons/handshake.svg") center center
+        no-repeat !important;
+}
+
 @keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
 }
