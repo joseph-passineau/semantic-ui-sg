@@ -22,11 +22,12 @@
 /* Internal Shadow */
 
 /* Box Shadow */
-@boxShadow:
- none
-;
+@boxShadow: none;
 
 /* Icon */
+
+@iconMargin: 0 0.35em 0 0;
+@iconHeight: auto;
 
 /* Loader */
 
@@ -45,12 +46,9 @@
 
 /* Hovered */
 
-
 /* Focused */
 
-
 /* Disabled */
-
 
 /* Pressed Down */
 
@@ -72,7 +70,6 @@
 
 /* Labeled Icon */
 
-
 /* Inverted */
 
 /* Basic */
@@ -81,10 +78,8 @@
 
 /* Basic Hover */
 @basicHoverBackground: @darkestTeal!important;
-@basicHoverBoxShadow:
-  0px 0px 0px @basicBorderSize @selectedBorderColor inset,
-  0px 0px 0px 0px @borderColor inset
-;
+@basicHoverBoxShadow: 0px 0px 0px @basicBorderSize @selectedBorderColor inset,
+    0px 0px 0px 0px @borderColor inset;
 
 /* Basic Focus */
 
@@ -93,7 +88,6 @@
 /* Basic Active */
 
 /* Basic Inverted */
-
 
 /* Basic Group */
 
@@ -107,7 +101,6 @@
 /* Colored */
 
 /* Inverted */
-
 
 /* Ordinality */
 
