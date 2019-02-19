@@ -1,429 +1,574 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <!-- Standard Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+        />
+        <title>Components</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="semantic.js"></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="semantic.css"
+        />
+        <style>
+            body,
+            html {
+                -webkit-font-smoothing: antialiased;
+            }
 
-<head>
-    <!-- Standard Meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Components</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="semantic.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
-    <link rel="stylesheet" type="text/css" href="semantic.css" />
-    <style>
-        body,
-        html {
-            -webkit-font-smoothing: antialiased;
-        }
-    
-        @font-face {
-            font-family: 'Calibre';
-            font-style: normal;
-            font-weight: 300;
-            src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Regular.woff2) format("woff");
-        }
-    
-        @font-face {
-            font-family: 'Calibre';
-            font-style: normal;
-            font-weight: 500;
-            src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Medium.woff2) format("woff");
-        }
-    
-        @font-face {
-            font-family: 'Calibre';
-            font-style: normal;
-            font-weight: 600;
-            src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Semibold.woff2) format("woff");
-        }
-    </style>
-</head>
+            @font-face {
+                font-family: "Calibre";
+                font-style: normal;
+                font-weight: 300;
+                src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Regular.woff2)
+                    format("woff");
+            }
 
-<body>
-    <div class="mw8 center pb4">
-        <h1 class="f1 fw6 tracked-tight navy">Semantic UI SG</h1>
-        <h2 class="navy bb b--navy ma0 pa0 mb4">Buttons</h2>
-        <h3>Default - Primary</h3>
-        <div class="flex mb2">
-            <button class="ui primary button">Archive</button>
-            <button class="ui primary button disabled">Archive [disabled]</button>
-        </div>
-        <p>The main button has a height of 32px</p>
-        <h3>Default - Primary - Tall</h3>
-        <div class="flex mb2">
-            <button class="ui primary button tall">Archive</button>
-            <button class="ui primary button tall disabled">Archive [disabled <em>tall</em>]</button>
-        </div>
-        <p>Add class <code>taller</code> to the button to give it a height of 40px</p>
-        <h3>Default - Primary - Taller</h3>
-        <div class="flex mb2">
-            <button class="ui primary button taller">Archive</button>
-            <button class="ui primary button taller disabled">Archive [disabled <em>tall</em>]</button>
-        </div>
-        <p>Add class <code>taller</code> to the button to give it a height of 48px</p>
-        <h3>Basic</h3>
-        <div class="flex mb4">
-            <button class="ui button basic primary">
-                Keep it
-            </button>
-            <button class="ui button basic primary disabled">
-                Keep it
-            </button>
-        </div>
-        <div class="flex mb2 pa2 bg-navy">
-            <button class="ui button basic primary">
-                Keep it
-            </button>
-            <button class="ui button basic primary disabled">
-                Keep it Basic [disabled]
-            </button>
-            <button class="ui button primary dark disabled">
-                Full restore [disabled <em>dark</em>]
-            </button>
-        </div>
-        <p>Add class <code>dark</code> to a disabled basic button to make it look good on dark backgrounds</p>
-        <h3>Basic - Tall</h3>
-        <div class="flex mb2 pa2 bg-navy">
-            <button class="ui button basic primary">
-                Keep it
-            </button>
-            <button class="ui button basic primary tall disabled">
-                Keep it Basic [disabled <em>tall</em>]
-            </button>
-            <button class="ui button primary tall dark disabled">
-                Full restore [disabled <em>tall dark</em>]
-            </button>
-        </div>
-        <h3>Custom Icons</h3>
-        <div class="mb3">
-            <button class="ui primary button">
-                <i class="handshake icon"></i>
-                Entrust All
-            </button>
-        </div>
-        <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Checkbox</h2>
-        <div class="flex mb4">
-            <div class="ui checkbox">
-                <input type="checkbox" name="example">
-                <label>Click me once, fool me twice</label>
+            @font-face {
+                font-family: "Calibre";
+                font-style: normal;
+                font-weight: 500;
+                src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Medium.woff2)
+                    format("woff");
+            }
+
+            @font-face {
+                font-family: "Calibre";
+                font-style: normal;
+                font-weight: 600;
+                src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Semibold.woff2)
+                    format("woff");
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="mw8 center pb4">
+            <h1 class="f1 fw6 tracked-tight navy">Semantic UI SG</h1>
+            <h2 class="navy bb b--navy ma0 pa0 mb4">Buttons</h2>
+            <h3>Default - Primary</h3>
+            <div class="flex mb2">
+                <button class="ui primary button">Archive</button>
+                <button class="ui primary button disabled">
+                    Archive [disabled]
+                </button>
             </div>
-        </div>
-        <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Radio</h2>
-        <div class="flex mb4">
-            <div class="ui form">
-                <div class="inline fields">
-                    <label for="fruit">Select your favorite fruit:</label>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
-                            <label>Apples</label>
+            <p>The main button has a height of 32px</p>
+            <h3>Default - Primary - Tall</h3>
+            <div class="flex mb2">
+                <button class="ui primary button tall">Archive</button>
+                <button class="ui primary button tall disabled">
+                    Archive [disabled <em>tall</em>]
+                </button>
+            </div>
+            <p>
+                Add class <code>taller</code> to the button to give it a height
+                of 40px
+            </p>
+            <h3>Default - Primary - Taller</h3>
+            <div class="flex mb2">
+                <button class="ui primary button taller">Archive</button>
+                <button class="ui primary button taller disabled">
+                    Archive [disabled <em>tall</em>]
+                </button>
+            </div>
+            <p>
+                Add class <code>taller</code> to the button to give it a height
+                of 48px
+            </p>
+            <h3>Basic</h3>
+            <div class="flex mb4">
+                <button class="ui button basic primary">
+                    Keep it
+                </button>
+                <button class="ui button basic primary disabled">
+                    Keep it
+                </button>
+            </div>
+            <div class="flex mb2 pa2 bg-navy">
+                <button class="ui button basic primary">
+                    Keep it
+                </button>
+                <button class="ui button basic primary disabled">
+                    Keep it Basic [disabled]
+                </button>
+                <button class="ui button primary dark disabled">
+                    Full restore [disabled <em>dark</em>]
+                </button>
+            </div>
+            <p>
+                Add class <code>dark</code> to a disabled basic button to make
+                it look good on dark backgrounds
+            </p>
+            <h3>Basic - Tall</h3>
+            <div class="flex mb2 pa2 bg-navy">
+                <button class="ui button basic primary">
+                    Keep it
+                </button>
+                <button class="ui button basic primary tall disabled">
+                    Keep it Basic [disabled <em>tall</em>]
+                </button>
+                <button class="ui button primary tall dark disabled">
+                    Full restore [disabled <em>tall dark</em>]
+                </button>
+            </div>
+            <h3>Custom Icons</h3>
+            <div class="mb3">
+                <button class="ui primary button">
+                    <i class="handshake icon"></i>
+                    Entrust All
+                </button>
+            </div>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Checkbox</h2>
+            <div class="flex mb4">
+                <div class="ui checkbox">
+                    <input type="checkbox" name="example" />
+                    <label>Click me once, fool me twice</label>
+                </div>
+            </div>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Radio</h2>
+            <div class="flex mb4">
+                <div class="ui form">
+                    <div class="inline fields">
+                        <label for="fruit">Select your favorite fruit:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input
+                                    type="radio"
+                                    name="fruit"
+                                    checked=""
+                                    tabindex="0"
+                                    class="hidden"
+                                />
+                                <label>Apples</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input
+                                    type="radio"
+                                    name="fruit"
+                                    tabindex="0"
+                                    class="hidden"
+                                />
+                                <label>Oranges</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input
+                                    type="radio"
+                                    name="fruit"
+                                    tabindex="0"
+                                    class="hidden"
+                                />
+                                <label>Pears</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input
+                                    type="radio"
+                                    name="fruit"
+                                    tabindex="0"
+                                    class="hidden"
+                                />
+                                <label>Grapefruit</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>Oranges</label>
+                    <div class="grouped fields">
+                        <label for="fruitier"
+                            >Select your second favorite fruitier:</label
+                        >
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input
+                                    type="radio"
+                                    name="fruitier"
+                                    checked=""
+                                    tabindex="0"
+                                    class="hidden"
+                                />
+                                <label>Apples</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>Pears</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input
+                                    type="radio"
+                                    name="fruitier"
+                                    tabindex="0"
+                                    class="hidden"
+                                />
+                                <label>Oranges</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="fruit" tabindex="0" class="hidden">
-                            <label>Grapefruit</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input
+                                    type="radio"
+                                    name="fruitier"
+                                    tabindex="0"
+                                    class="hidden"
+                                />
+                                <label>Pears</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input
+                                    type="radio"
+                                    name="fruitier"
+                                    tabindex="0"
+                                    class="hidden"
+                                />
+                                <label>Grapefruit</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="grouped fields">
-                    <label for="fruitier">Select your second favorite fruitier:</label>
+            </div>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Toggle</h2>
+            <div class="flex mb2 pv3 ph2">
+                <p class="ma0 mr2">
+                    Automatically set new group to Self-Manage
+                </p>
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" name="public" />
+                    <label></label>
+                </div>
+            </div>
+            <div class="flex mb2 bg-navy pv3 ph2">
+                <p class="mr2 white ma0">
+                    Automatically set new group to Self-Manage
+                </p>
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" name="public" />
+                    <label></label>
+                </div>
+            </div>
+            <div class="flex mb2 pv3 ph2">
+                <p class="ma0 mr2">
+                    Automatically set new group to Self-Manage
+                </p>
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" disabled name="public" />
+                    <label></label>
+                </div>
+            </div>
+            <div class="flex mb4 bg-navy pv3 ph2">
+                <p class="mr2 white ma0">
+                    Automatically set new group to Self-Manage
+                </p>
+                <div class="ui toggle checkbox">
+                    <input type="checkbox" name="public" disabled />
+                    <label></label>
+                </div>
+            </div>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Tooltip</h2>
+            <div class="flex mb4">
+                <button class="ui button primary activate light">People</button>
+                <div class="ui popup">
+                    <p>Myrtie Ryan</p>
+                    <p>Pauline Wong</p>
+                    <p>Gerald Gibson</p>
+                </div>
+            </div>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">
+                Tooltip Basic - Inverted
+            </h2>
+            <div class="flex mb4">
+                <button class="ui button primary activate dark-popup">
+                    Countries
+                </button>
+                <div class="ui popup" data-variation="inverted">
+                    <p>
+                        Add an owner to this group to enable the Self-Managed
+                        mode
+                    </p>
+                </div>
+            </div>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">
+                Tooltip Basic - Inverted - Wide
+            </h2>
+            <div class="flex mb4">
+                <button class="ui button primary activate wide">
+                    Countries
+                </button>
+                <div class="ui popup" data-variation="inverted">
+                    <p>
+                        Add an owner to this group to enable the Self-Managed
+                        mode
+                    </p>
+                </div>
+            </div>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">
+                Tooltip Basic - Inverted - Very Wide
+            </h2>
+            <div class="flex mb4">
+                <button class="ui button primary activate very-wide">
+                    Countries
+                </button>
+                <div class="ui popup" data-variation="inverted">
+                    <p>
+                        Add an owner to this group to enable the Self-Managed
+                        mode
+                    </p>
+                </div>
+            </div>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Input</h2>
+            <h3 class="ma0 pa0 mb1">Default</h3>
+            <div class="mb4">
+                <div class="ui input fluid">
+                    <input type="text" placeholder="Search..." />
+                </div>
+            </div>
+            <h3 class="ma0 pa0 mb1">Border</h3>
+            <div class="mv3">
+                <div class="ui input fluid border">
+                    <input type="text" placeholder="johnsmith@contoso.com" />
+                </div>
+            </div>
+            <p>
+                Add class <code>border</code> to an input to add a border to it
+            </p>
+            <h3 class="ma0 pa0 mb1">With icon</h3>
+            <div class="mv3">
+                <div class="ui left icon input fluid">
+                    <input type="text" placeholder="Search..." />
+                    <i class="icon search"></i>
+                </div>
+            </div>
+            <h3 class="ma0 pa0 mb1">Disabled</h3>
+            <div class="mv3">
+                <div class="ui input fluid">
+                    <input type="text" disabled placeholder="Email" />
+                </div>
+            </div>
+            <h3 class="ma0 pa0 mb1">Action</h3>
+            <div class="mv3">
+                <div class="ui action input fluid">
+                    <input type="text" placeholder="Search..." />
+                    <button class="ui button tall primary">Search</button>
+                </div>
+            </div>
+            <h3 class="ma0 pa0 mb1">Action - Icon</h3>
+            <div class="mv3">
+                <div class="ui action left icon input fluid">
+                    <input type="text" placeholder="Search..." />
+                    <i aria-hidden="true" class="search icon"></i>
+                    <button class="ui button tall primary" role="button">
+                        Search
+                    </button>
+                </div>
+            </div>
+            <h3 class="ma0 pa0 mb1">Action - Icon - Border</h3>
+            <div class="mv3">
+                <div class="ui action left icon input fluid border">
+                    <input type="text" placeholder="Search..." />
+                    <i aria-hidden="true" class="search icon"></i>
+                    <button class="ui button tall primary" role="button">
+                        Search
+                    </button>
+                </div>
+            </div>
+            <h3 class="ma0 pa0 mb1">Action - Disabled</h3>
+            <div class="mv3">
+                <div class="ui action input fluid">
+                    <input type="text" placeholder="Search..." disabled />
+                    <button class="ui button tall disabled">Search</button>
+                </div>
+            </div>
+            <h3 class="ma0 pa0 mb1">Numeric</h3>
+            <div class="flex mv3">
+                <div class="ui input teal border small center-text">
+                    <input type="text" value="3" />
+                </div>
+            </div>
+            <h3 class="ma0 pa0 mb1">Textarea</h3>
+            <div class="flex mv3">
+                <div class="ui icon form">
                     <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="fruitier" checked="" tabindex="0" class="hidden">
-                            <label>Apples</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="fruitier" tabindex="0" class="hidden">
-                            <label>Oranges</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="fruitier" tabindex="0" class="hidden">
-                            <label>Pears</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="fruitier" tabindex="0" class="hidden">
-                            <label>Grapefruit</label>
-                        </div>
+                        <label>Text</label>
+                        <textarea></textarea>
                     </div>
                 </div>
             </div>
-        </div>
-        <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Toggle</h2>
-        <div class="flex mb2 pv3 ph2">
-            <p class="ma0 mr2">Automatically set new group to Self-Manage</p>
-            <div class="ui toggle checkbox">
-                <input type="checkbox" name="public">
-                <label></label>
+            <h3 class="ma0 pa0 mb1">Search</h3>
+            <div class="ui search fluid">
+                <input
+                    class="prompt"
+                    type="text"
+                    placeholder="Github repos..."
+                />
+                <div class="results"></div>
             </div>
-        </div>
-        <div class="flex mb2 bg-navy pv3 ph2">
-            <p class="mr2 white ma0">Automatically set new group to Self-Manage</p>
-            <div class="ui toggle checkbox">
-                <input type="checkbox" name="public">
-                <label></label>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Dropdown</h2>
+            <div class="flex mv3">
+                <div class="ui selection dropdown">
+                    <input type="hidden" name="gender" />
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Email</div>
+                    <div class="menu">
+                        <div class="item" data-value="1">Male</div>
+                        <div class="item" data-value="0">Female</div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="flex mb2 pv3 ph2">
-            <p class="ma0 mr2">Automatically set new group to Self-Manage</p>
-            <div class="ui toggle checkbox">
-                <input type="checkbox" disabled name="public">
-                <label></label>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Placeholder</h2>
+            <div class="flex flex-column mv3 w-100">
+                <div class="ui fluid placeholder">
+                    <div class="image header">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="paragraph">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="flex mb4 bg-navy pv3 ph2">
-            <p class="mr2 white ma0">Automatically set new group to Self-Manage</p>
-            <div class="ui toggle checkbox">
-                <input type="checkbox" name="public" disabled>
-                <label></label>
+            <div class="flex flex-column mv3 w-100 bg-navy">
+                <div class="ui fluid inverted placeholder">
+                    <div class="image header">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="paragraph">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Tooltip</h2>
-        <div class="flex mb4">
-            <button class="ui button primary activate light">People</button>
-            <div class="ui popup">
-                <p>Myrtie Ryan</p>
-                <p>Pauline Wong</p>
-                <p>Gerald Gibson</p>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Loader</h2>
+            <div class="ui active inline loader"></div>
+            <div class="bg-navy mt3 pa2">
+                <div class="ui active inline inverted loader"></div>
             </div>
-        </div>
-        <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Tooltip Basic - Inverted</h2>
-        <div class="flex mb4">
-            <button class="ui button primary activate dark-popup">Countries</button>
-            <div class="ui popup" data-variation="inverted">
-                <p>Add an owner to this group to enable the Self-Managed mode</p>
+            <h3>Indeterminate</h3>
+            <div class="ui active indeterminate inline loader"></div>
+            <div class="bg-navy mt3 mb4 pa2">
+                <div
+                    class="ui active inline indeterminate inverted loader"
+                ></div>
             </div>
-        </div>
-        <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Tooltip Basic - Inverted - Wide</h2>
-        <div class="flex mb4">
-            <button class="ui button primary activate wide">Countries</button>
-            <div class="ui popup" data-variation="inverted">
-                <p>Add an owner to this group to enable the Self-Managed mode</p>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Progress</h2>
+            <div class="ui red tiny progress">
+                <div class="bar" style="width: 0%"></div>
             </div>
-        </div>
-        <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">Tooltip Basic - Inverted - Very Wide</h2>
-        <div class="flex mb4">
-            <button class="ui button primary activate very-wide">Countries</button>
-            <div class="ui popup" data-variation="inverted">
-                <p>Add an owner to this group to enable the Self-Managed mode</p>
+            <div class="ui red tiny progress">
+                <div class="bar" style="width: 20%"></div>
             </div>
-        </div>
-        <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Input</h2>
-        <h3 class="ma0 pa0 mb1">Default</h3>
-        <div class="mb4">
-            <div class="ui input fluid">
-                <input type="text" placeholder="Search...">
+            <div class="ui yellow tiny progress">
+                <div class="bar" style="width: 50%"></div>
             </div>
-        </div>
-        <h3 class="ma0 pa0 mb1">Border</h3>
-        <div class="mv3">
-            <div class="ui input fluid border">
-                <input type="text" placeholder="johnsmith@contoso.com">
+            <div class="ui green tiny progress">
+                <div class="bar" style="width: 100%"></div>
             </div>
-        </div>
-        <p>Add class <code>border</code> to an input to add a border to it</p>
-        <h3 class="ma0 pa0 mb1">With icon</h3>
-        <div class="mv3">
-            <div class="ui left icon input fluid">
-                <input type="text" placeholder="Search...">
-                <i class="icon search"></i>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Placeholder</h2>
+            <div class="flex flex-column mv3 w-100">
+                <div class="ui fluid placeholder">
+                    <div class="image header">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="paragraph">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <h3 class="ma0 pa0 mb1">Disabled</h3>
-        <div class="mv3">
-            <div class="ui input fluid">
-                <input type="text" disabled placeholder="Email">
-            </div>
-        </div>
-        <h3 class="ma0 pa0 mb1">Action</h3>
-        <div class="mv3">
-            <div class="ui action input fluid">
-                <input type="text" placeholder="Search...">
-                <button class="ui button tall primary">Search</button>
-            </div>
-        </div>
-        <h3 class="ma0 pa0 mb1">Action - Icon</h3>
-        <div class="mv3">
-            <div class="ui action left icon input fluid">
-                <input type="text" placeholder="Search...">
-                <i aria-hidden="true" class="search icon"></i>
-                <button class="ui button tall primary" role="button">Search</button>
-            </div>
-        </div>
-        <h3 class="ma0 pa0 mb1">Action - Icon - Border</h3>
-        <div class="mv3">
-            <div class="ui action left icon input fluid border">
-                <input type="text" placeholder="Search...">
-                <i aria-hidden="true" class="search icon"></i>
-                <button class="ui button tall primary" role="button">Search</button>
-            </div>
-        </div>
-        <h3 class="ma0 pa0 mb1">Action - Disabled</h3>
-        <div class="mv3">
-            <div class="ui action input fluid">
-                <input type="text" placeholder="Search..." disabled>
-                <button class="ui button tall disabled">Search</button>
-            </div>
-        </div>
-        <h3 class="ma0 pa0 mb1">Numeric</h3>
-        <div class="flex mv3">
-            <div class="ui input teal border small center-text">
-                <input type="text" value="3">
-            </div>
-        </div>
-        <h3 class="ma0 pa0 mb1">Textarea</h3>
-        <div class="flex mv3">
-            <div class="ui icon form">
-                <div class="field">
-                    <label>Text</label>
-                    <textarea></textarea>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">
+                Placeholder Inverted
+            </h2>
+            <div class="flex flex-column mv3 w-100 bg-navy">
+                <div class="ui fluid inverted placeholder">
+                    <div class="image header">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="paragraph">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <h3 class="ma0 pa0 mb1">Search</h3>
-        <div class="ui search fluid">
-            <input class="prompt" type="text" placeholder="Github repos...">
-            <div class="results"></div>
-        </div>
-        <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Dropdown</h2>
-        <div class="flex mv3">
-            <div class="ui selection dropdown">
-                <input type="hidden" name="gender">
-                <i class="dropdown icon"></i>
-                <div class="default text">Email</div>
-                <div class="menu">
-                    <div class="item" data-value="1">Male</div>
-                    <div class="item" data-value="0">Female</div>
-                </div>
-            </div>
-        </div>
-        <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Placeholder</h2>
-        <div class="flex flex-column mv3 w-100">
-            <div class="ui fluid placeholder">
-                <div class="image header">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                <div class="paragraph">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-column mv3 w-100 bg-navy">
-            <div class="ui fluid inverted placeholder">
-                <div class="image header">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                <div class="paragraph">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </div>
-        <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Loader</h2>
-        <div class="ui active inline loader"></div>
-        <div class="bg-navy mt3 pa2">
-            <div class="ui active inline inverted loader"></div>
-        </div>
-        <h3>Indeterminate</h3>
-        <div class="ui active indeterminate inline loader"></div>
-        <div class="bg-navy mt3 mb4 pa2">
-            <div class="ui active inline indeterminate inverted loader"></div>
-        </div>
-        <h2>Progress</h2>
-        <div class="ui yellow tiny progress">
-            <div class="bar"></div>
-        </div>
-    </div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.activate.dark-popup')
-                .popup({
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".activate.dark-popup").popup({
                     delay: {
                         show: 300,
                         hide: 300
                     },
-                    position: 'right center',
-                    variation: 'inverted basic'
+                    position: "right center",
+                    variation: "inverted basic"
                 });
-            $('.activate.light')
-                .popup({
+                $(".activate.light").popup({
                     delay: {
                         show: 300,
                         hide: 300
                     },
-                    position: 'bottom center',
+                    position: "bottom center"
                 });
-            $('.activate.wide')
-                .popup({
+                $(".activate.wide").popup({
                     delay: {
                         show: 300,
                         hide: 300
                     },
-                    position: 'right center',
-                    variation: 'inverted basic wide'
+                    position: "right center",
+                    variation: "inverted basic wide"
                 });
-            $('.activate.very-wide')
-                .popup({
+                $(".activate.very-wide").popup({
                     delay: {
                         show: 300,
                         hide: 300
                     },
-                    position: 'right center',
-                    variation: 'inverted basic very wide'
+                    position: "right center",
+                    variation: "inverted basic very wide"
                 });
-        });
-        $('.ui.search')
-            .search({
+            });
+            $(".ui.search").search({
                 apiSettings: {
-                    onResponse: function (response) {
-                        $.each(response.items, function (index, item) {
+                    onResponse: function(response) {
+                        $.each(response.items, function(index, item) {
                             item.avatar_url = item.owner.avatar_url;
                         });
                         return response;
                     },
-                    url: '//api.github.com/search/repositories?q={query}',
+                    url: "//api.github.com/search/repositories?q={query}"
                 },
                 fields: {
-                    results: 'items',
-                    title: 'name',
-                    image: 'avatar_url',
-                    url: 'html_url'
+                    results: "items",
+                    title: "name",
+                    image: "avatar_url",
+                    url: "html_url"
                 },
-                minCharacters: 3,
+                minCharacters: 3
             });
-        $('.ui.dropdown')
-            .dropdown()
-            ;
-        $('.ui.checkbox')
-            .checkbox()
-            ;
-    </script>
-</body>
-
+            $(".ui.dropdown").dropdown();
+            $(".ui.checkbox").checkbox();
+        </script>
+    </body>
 </html>

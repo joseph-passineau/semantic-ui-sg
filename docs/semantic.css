@@ -473,11 +473,11 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 }
 
 .ui.basic.loading.button:not(.inverted):before {
-  border-color: #D4D6DB;
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 .ui.basic.loading.button:not(.inverted):after {
-  border-top-color: #828A9E;
+  border-top-color: #D4D6DB;
 }
 
 /*-------------------
@@ -6580,7 +6580,7 @@ i.icons .inverted.corner.icon {
          Site Overrides
 *******************************/
 
-.input i.icon {
+i.icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6592,24 +6592,8 @@ i.icons .inverted.corner.icon {
   justify-content: center;
 }
 
-.ui.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
-  margin: 0 0.35em 0 0;
-}
-
-.ui.button > .icon:not(.button) {
-  opacity: 1;
-  height: auto;
-}
-
 i.icon.search:before {
   content: "";
-  display: block;
   height: 17px;
   width: 16px;
   top: 0;
@@ -6617,19 +6601,35 @@ i.icon.search:before {
   background: url("themes/sharegate/assets/icons/magnifier.svg") center center no-repeat !important;
 }
 
-i.icon.handshake {
-  height: 16px;
-  width: 24px;
+i.icon.loading.search:before {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
 }
 
-i.icon.handshake:before {
-  content: "";
-  display: block;
-  height: 16px;
-  width: 24px;
-  top: 0;
-  margin-top: 0;
-  background: url("themes/sharegate/assets/icons/handshake.svg") center center no-repeat !important;
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
 }
 
 /*******************************
@@ -7071,7 +7071,7 @@ img.ui.bordered.image {
   width: 1.3125em;
   height: 1.3125em;
   border-radius: 500rem;
-  border: 0.2em solid #D4D6DB;
+  border: 0.2em solid rgba(0, 0, 0, 0.1);
 }
 
 .ui.loading.loading.input > i.icon:after {
@@ -7087,7 +7087,7 @@ img.ui.bordered.image {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #828A9E transparent transparent;
+  border-color: #D4D6DB transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   -webkit-box-shadow: 0px 0px 0px 1px transparent;
@@ -10108,7 +10108,7 @@ ol.ui.horizontal.list li:before,
   width: 100%;
   height: 100%;
   border-radius: 500rem;
-  border: 0.2em solid #D4D6DB;
+  border: 0.2em solid #d4d6db;
 }
 
 /* Active Shape */
@@ -10125,7 +10125,7 @@ ol.ui.horizontal.list li:before,
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #828A9E transparent transparent;
+  border-color: #828a9e transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   -webkit-box-shadow: 0px 0px 0px 1px transparent;
@@ -10233,7 +10233,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.dimmer .ui.loader:before {
-  border-color: #85858A;
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .ui.dimmer .ui.loader:after {
@@ -10247,11 +10247,11 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.inverted.dimmer .ui.loader:before {
-  border-color: #D4D6DB;
+  border-color: #d4d6db;
 }
 
 .ui.inverted.dimmer .ui.loader:after {
-  border-color: #828A9E transparent transparent;
+  border-color: #828a9e transparent transparent;
 }
 
 /*******************************
@@ -10406,7 +10406,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.inverted.loader:before {
-  border-color: #85858A;
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 .ui.inverted.loader:after {
@@ -11766,7 +11766,7 @@ ol.ui.horizontal.list li:before,
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #828A9E #D4D6DB #D4D6DB #D4D6DB;
+  border-color: #D4D6DB rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
   border-style: solid;
   border-width: 0.2em;
   -webkit-box-shadow: 0px 0px 0px 1px transparent;
@@ -13668,7 +13668,7 @@ ol.ui.horizontal.list li:before,
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #828A9E #D4D6DB #D4D6DB #D4D6DB;
+  border-color: #D4D6DB rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
   border-style: solid;
   border-width: 0.2em;
   -webkit-box-shadow: 0px 0px 0px 1px transparent;
@@ -25813,7 +25813,7 @@ select.ui.dropdown {
   width: 1.3125em;
   height: 1.3125em;
   border-radius: 500rem;
-  border: 0.2em solid #D4D6DB;
+  border: 0.2em solid rgba(0, 0, 0, 0.1);
 }
 
 .ui.loading.dropdown > i.icon:after {
@@ -25831,7 +25831,7 @@ select.ui.dropdown {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #828A9E transparent transparent;
+  border-color: #D4D6DB transparent transparent;
   border-style: solid;
   border-width: 0.2em;
 }
@@ -28445,7 +28445,7 @@ a.ui.nag {
   line-height: 1;
   position: relative;
   width: 0%;
-  min-width: 2em;
+  min-width: 0.5em;
   background: #888888;
   border-radius: 0.25rem;
   -webkit-transition: width 0.3s ease, background-color 0.3s ease;
@@ -28594,7 +28594,7 @@ a.ui.nag {
 ---------------*/
 
 .ui.progress.success .bar {
-  background-color: #21BA45 !important;
+  background-color: #2bbcaa !important;
 }
 
 .ui.progress.success .bar,
@@ -28630,7 +28630,7 @@ a.ui.nag {
 ---------------*/
 
 .ui.progress.error .bar {
-  background-color: #DB2828 !important;
+  background-color: #db012d !important;
 }
 
 .ui.progress.error .bar,
@@ -28649,7 +28649,7 @@ a.ui.nag {
 
 .ui.active.progress .bar {
   position: relative;
-  min-width: 2em;
+  min-width: 0.5em;
 }
 
 .ui.active.progress .bar::after {
@@ -28730,7 +28730,7 @@ a.ui.nag {
 }
 
 .ui.inverted.progress.success > .label {
-  color: #21BA45;
+  color: #2bbcaa;
 }
 
 .ui.inverted.progress.warning > .label {
@@ -28738,7 +28738,7 @@ a.ui.nag {
 }
 
 .ui.inverted.progress.error > .label {
-  color: #DB2828;
+  color: #db012d;
 }
 
 /*--------------
@@ -28803,7 +28803,7 @@ a.ui.nag {
 /* Red */
 
 .ui.red.progress .bar {
-  background-color: #DB2828;
+  background-color: #db012d;
 }
 
 .ui.red.inverted.progress .bar {
@@ -28823,7 +28823,7 @@ a.ui.nag {
 /* Yellow */
 
 .ui.yellow.progress .bar {
-  background-color: #FCB736;
+  background-color: #fcb736;
 }
 
 .ui.yellow.inverted.progress .bar {
@@ -28843,7 +28843,7 @@ a.ui.nag {
 /* Green */
 
 .ui.green.progress .bar {
-  background-color: #21BA45;
+  background-color: #2bbcaa;
 }
 
 .ui.green.inverted.progress .bar {
@@ -28939,7 +28939,7 @@ a.ui.nag {
 }
 
 .ui.tiny.progress .bar {
-  height: 0.5em;
+  height: 0.3em;
 }
 
 .ui.small.progress {
@@ -29390,7 +29390,7 @@ a.ui.nag {
   width: 1.3125em;
   height: 1.3125em;
   border-radius: 500rem;
-  border: 0.2em solid #D4D6DB;
+  border: 0.2em solid rgba(0, 0, 0, 0.1);
 }
 
 .ui.loading.search .input > i.icon:after {
@@ -29406,7 +29406,7 @@ a.ui.nag {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #828A9E transparent transparent;
+  border-color: #D4D6DB transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   -webkit-box-shadow: 0px 0px 0px 1px transparent;
@@ -30640,7 +30640,7 @@ body.pushable > .pusher {
   width: 2.5em;
   height: 2.5em;
   border-radius: 500rem;
-  border: 0.2em solid #D4D6DB;
+  border: 0.2em solid rgba(0, 0, 0, 0.1);
 }
 
 .ui.tab.loading:after,
@@ -30657,7 +30657,7 @@ body.pushable > .pusher {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #828A9E transparent transparent;
+  border-color: #D4D6DB transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   -webkit-box-shadow: 0px 0px 0px 1px transparent;

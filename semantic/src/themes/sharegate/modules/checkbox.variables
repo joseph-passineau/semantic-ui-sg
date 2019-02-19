@@ -79,7 +79,7 @@
 @toggleHeight: 1.25rem;
 
 @toggleHandleRadius: @circularRadius;
-@toggleHandleOffset: .175rem;
+@toggleHandleOffset: .185rem;
 @toggleHandleTransition:
   background @sliderTransitionDuration @defaultEasing,
   left @sliderTransitionDuration @defaultEasing
