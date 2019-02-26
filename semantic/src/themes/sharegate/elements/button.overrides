@@ -3,87 +3,13 @@
 *******************************/
  
 .ui.button {
-    min-height: 32px;
-}
-
-.ui.button.tall {
     min-height: 40px;
 }
 
-.ui.button.taller {
+.ui.button.tall {
     min-height: 48px;
+}
+
+.ui.button.short {
+    min-height: 32px;
 } 
-
-/* Semantic's opinion is too opiniated */
-.ui.primary.buttons .button,
-.ui.primary.button {
-  background-color: @lightBlack;
-  color: @primaryTextColor;
-}
-
-.ui.basic.primary.buttons .button:hover,
-.ui.basic.primary.button:hover {
-  background: @darkestTeal !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @darkestTeal inset !important;
-  color: #FFF !important;
-}
-
-.ui.basic.primary.buttons .button,
-.ui.basic.primary.button {
-  background: transparent !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @lightBlack inset !important;
-  color: @lightBlack !important;
-}
-
-.ui.basic.primary.buttons .button:focus,
-.ui.basic.primary.button:focus {
-  background: @darkestTeal !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @darkestTeal inset !important;
-  color: #FFF !important;
-}
-
-.ui.teal.primary.buttons .button:hover,
-.ui.teal.primary.button:hover {
-  background: @darkestTeal !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @darkestTeal inset !important;
-  color: #FFF !important;
-}
-
-.ui.teal.primary.buttons .button:focus,
-.ui.teal.primary.button:focus {
-  background: @darkestTeal !important;
-  box-shadow: 0px 0px 0px @basicColoredBorderSize @darkestTeal inset !important;
-  color: #FFF !important;
-}
-
-/* Disabled primary button */
-.ui.buttons .disabled.button, .ui.disabled.button, .ui.button:disabled, .ui.disabled.button:hover, .ui.disabled.active.button {
-    background: #D4D6DB!important;
-    box-shadow: 0px 0px 0px @basicColoredBorderSize #D4D6DB inset !important;
-    opacity: 1!important;
-    color: #FFF!important;
-}
-
-.ui.buttons .dark.button, .ui.dark.button, .ui.dark.active.button {
-    background: transparent!important;
-    box-shadow: 0px 0px 0px 2px #FFF inset !important;
-    opacity: 1!important;
-    color: #FFF!important;
-}
-
-.ui.buttons .disabled.dark.button, .ui.disabled.dark.button, .ui.button.dark:disabled, .ui.disabled.dark.button:hover, .ui.disabled.dark.button:focus, .ui.disabled.dark.active.button {
-    background: #263350!important;
-    box-shadow: 0px 0px 0px 1px #263350 inset !important;
-    opacity: 1!important;
-    color: #6E778B!important;
-}
-
-/* Disabled basic primary button */
-.ui.buttons .disabled.button.basic, .ui.disabled.basic.button, .ui.button.basic:disabled, .ui.disabled.button.basic:hover, .ui.disabled.button.basic:focus, .ui.disabled.active.button.basic {
-    background: transparent!important;
-    box-shadow: 0px 0px 0px 2px #263350 inset !important;
-    opacity: 1!important;
-    color: #6E778B!important;
-}
-
-/* Variation - Squared */

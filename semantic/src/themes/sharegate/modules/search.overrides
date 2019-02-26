@@ -12,5 +12,5 @@
 }
 
 .ui.search > .prompt {
-    background-color: #F1F8F8;
+    background-color: @primaryColorLightest;
 }

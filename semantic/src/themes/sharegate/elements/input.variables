@@ -2,5 +2,10 @@
     User Variable Overrides
 *******************************/
 
-@background: #F1F8F8;
+@background: @primaryColorLightest;
 @borderColor: transparent;
+@borderRadius: 1.5rem;
+
+@padding: 0.75rem @horizontalPadding;
+
+@placeholderErrorColor: var(--alert-dark);

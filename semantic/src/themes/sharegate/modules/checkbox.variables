@@ -12,7 +12,7 @@
 
 /* Checkbox */
 @checkboxBackground: @white;
-@checkboxBorder: 1px solid #D4D6DB;
+@checkboxBorder: 1px solid @cloud;
 @checkboxBorderRadius: @3px;
 @checkboxTransition:
   border @defaultDuration @defaultEasing,
@@ -24,7 +24,7 @@
 @checkboxFocusBorderColor: @focusedFormMutedBorderColor;
 
 /* Checkmark */
-@checkboxCheckFontSize: 16px;
+@checkboxCheckFontSize: 1em;
 
 /* Label */
 
@@ -40,10 +40,10 @@
 /* Focus */
 
 /* Active */
-@checkboxActiveCheckColor: @teal;
+@checkboxActiveCheckColor: @primaryColor;
 
 /* Active Focus */
-@checkboxActiveFocusCheckColor: @teal;
+@checkboxActiveFocusCheckColor: @primaryColor;
 
 /* Indeterminate */
 
@@ -91,7 +91,7 @@
   0 0 0 0 @borderColor inset
 ;
 
-@toggleLaneBackground: #A8AFBD;
+@toggleLaneBackground: @cloudDark;
 /* cloud-dark */
 @toggleLaneHeight: 1.25rem;
 @toggleLaneBoxShadow: none;
@@ -104,18 +104,18 @@
 @toggleLabelOffset: 0.15em;
 
 
-@toggleFocusColor: #A8AFBD;
+@toggleFocusColor: @cloudDark;
 @toggleHoverColor: @toggleFocusColor; 
 
 @toggleOffLabelColor: @checkboxColor;
 @toggleOffHandleBoxShadow: @handleBoxShadow;
 
 @toggleOnLabelColor: @selectedTextColor;
-@toggleOnLaneColor: @darkestTeal;
+@toggleOnLaneColor: @primaryColor;
 
 @toggleOnHandleBoxShadow: @handleBoxShadow;
 
-@toggleOnFocusLaneColor: @darkestTeal;
+@toggleOnFocusLaneColor: @primaryColor;
 @toggleOnFocusLabelColor: @toggleOnLabelColor;
 
 /*-------------------

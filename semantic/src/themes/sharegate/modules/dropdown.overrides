@@ -7,7 +7,7 @@
 
 .ui.selection.dropdown {
   line-height: 1.5em;
-  background-color: #F1F8F8;
+  background-color: @primaryColorLightest;
 }
 
 .ui.dropdown > .dropdown.icon {
@@ -20,7 +20,7 @@
 }
 
 .ui.selection.dropdown .menu > .item {
-  background-color: #F1F8F8;
+  background-color: @primaryColorLightest;
 }
 
 .ui.dropdown.selected, .ui.dropdown .menu .selected.item {

@@ -12,12 +12,14 @@
 
 /* Button */
 @horizontalMargin: 0;
+@backgroundColor: @black;
 
 /* Button defaults to using same height as input globally */
 @horizontalPadding: 2em;
 
 /* Text */
 @borderRadius: 2em;
+@textColor: @white;
 
 /* Internal Shadow */
 
@@ -44,17 +46,19 @@
 --------------------*/
 
 /* Hovered */
-
+@hoverBackgroundColor: @jetDarkest;
+@hoverColor: @white;
 
 /* Focused */
-
-
-/* Disabled */
-
+@focusColor: @white;
 
 /* Pressed Down */
+@downBackgroundColor: @jetDarkest;
+@downColor: @white;
 
 /* Active */
+@activeBackgroundColor: @jetDarkest; //@todo
+@activeColor: @white;
 
 /* Active + Hovered */
 
@@ -78,9 +82,11 @@
 /* Basic */
 @basicBackground: transparent none;
 @basicFontWeight: @bold;
+@basicTextColor: @black;
 
 /* Basic Hover */
-@basicHoverBackground: @darkestTeal!important;
+@basicHoverBackground: @primaryColorHover!important;
+@basicHoverTextColor: @white;
 @basicHoverBoxShadow:
   0px 0px 0px @basicBorderSize @selectedBorderColor inset,
   0px 0px 0px 0px @borderColor inset

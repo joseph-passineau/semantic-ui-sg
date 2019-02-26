@@ -2,9 +2,14 @@
          Site Overrides
 *******************************/
 
+.ui.input > input {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
 // making sure that the inputs all share the same height
 .input {
-    height: 2.5em;
+    height: 3em;
 }
 
 .input.border input {
@@ -30,5 +35,10 @@
 }
 
 .ui.form textarea {
-    background: #F1F8F8!important;
+    background: @primaryColorLightest!important;
+}
+
+.ui.input.basic > input {
+    border: 1px solid @cloud;
+    background-color: #FFF;
 }
