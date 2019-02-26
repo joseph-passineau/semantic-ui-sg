@@ -148,96 +148,52 @@
                         <label for="fruit">Select your favorite fruit:</label>
                         <div class="field">
                             <div class="ui radio checkbox">
-                                <input
-                                    type="radio"
-                                    name="fruit"
-                                    checked=""
-                                    tabindex="0"
-                                    class="hidden"
-                                />
+                                <input type="radio" name="fruit" checked="" tabindex="0" class="hidden" />
                                 <label>Apples</label>
                             </div>
                         </div>
                         <div class="field">
                             <div class="ui radio checkbox">
-                                <input
-                                    type="radio"
-                                    name="fruit"
-                                    tabindex="0"
-                                    class="hidden"
-                                />
+                                <input type="radio" name="fruit" tabindex="0" class="hidden" />
                                 <label>Oranges</label>
                             </div>
                         </div>
                         <div class="field">
                             <div class="ui radio checkbox">
-                                <input
-                                    type="radio"
-                                    name="fruit"
-                                    tabindex="0"
-                                    class="hidden"
-                                />
+                                <input type="radio" name="fruit" tabindex="0" class="hidden" />
                                 <label>Pears</label>
                             </div>
                         </div>
                         <div class="field">
                             <div class="ui radio checkbox">
-                                <input
-                                    type="radio"
-                                    name="fruit"
-                                    tabindex="0"
-                                    class="hidden"
-                                />
+                                <input type="radio" name="fruit" tabindex="0" class="hidden" />
                                 <label>Grapefruit</label>
                             </div>
                         </div>
                     </div>
                     <div class="grouped fields">
-                        <label for="fruitier"
-                            >Select your second favorite fruitier:</label
-                        >
+                        <label for="fruitier">Select your second favorite fruitier:</label>
                         <div class="field">
                             <div class="ui radio checkbox">
-                                <input
-                                    type="radio"
-                                    name="fruitier"
-                                    checked=""
-                                    tabindex="0"
-                                    class="hidden"
-                                />
+                                <input type="radio" name="fruitier" checked="" tabindex="0" class="hidden" />
                                 <label>Apples</label>
                             </div>
                         </div>
                         <div class="field">
                             <div class="ui radio checkbox">
-                                <input
-                                    type="radio"
-                                    name="fruitier"
-                                    tabindex="0"
-                                    class="hidden"
-                                />
+                                <input type="radio" name="fruitier" tabindex="0" class="hidden" />
                                 <label>Oranges</label>
                             </div>
                         </div>
                         <div class="field">
                             <div class="ui radio checkbox">
-                                <input
-                                    type="radio"
-                                    name="fruitier"
-                                    tabindex="0"
-                                    class="hidden"
-                                />
+                                <input type="radio" name="fruitier" tabindex="0" class="hidden" />
                                 <label>Pears</label>
                             </div>
                         </div>
                         <div class="field">
                             <div class="ui radio checkbox">
-                                <input
-                                    type="radio"
-                                    name="fruitier"
-                                    tabindex="0"
-                                    class="hidden"
-                                />
+                                <input type="radio" name="fruitier" tabindex="0" class="hidden" />
                                 <label>Grapefruit</label>
                             </div>
                         </div>
@@ -332,6 +288,20 @@
                     </p>
                 </div>
             </div>
+            <h2 class="navy bb b--navy ma0 pa0 mb3 mb4 mt4">
+                Tooltip Basic - Flush
+            </h2>
+            <div class="flex mb4">
+                <button class="ui button primary activate very-wide">
+                    Countries
+                </button>
+                <div class="ui popup flush" data-variation="inverted">
+                    <p>
+                        Add an owner to this group to enable the Self-Managed
+                        mode
+                    </p>
+                </div>
+            </div>
             <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Input</h2>
             <h3 class="ma0 pa0 mb1">Default</h3>
             <div class="mb4">
@@ -412,11 +382,7 @@
             </div>
             <h3 class="ma0 pa0 mb1">Search</h3>
             <div class="ui search fluid">
-                <input
-                    class="prompt"
-                    type="text"
-                    placeholder="Github repos..."
-                />
+                <input class="prompt" type="text" placeholder="Github repos..." />
                 <div class="results"></div>
             </div>
             <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Dropdown</h2>
@@ -466,9 +432,7 @@
             <h3>Indeterminate</h3>
             <div class="ui active indeterminate inline loader"></div>
             <div class="bg-navy mt3 mb4 pa2">
-                <div
-                    class="ui active inline indeterminate inverted loader"
-                ></div>
+                <div class="ui active inline indeterminate inverted loader"></div>
             </div>
             <h2 class="navy bb b--navy ma0 pa0 mb3 mt4">Progress</h2>
             <div class="ui red tiny progress">
@@ -516,7 +480,7 @@
         </div>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
         <script>
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $(".activate.dark-popup").popup({
                     delay: {
                         show: 300,
@@ -551,8 +515,8 @@
             });
             $(".ui.search").search({
                 apiSettings: {
-                    onResponse: function(response) {
-                        $.each(response.items, function(index, item) {
+                    onResponse: function (response) {
+                        $.each(response.items, function (index, item) {
                             item.avatar_url = item.owner.avatar_url;
                         });
                         return response;
@@ -571,4 +535,5 @@
             $(".ui.checkbox").checkbox();
         </script>
     </body>
-</html>
+    
+    </html>
