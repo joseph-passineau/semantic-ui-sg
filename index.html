@@ -8,10 +8,8 @@
     <title>Components</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="/semantic/dist/semantic.js"></script>
-    <script src="prism.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
-    <link rel="stylesheet" href="https://unpkg.com/@sharegate/tachyons-sg@1.6.0/css/tachyons.css" />
-    <link rel="stylesheet" href="prism.css" />
+    <link rel="stylesheet" href="tachyons.min.css" />
     <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.css" />
     <style>
         body,
@@ -42,8 +40,8 @@
     </style>
 </head>
 <body>
-    <div class="mw7 mt4 center">
-        <h1 class="ma0 pa0 flex items-center">Semantic UI React<svg xmlns="http://www.w3.org/2000/svg" class="dev-mode pointer w6 h6 ml1" viewbox="0 0 64 64" id="svg2"><g id="layer1"><rect id="rect3308" width="52.5" height="47.5" x="3.75" y="6.25" rx="6.284" ry="6.2956" fill-rule="evenodd" stroke="#fff" stroke-width="4.375"/><rect id="rect6235" width="40" height="35" x="10" y="12.5" rx="3.8213" ry="3.9179" fill="#fff" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><rect id="rect6963" width="15" height="6.25" x="31.25" y="37.5" rx="0" ry="0" stroke-width="8.75" stroke-linecap="round" stroke-linejoin="round"/><path d="M 15,20 L 26.25,31.25 L 15,42.5" id="path7691" fill="none" fill-opacity=".75" fill-rule="evenodd" stroke="#000" stroke-width="5.625"/></g></svg></h1>
+    <div class="mw8 mt4 center">
+        <h1 class="ma0 pa0 flex items-center">Semantic UI React</h1>
         <a href="https://react.semantic-ui.com" target="_blank" class="f5">https://react.semantic-ui.com</a>
         <diV class="flex mt3 justify-between">
             <div class="flex">
@@ -65,25 +63,130 @@
             </div>
         </div>
         <p class="fw3 f5">Use the <strong>Button</strong> component when an action need to be performed after clicking an element.</p>
-        <h3 class="ma0 pa0 mb2" id="button-standard">Standard</h3>
-        <div class="mb4">
-            <button class="ui button">Click Here</button>
+        <div class="flex mt8">
+            <div class="mr12">
+                <h2 class="ma0 pa0 mb4" id="button-standard">Solid CTA</h2>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
+                <div class="mb8">
+                    <button class="ui button">View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
+                <div class="mb8">
+                    <button class="ui button active">View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
+                <div class="mb8">
+                    <button class="ui button" disabled>View & edit email</button>
+                </div>
+            </div>
+            <div class="mr12">
+                <h2 class="ma0 pa0 mb4" id="button-standard">Outline CTA</h2>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
+                <div class="mb8">
+                    <button class="ui button basic">View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
+                <div class="mb8">
+                    <button class="ui button basic active">View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
+                <div class="mb8">
+                    <button class="ui button basic" disabled>View & edit email</button>
+                </div>
+            </div>
+            <div class="mr12">
+                <h2 class="ma0 pa0 mb4" id="button-standard">Solid CTA</h2>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
+                <div class="mb8">
+                    <button class="ui button primary">View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
+                <div class="mb8">
+                    <button class="ui button primary active">View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
+                <div class="mb8">
+                    <button class="ui button primary" disabled>View & edit email</button>
+                </div>
+            </div>
+            <div class="mr12">
+                <h2 class="ma0 pa0 mb4" id="button-standard">Outline CTA</h2>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
+                <div class="mb8">
+                    <button class="ui button basic primary">View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
+                <div class="mb8">
+                    <button class="ui button basic primary active">View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
+                <div class="mb8">
+                    <button class="ui button basic primary" disabled>View & edit email</button>
+                </div>
+            </div>
         </div>
-        <pre><code class="language-html">&lt;Button&gt;Click Here&lt;/Button&gt;</code></pre>
-        <h3 class="ma0 pa0 mb2 mt8" id="button-emphasir">Emphasis</h3>
-        <div>
-            <button class="ui button primary">Primary</button>
+        <div class="flex mt8">
+            <div class="mr12">
+                <h2 class="ma0 pa0 mb2" id="button-standard">Icon Solid CTA</h2>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
+                <div class="mb8">
+                    <button class="ui button"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
+                <div class="mb8">
+                    <button class="ui button active"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
+                <div class="mb8">
+                    <button class="ui button" disabled><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+            </div>
+            <div class="mr12">
+                <h2 class="ma0 pa0 mb2" id="button-standard">Icon Outline CTA</h2>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
+                <div class="mb8">
+                    <button class="ui button basic"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
+                <div class="mb8">
+                    <button class="ui button basic active"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill="#979797" fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)" fill="#FFF"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
+                <div class="mb8">
+                    <button class="ui button basic" disabled><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+            </div>
+            <div class="mr12">
+                <h2 class="ma0 pa0 mb2" id="button-standard">Icon Solid CTA</h2>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
+                <div class="mb8">
+                    <button class="ui button primary"><svg class="mr2 fill-white" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
+                <div class="mb8">
+                    <button class="ui button primary active"><svg class="mr2 fill-white" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
+                <div class="mb8">
+                    <button class="ui button primary" disabled><svg class="mr2 fill-white" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+            </div>
+            <div class="mr12">
+                <h2 class="ma0 pa0 mb2" id="button-standard">Icon Outline CTA</h2>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
+                <div class="mb8">
+                    <button class="ui button basic primary"><svg class="mr2 fill-primary" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
+                <div class="mb8">
+                    <button class="ui button basic primary active"><svg class="mr2 fill-white" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+                <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
+                <div class="mb8">
+                    <button class="ui button basic primary" disabled><svg class="mr2 fill-primary-lightest" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
+                </div>
+            </div>
         </div>
-        <pre><code class="language-html">&lt;Button primary&gt;Primary&lt;/Button&gt;</code></pre>
-        <h3 class="ma0 pa0 mb2 mt8" id="button-basic">Basic</h3>
-        <div class="mt2">
-            <button class="ui basic button">Standard</button>
-        </div>
-        <pre><code class="language-html">&lt;Button basic&gt;Standard&lt;/Button&gt;</code></pre>
-        <div class="mt2">
-            <button class="ui basic button primary">Primary</button>
-        </div>
-        <pre><code class="language-html">&lt;Button basic primary&gt;Standard&lt;/Button&gt;</code></pre>
         <h3 class="ma0 pa0 mb2 mt8" id="button-icon">Icon</h3>
         <div class="flex mt6">
             <div class="mr2">
@@ -155,18 +258,6 @@
         <p class="fw3 f6 ma0 pa0 mb2 lh-solid">Make sure the icon is wrapped in a 1:1 ratio element (e.g. 20x20 - .w4 .h4).</p>
         <pre><code class="language-html">import * as Handshake from './handshake.svg'
 &lt;Button icon&gt;&lt;Handshake/&gt;&lt;/Button&gt;</code></pre>
-        <h3 class="ma0 pa0 mb2 mt8" id="button-disabled">Disabled</h3>
-        <div class="mt2">
-            <button class="ui disabled button">Disabled</button>
-        </div>
-        <div class="mt2">
-            <button class="ui disabled primary button">Disabled</button>
-        </div>
-        <div class="mt2">
-            <button class="ui disabled basic button">Disabled</button>
-        </div>
-        <p class="mt6 fw3 f6 lh-solid">Use a disabled button when no action is currently possible. Ideally explain why to the user. Always use the disabled version of the same button.</p>
-        <pre><code class="language-html">&lt;Button disabled&gt;Disabled&lt;/Button&gt;</code></pre>
         <h3 class="ma0 pa0 mb2 mt8" id="button-loading">Loading</h3>
         <div>
             <div class="mt2">
@@ -179,7 +270,6 @@
                <button class="ui basic loading button">Loading</button>
             </div>
         </div>
-        <pre><code class="language-html">&lt;Button loading&gt;&lt;/Button&gt;</code></pre>
         <p class="mt6 fw3 f6 ma0 pa0 mb2 lh-solid">Use a loading button when...</p>
         <h3 class="ma0 pa0 mb2 mt8" id="button-positive">Positive</h3>
         <button class="ui positive button">Standard</button>
@@ -187,7 +277,6 @@
         <button class="ui positive button basic">Basic</button>
         <button class="ui button positive basic disabled">Basic Disabled</button>
         <p class="mt6 fw3 f6 ma0 pa0 mb2 lh-solid">A button can hint towards a positive consequence.</p>
-        <pre><code class="language-html">&lt;Button positive&gt;Positive&lt;/Button&gt;</code></pre>
         <h3 class="ma0 pa0 mb2 mt8" id="button-negative">Negative</h3>
         <button class="ui negative button">Standard</button>
         <button class="ui negative button disabled">Disabled</button>
@@ -486,13 +575,6 @@
         </div>
     </div>
     <script>
-        const devMode = document.querySelector('.dev-mode');
-        devMode.addEventListener('click', () => {
-            const pre = document.querySelectorAll('pre');
-            pre.forEach(pre => {
-                pre.classList.toggle('db');
-            });
-        });
         // change primary color
         let root = document.documentElement;
         const overcast = document.querySelector('.theme-overcast');
@@ -504,22 +586,23 @@
         const light = document.querySelector('.theme-light');
         overcast.addEventListener('click', () => {
             root.style.setProperty('--primary', 'var(--overcast)');
-            root.style.setProperty('--primary-darkest', 'var(--overcast-darkest)');
+            root.style.setProperty('--primary-dark', 'var(--overcast-dark)');
             root.style.setProperty('--primary-lightest', 'var(--overcast-lightest)');
+            root.style.setProperty('--primary-light', 'var(--overcast-light)');
         });
         apricot.addEventListener('click', () => {
             root.style.setProperty('--primary', 'var(--apricot)');
-            root.style.setProperty('--primary-darkest', 'var(--apricot-darkest)');
+            root.style.setProperty('--primary-dark', 'var(--apricot-dark)');
             root.style.setProperty('--primary-lightest', 'var(--apricot-lightest)');
         });
         marketing.addEventListener('click', () => {
             root.style.setProperty('--primary', 'var(--jet)');
-            root.style.setProperty('--primary-darkest', 'var(--jet-darkest)');
+            root.style.setProperty('--primary-dark', 'var(--jet-dark)');
             root.style.setProperty('--primary-lightest', 'var(--jet-lightest)');
         });
         desktop.addEventListener('click', () => {
             root.style.setProperty('--primary', 'var(--desktop)');
-            root.style.setProperty('--primary-darkest', 'var(--desktop-darkest)');
+            root.style.setProperty('--primary-dark', 'var(--desktop-dark)');
             root.style.setProperty('--primary-lightest', 'var(--desktop-lightest)');
         });
         dark.addEventListener('click', () => {

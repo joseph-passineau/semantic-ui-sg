@@ -38,8 +38,10 @@
 --------------------*/
 
 @primaryColor           :  var(--primary);
-@primaryColorLightest   : var(--primary-lightest);
-@secondaryColor         : var(--jet);
+@primaryColorLightest   :  var(--primary-lightest);
+@primaryColorDark       :  var(--primary-dark);
+@primaryColorLight      :  var(--primary-light);
+@secondaryColor         :  var(--jet);
 
 /*--------------
   Page Heading
@@ -206,6 +208,7 @@
 /*---  SG Colors  ---*/
 /*---  Jet  ---*/
 @jetDarkest: var(--jet-darkest);
+@jetDark: var(--jet-dark);
 
 /*--- Success --*/
 @success: var(--success);
@@ -215,7 +218,11 @@
 
 /*--- Cloud--*/
 @cloud: var(--cloud);
+@cloudLight: var(--cloud-light);
 @cloudDark: var(--cloud-dark);
+
+/*--- Cloud--**/
+@marineLight: var(--marine-light);
 
 /*---  Colors  ---*/
 @red              : #DB2828;
@@ -230,7 +237,7 @@
 @pink             : #E03997;
 @brown            : #A5673F;
 @grey             : #767676;
-@black            : var(--jet);
+@black            : var(--jet-dark);
 
 /*---  Light Colors  ---*/
 @lightRed         : #FF695E; // todo
@@ -738,7 +745,7 @@
 ;
 
 /*---  Colors  ---*/
-@primaryColorHover        : var(--primary-darkest);
+@primaryColorHover        : var(--primary-dark);
 @secondaryColorHover      : @secondaryColor;
 @lightPrimaryColorHover   : @lightPrimaryColor;
 @lightSecondaryColorHover : @lightSecondaryColor;
@@ -798,7 +805,7 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@primaryColorFocus        : @primaryColor; // @to pick
+@primaryColorFocus        : @primaryColorDark;
 @secondaryColorFocus      : @secondaryColor;
 @lightPrimaryColorFocus   : @lightPrimaryColor;
 @lightSecondaryColorFocus : @lightSecondaryColor;
@@ -920,7 +927,7 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@primaryColorActive        : @primaryColor; //@todo
+@primaryColorActive        : @primaryColorDark;
 @secondaryColorActive      : @secondaryColor;
 @lightPrimaryColorActive   : @lightPrimaryColor;
 @lightSecondaryColorActive : @lightSecondaryColor;

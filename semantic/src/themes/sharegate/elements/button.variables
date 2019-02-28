@@ -2,6 +2,8 @@
     User Variable Overrides
 *******************************/
 
+@disabledOpacity: 1;
+
 /*******************************
             Button
 *******************************/
@@ -46,7 +48,7 @@
 --------------------*/
 
 /* Hovered */
-@hoverBackgroundColor: @jetDarkest;
+@hoverBackgroundColor: @marineLight;
 @hoverColor: @white;
 
 /* Focused */
@@ -57,7 +59,7 @@
 @downColor: @white;
 
 /* Active */
-@activeBackgroundColor: @jetDarkest; //@todo
+@activeBackgroundColor: @marineLight;
 @activeColor: @white;
 
 /* Active + Hovered */
@@ -83,20 +85,28 @@
 @basicBackground: transparent none;
 @basicFontWeight: @bold;
 @basicTextColor: @black;
+@basicBoxShadow: 0px 0px 0px @basicBorderSize @jetDark inset;
 
 /* Basic Hover */
-@basicHoverBackground: @primaryColorHover!important;
+@basicHoverBackground: @marineLight!important;
 @basicHoverTextColor: @white;
 @basicHoverBoxShadow:
-  0px 0px 0px @basicBorderSize @selectedBorderColor inset,
-  0px 0px 0px 0px @borderColor inset
+  0px 0px 0px @basicBorderSize @marineLight inset
 ;
 
 /* Basic Focus */
+@basicFocusBackground: @marineLight!important;
+@basicFocusTextColor: @white;
+@basicFocusBoxShadow:
+  0px 0px 0px @basicBorderSize @marineLight inset
+;
 
 /* Basic Down */
 
 /* Basic Active */
+@basicActiveBackground: @marineLight;
+@basicActiveBoxShadow: 0px 0px 0px @basicBorderSize @marineLight inset;
+@basicActiveTextColor: @white;
 
 /* Basic Inverted */
 
