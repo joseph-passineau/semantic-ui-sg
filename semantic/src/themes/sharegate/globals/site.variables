@@ -68,7 +68,7 @@
 
 /* Input Text Color */
 @inputColor: @textColor;
-@inputPlaceholderColor: var(--moonstone);
+@inputPlaceholderColor: @marineLightest;
 @inputPlaceholderFocusColor: @inputColor;
 
 /* Line Height Default For Inputs in Browser (Descenders are 17px at 14px base em) */
@@ -79,10 +79,10 @@
 --------------------*/
 
 /* Used on inputs, textarea etc */
-@focusedFormBorderColor: @primaryColor;
+@focusedFormBorderColor: @jetDark;
 
 /* Used on dropdowns, other larger blocks */
-@focusedFormMutedBorderColor: #96C8DA;
+@focusedFormMutedBorderColor: @jetDark;
 
 /*-------------------
         Sizes
@@ -111,7 +111,7 @@
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.4285em;
-@textColor           : rgba(0, 0, 0, 0.87);
+@textColor           : @jetDark;
 
 /*-------------------
       Paragraph
@@ -221,7 +221,8 @@
 @cloudLight: var(--cloud-light);
 @cloudDark: var(--cloud-dark);
 
-/*--- Cloud--**/
+/*--- Marine --**/
+@marineLightest: var(--marine-lightest);
 @marineLight: var(--marine-light);
 
 /*---  Colors  ---*/
@@ -375,10 +376,10 @@
 
 /* Negative */
 @negativeColor           : @alert;
-@negativeBackgroundColor : #FFF6F6;
-@negativeBorderColor     : var(--alert-lightest);
+@negativeBackgroundColor : transparent;
+@negativeBorderColor     : var(--alert-dark);
 @negativeHeaderColor     : var(--alert-darkest);
-@negativeTextColor       : var(--alert-dark);
+@negativeTextColor       : @textColor;
 
 /* Info */
 @infoColor              : #31CCEC;

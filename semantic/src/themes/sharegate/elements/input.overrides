@@ -5,40 +5,39 @@
 .ui.input > input {
     font-size: 1.125rem;
     line-height: 1.5rem;
+    width: 240px;
 }
 
 // making sure that the inputs all share the same height
-.input {
+.input,
+form input {
     height: 3em;
-}
-
-.input.border input {
-    border: 1px solid @grey;
 }
 
 // inputs shoul always have the same font size
 // lets set the width of the small inputs
-.ui.small.input {
-    font-size: 1em;
-    width: 2.5em;
-    text-align: center;
+// .ui.small.input {
+//     font-size: 1em;
+//     width: 2.5em;
+//     text-align: center;
+// }
+
+// .ui.small.input.center-text input {
+//     text-align: center;
+//     line-height: 40px;
+// }
+
+.ui.disabled.input,
+.ui.input:not(.disabled) input[disabled] {
+    border-color: @cloudLight;
+    background-color: @cloudLight;
 }
 
-.ui.small.input.center-text input {
-    text-align: center;
-    line-height: 40px;
+// Success Variation
+.ui.input.success input {
+    border-color: @positiveColor;
 }
 
-// can we has colored inputs
-.ui.input.teal input {
-    color: @teal;
-}
-
-.ui.form textarea {
-    background: @primaryColorLightest!important;
-}
-
-.ui.input.basic > input {
-    border: 1px solid @cloud;
-    background-color: #FFF;
+.ui.input.success svg {
+    fill: var(--success);
 }

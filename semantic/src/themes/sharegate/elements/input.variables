@@ -1,11 +1,12 @@
 /*******************************
     User Variable Overrides
 *******************************/
+@disabledOpacity: 1;
+@iconOpacity: 1;
+@placeholderErrorColor: @marineLightest;
 
-@background: @primaryColorLightest;
-@borderColor: transparent;
-@borderRadius: 1.5rem;
+@background: @white;
+@borderColor: @cloud;
+@borderRadius: .25rem;
 
-@padding: 0.75rem @horizontalPadding;
-
-@placeholderErrorColor: var(--alert-dark);
+@padding: 0.75rem 1rem;

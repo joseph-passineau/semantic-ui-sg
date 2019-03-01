@@ -40,9 +40,9 @@
 .ui.button.primary:disabled,
 .ui.disabled.button.primary:hover,
 .ui.disabled.primary.active.button {
-    background-color: @primaryColorLightest!important;
+    background-color: @primaryColorLight!important;
     color: @white!important;
-    box-shadow: 0px 0px 0px @basicBorderSize @primaryColorLightest inset!important;
+    box-shadow: 0px 0px 0px @basicBorderSize @primaryColorLight inset!important;
 }
 
 .ui.buttons .disabled.button.basic.primary,
@@ -51,8 +51,8 @@
 .ui.disabled.button.basic.primary:hover,
 .ui.disabled.basic.primary.active.button {
     background-color: transparent!important;
-    color: @primaryColorLightest!important;
-    box-shadow: 0px 0px 0px @basicBorderSize @primaryColorLightest inset!important;
+    color: @primaryColorLight!important;
+    box-shadow: 0px 0px 0px @basicBorderSize @primaryColorLight inset!important;
 }
 
 .ui.basic.primary.buttons .button:hover,
@@ -109,5 +109,5 @@
 
 .ui.button.basic.primary.disabled svg,
 .ui.button.basic.primary:disabled svg {
-    fill: var(--primary-lightest);
+    fill: var(--primary-light);
 }

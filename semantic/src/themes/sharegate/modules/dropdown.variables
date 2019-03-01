@@ -53,6 +53,7 @@
    Selection
 --------------*/
 @selectionMinHeight: 2.5em;
+@selectionBorder: 1px solid @cloud;
 
 /* <select> */
 
