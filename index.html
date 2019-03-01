@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <!-- Standard Meta -->
     <meta charset="utf-8" />
@@ -8,44 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Components</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="semantic.js"></script>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <script src="/semantic/dist/semantic.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
     <link rel="stylesheet" href="tachyons.min.css" />
-    <link rel="stylesheet" type="text/css" href="semantic.css" />
+    <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.css" />
     <style>
         body,
         html {
-            -webkit-font-smoothing: antialiased;
+            -webkit-font-smoothing: antialiased; 
         }
-
         @font-face {
             font-family: 'Calibre';
             font-style: normal;
             font-weight: 400;
             src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Regular.woff2) format("woff");
         }
-
         @font-face {
             font-family: 'Calibre';
             font-style: normal;
             font-weight: 500;
             src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Medium.woff2) format("woff");
         }
-
         @font-face {
             font-family: 'Calibre';
             font-style: normal;
             font-weight: 600;
             src: url(https://sharegate.com/app/themes/sharegate/dist/css/fonts/vapor/calibre/CalibreWeb-Semibold.woff2) format("woff");
         }
-
         pre {
             display: none;
         }
     </style>
 </head>
-
 <body>
     <div class="mw8 mt4 center">
         <h1 class="ma0 pa0 flex items-center">Semantic UI React</h1>
@@ -55,35 +48,21 @@
                 <h3 class="ma0 pv1 pointer ph2 br4 mr2 ba b--jet hover-bg-overcast br4 theme-overcast">Overcast</h3>
                 <h3 class="ma0 pv1 pointer ph2 br4 mr2 ba b--jet hover-bg-apricot br4 theme-apricot">Apricot</h3>
                 <h3 class="ma0 pv1 pointer ph2 br4 mr2 ba b--jet hover-bg-jet br4 theme-marketing">Marketing</h3>
-                <h3 class="ma0 pv1 pointer ph2 br4 mr2 ba b--jet hover-bg-desktop hover-white br4 theme-desktop">Desktop
-                </h3>
+                <h3 class="ma0 pv1 pointer ph2 br4 mr2 ba b--jet hover-bg-desktop hover-white br4 theme-desktop">Desktop</h3>
             </div>
             <div class="flex">
                 <h3 class="ma0 pv1 pointer ph2 br4 theme-light">Light</h3>
                 <h3 class="ma0 pv1 pointer ph2 br4 mr2 theme-dark bg-black white">Dark</h3>
             </div>
         </diV>
-        <p class="ma0 pa0 mt6 f5 fw3 lh-solid"><strong>Semantic UI</strong> should be used when you need complex
-            controls(inputs, buttons, loading animations, etc). <strong>Pitfalls: </strong><em>Modals are not part of
-                this since Apricot Modals are too specific. </em></p>
+        <p class="ma0 pa0 mt6 f5 fw3 lh-solid"><strong>Semantic UI</strong> should be used when you need complex controls(inputs, buttons, loading animations, etc). <strong>Pitfalls: </strong><em>Modals are not part of this since Apricot Modals are too specific. </em></p>
         <div class="flex items-center mt8">
             <h2 class="ma0 pa0 fw6 f3">Button</h2>
             <div class="ml2 w4">
-                <a href="https://react.semantic-ui.com/elements/button/" target="_blank" title="Semantic Doc"><svg
-                        id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
-                        <g>
-                            <g>
-                                <path
-                                    d="M255.2,209.3c-5.3,5.3-5.3,13.8,0,19.1c21.9,21.9,21.9,57.5,0,79.4l-115,115c-21.9,21.9-57.5,21.9-79.4,0l-17.3-17.3 c-21.9-21.9-21.9-57.5,0-79.4l115-115c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-115,115C8.7,322.7,0,343.6,0,365.8 c0,22.2,8.6,43.1,24.4,58.8l17.3,17.3c16.2,16.2,37.5,24.3,58.8,24.3s42.6-8.1,58.8-24.3l115-115c32.4-32.4,32.4-85.2,0-117.6 C269.1,204,260.5,204,255.2,209.3z" />
-                                <path
-                                    d="M458.5,58.2l-17.3-17.3c-32.4-32.4-85.2-32.4-117.6,0l-115,115c-32.4,32.4-32.4,85.2,0,117.6c5.3,5.3,13.8,5.3,19.1,0 s5.3-13.8,0-19.1c-21.9-21.9-21.9-57.5,0-79.4l115-115c21.9-21.9,57.5-21.9,79.4,0l17.3,17.3c21.9,21.9,21.9,57.5,0,79.4l-115,115 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l115-115c15.7-15.7,24.4-36.6,24.4-58.8 C482.8,94.8,474.2,73.9,458.5,58.2z" />
-                            </g>
-                        </g>
-                    </svg></a>
+                <a href="https://react.semantic-ui.com/elements/button/" target="_blank" title="Semantic Doc"><svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8"><g><g><path d="M255.2,209.3c-5.3,5.3-5.3,13.8,0,19.1c21.9,21.9,21.9,57.5,0,79.4l-115,115c-21.9,21.9-57.5,21.9-79.4,0l-17.3-17.3 c-21.9-21.9-21.9-57.5,0-79.4l115-115c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-115,115C8.7,322.7,0,343.6,0,365.8 c0,22.2,8.6,43.1,24.4,58.8l17.3,17.3c16.2,16.2,37.5,24.3,58.8,24.3s42.6-8.1,58.8-24.3l115-115c32.4-32.4,32.4-85.2,0-117.6 C269.1,204,260.5,204,255.2,209.3z"/><path d="M458.5,58.2l-17.3-17.3c-32.4-32.4-85.2-32.4-117.6,0l-115,115c-32.4,32.4-32.4,85.2,0,117.6c5.3,5.3,13.8,5.3,19.1,0 s5.3-13.8,0-19.1c-21.9-21.9-21.9-57.5,0-79.4l115-115c21.9-21.9,57.5-21.9,79.4,0l17.3,17.3c21.9,21.9,21.9,57.5,0,79.4l-115,115 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l115-115c15.7-15.7,24.4-36.6,24.4-58.8 C482.8,94.8,474.2,73.9,458.5,58.2z"/></g></g></svg></a>
             </div>
         </div>
-        <p class="fw3 f5">Use the <strong>Button</strong> component when an action need to be performed after clicking
-            an element.</p>
+        <p class="fw3 f5">Use the <strong>Button</strong> component when an action need to be performed after clicking an element.</p>
         <div class="flex mt8">
             <div class="mr12">
                 <h2 class="ma0 pa0 mb4" id="button-standard">Solid CTA</h2>
@@ -151,252 +130,60 @@
                 <h2 class="ma0 pa0 mb2" id="button-standard">Icon Solid CTA</h2>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
                 <div class="mb8">
-                    <button class="ui button"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
                 <div class="mb8">
-                    <button class="ui button active"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button active"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
                 <div class="mb8">
-                    <button class="ui button" disabled><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button" disabled><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
             </div>
             <div class="mr12">
                 <h2 class="ma0 pa0 mb2" id="button-standard">Icon Outline CTA</h2>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
                 <div class="mb8">
-                    <button class="ui button basic"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button basic"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
                 <div class="mb8">
-                    <button class="ui button basic active"><svg width="19" height="19"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill="none" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill="#979797" fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)" fill="#FFF">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button basic active"><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill="#979797" fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)" fill="#FFF"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
                 <div class="mb8">
-                    <button class="ui button basic" disabled><svg width="19" height="19"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button basic" disabled><svg width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
             </div>
             <div class="mr12">
                 <h2 class="ma0 pa0 mb2" id="button-standard">Icon Solid CTA</h2>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
                 <div class="mb8">
-                    <button class="ui button primary"><svg class="mr2 fill-white" width="19" height="19"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button primary"><svg class="mr2 fill-white" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
                 <div class="mb8">
-                    <button class="ui button primary active"><svg class="mr2 fill-white" width="19" height="19"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button primary active"><svg class="mr2 fill-white" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
                 <div class="mb8">
-                    <button class="ui button primary" disabled><svg class="mr2 fill-white" width="19" height="19"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button primary" disabled><svg class="mr2 fill-white" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
             </div>
             <div class="mr12">
                 <h2 class="ma0 pa0 mb2" id="button-standard">Icon Outline CTA</h2>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Default</h3>
                 <div class="mb8">
-                    <button class="ui button basic primary"><svg class="mr2 fill-primary" width="19" height="19"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button basic primary"><svg class="mr2 fill-primary" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Active / Hover</h3>
                 <div class="mb8">
-                    <button class="ui button basic primary active"><svg class="mr2 fill-white" width="19" height="19"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button basic primary active"><svg class="mr2 fill-white" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
                 <h3 class="ma0 pa0 mb4 marine-lightest" id="button-standard">Disabled</h3>
                 <div class="mb8">
-                    <button class="ui button basic primary" disabled><svg class="mr2 fill-primary-lightest" width="19"
-                            height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <path
-                                    d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z"
-                                    id="a" />
-                            </defs>
-                            <g transform="translate(0 1)" fill-rule="evenodd">
-                                <mask id="b" fill="#fff">
-                                    <use xlink:href="#a" />
-                                </mask>
-                                <use fill-rule="nonzero" xlink:href="#a" />
-                                <g mask="url(#b)">
-                                    <path d="M0 0h18v18H0z" />
-                                </g>
-                            </g>
-                        </svg> View & edit email</button>
+                    <button class="ui button basic primary" disabled><svg class="mr2 fill-primary-lightest" width="19" height="19" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M15.293 5L13 2.707 7.207 8.5 9.5 10.793 15.293 5zM16 4.293l.94-.94a.5.5 0 0 0 0-.707l-1.586-1.585a.5.5 0 0 0-.708 0L13.707 2 16 4.293zm-7.39 7.024L6.683 9.39l-1.285 3.212 3.212-1.285zM12 11h1v5.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 0 16.5v-15A1.5 1.5 0 0 1 1.5 0H11v1H1.5a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V11zm5.646-9.06a1.5 1.5 0 0 1 0 2.12l-7.792 7.794-.168.11-5 2a.5.5 0 0 1-.65-.65l2-5 .11-.168L13.94.354a1.5 1.5 0 0 1 2.122 0l1.585 1.585z" id="a"/></defs><g transform="translate(0 1)" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill-rule="nonzero" xlink:href="#a"/><g mask="url(#b)"><path d="M0 0h18v18H0z"/></g></g></svg> View & edit email</button>
                 </div>
             </div>
         </div>
@@ -404,11 +191,11 @@
         <div class="flex mt6">
             <div class="mr2">
                 <button class="ui button icon">
-                    <svg class="flex" width="24px" height="24px" viewBox="0 0 31 20" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg class="flex" width="24px" height="24px" viewBox="0 0 31 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="First-Time-Experience" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="3---UNLOCKED---Assistant---States" transform="translate(-643.000000, -181.000000)"
-                                fill="#FFFFFF" fill-rule="nonzero">
+                            <g id="3---UNLOCKED---Assistant---States" transform="translate(-643.000000, -181.000000)" fill="#FFFFFF"
+                                fill-rule="nonzero">
                                 <g id="Cartes---Unused-Groups" transform="translate(108.000000, 106.000000)">
                                     <g id="CTA" transform="translate(535.000000, 74.000000)">
                                         <g id="Padding-Group-2">
@@ -425,11 +212,11 @@
             </div>
             <div class="mr2">
                 <button class="ui button primary icon">
-                    <svg class="flex" width="24px" height="24px" viewBox="0 0 31 20" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg class="flex" width="24px" height="24px" viewBox="0 0 31 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="First-Time-Experience" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="3---UNLOCKED---Assistant---States" transform="translate(-643.000000, -181.000000)"
-                                fill="#FFFFFF" fill-rule="nonzero">
+                            <g id="3---UNLOCKED---Assistant---States" transform="translate(-643.000000, -181.000000)" fill="#FFFFFF"
+                                fill-rule="nonzero">
                                 <g id="Cartes---Unused-Groups" transform="translate(108.000000, 106.000000)">
                                     <g id="CTA" transform="translate(535.000000, 74.000000)">
                                         <g id="Padding-Group-2">
@@ -446,11 +233,11 @@
             </div>
             <div class="mr2">
                 <button class="ui button basic icon">
-                    <svg class="flex" width="24px" height="24px" viewBox="0 0 31 20" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg class="flex" width="24px" height="24px" viewBox="0 0 31 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="First-Time-Experience" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="3---UNLOCKED---Assistant---States" transform="translate(-643.000000, -181.000000)"
-                                fill="#000000" fill-rule="nonzero">
+                            <g id="3---UNLOCKED---Assistant---States" transform="translate(-643.000000, -181.000000)" fill="#000000"
+                                fill-rule="nonzero">
                                 <g id="Cartes---Unused-Groups" transform="translate(108.000000, 106.000000)">
                                     <g id="CTA" transform="translate(535.000000, 74.000000)">
                                         <g id="Padding-Group-2">
@@ -466,15 +253,9 @@
                 </button>
             </div>
         </div>
-        <p class="mt8 fw3 f6 ma0 pa0 mb2 lh-solid">Use <em>icon only</em> buttons when the icon is a known pattern by
-            the user.</p>
-        <p class="fw3 f6 ma0 pa0 mb2 lh-solid">Do not use Semantic Icons as we don't <a
-                href="https://cloudfour.com/thinks/seriously-dont-use-icon-fonts/" target="_blank">support them</a>,
-            rather use a svg as a <a
-                href="https://scotch.io/tutorials/whats-new-in-create-react-app-2#toc-svg-as-a-react-component"
-                target="_blank">component</a>.</p>
-        <p class="fw3 f6 ma0 pa0 mb2 lh-solid">Make sure the icon is wrapped in a 1:1 ratio element (e.g. 20x20 - .w4
-            .h4).</p>
+        <p class="mt8 fw3 f6 ma0 pa0 mb2 lh-solid">Use <em>icon only</em> buttons when the icon is a known pattern by the user.</p>
+        <p class="fw3 f6 ma0 pa0 mb2 lh-solid">Do not use Semantic Icons as we don't <a href="https://cloudfour.com/thinks/seriously-dont-use-icon-fonts/" target="_blank">support them</a>, rather use a svg as a <a href="https://scotch.io/tutorials/whats-new-in-create-react-app-2#toc-svg-as-a-react-component" target="_blank">component</a>.</p>
+        <p class="fw3 f6 ma0 pa0 mb2 lh-solid">Make sure the icon is wrapped in a 1:1 ratio element (e.g. 20x20 - .w4 .h4).</p>
         <pre><code class="language-html">import * as Handshake from './handshake.svg'
 &lt;Button icon&gt;&lt;Handshake/&gt;&lt;/Button&gt;</code></pre>
         <h3 class="ma0 pa0 mb2 mt8" id="button-loading">Loading</h3>
@@ -486,7 +267,7 @@
                 <button class="ui loading primary button">Loading</button>
             </div>
             <div class="mt2">
-                <button class="ui basic loading button">Loading</button>
+               <button class="ui basic loading button">Loading</button>
             </div>
         </div>
         <p class="mt6 fw3 f6 ma0 pa0 mb2 lh-solid">Use a loading button when...</p>
@@ -511,68 +292,13 @@
         <button class="ui button fluid">Fluid</button>
         <p class="mt6 fw3 f6 ma0 pa0 mb2 lh-solid">A button can the width of his parent.</p>
         <pre><code class="language-html">&lt;Button fluid&gt;Fluid&lt;/Button&gt;</code></pre>
-        <h3 class="ma0 pa0 mb2 mt8" id="button-tall">Tall <svg name="SG Propiteary" id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg" class="w5 h5" viewBox="0 0 504.065 504.065">
-                <path
-                    d="M41.493,281.6l45.686-79.951c4.726-8.271,15.36-11.028,23.631-6.302l337.132,196.529	c8.271,4.726,11.028,15.36,6.302,23.631l-45.686,79.951c-4.726,8.271-15.36,11.028-23.631,6.302L47.794,305.231	C39.523,300.505,36.767,289.871,41.493,281.6z"
-                    fill="#F47422" />
-                <path
-                    d="M87.573,203.225l-0.788-0.788l-9.058,16.148l258.757,230.794	C336.483,449.378,87.573,203.225,87.573,203.225z"
-                    fill="#AC3327" />
-                <path
-                    d="M408.557,495.458l45.686-79.951c4.726-8.271,1.969-18.905-6.302-23.631L341.21,329.649	l-66.56,107.914l110.277,64.197C393.197,506.486,403.831,503.729,408.557,495.458z"
-                    fill="#D6D6D6" />
-                <path d="M293.554,406.843l-1.969,2.757l44.505,39.778L293.554,406.843z" fill="#CACACA" />
-                <path
-                    d="M87.573,179.2l64.591-64.197c6.695-6.695,17.723-6.695,24.418,0l274.905,272.148	c6.695,6.695,6.695,17.329,0,24.025l-64.591,64.197c-6.695,6.695-17.723,6.695-24.418,0L87.573,203.225	C80.877,196.529,80.877,185.895,87.573,179.2z"
-                    fill="#76B6B5" />
-                <path
-                    d="M147.831,119.335l-14.966,14.572l173.292,259.938C306.157,393.846,147.831,119.335,147.831,119.335z"
-                    fill="#0B80B7" />
-                <path
-                    d="M451.486,411.175c6.695-6.695,6.695-17.329,0-24.025l-93.342-92.16l-89.797,87.04l94.129,93.342	c6.695,6.695,17.723,6.695,24.418,0C386.896,475.372,451.486,411.175,451.486,411.175z"
-                    fill="#E0E0E0" />
-                <path
-                    d="M154.133,95.705l79.951-46.08c8.271-4.726,18.905-1.969,23.631,6.302L453.85,396.209	c4.726,8.271,1.969,18.905-6.302,23.631l-79.951,46.08c-8.271,4.726-18.905,1.969-23.631-6.302L147.831,119.335	C143.105,111.065,145.862,100.431,154.133,95.705z"
-                    fill="#D4D6DB" />
-                <path d="M288.04,362.732l-1.575,1.575l19.692,29.538L288.04,362.732z" fill="#D1D1D1" />
-                <path
-                    d="M367.991,466.314l79.951-46.08c8.271-4.726,11.028-15.36,6.302-23.631l-68.529-118.942	l-108.308,66.954l66.56,115.397C349.087,468.283,359.72,471.04,367.991,466.314z"
-                    fill="#EBEBEB" />
-                <path
-                    d="M240.779,56.714c-0.788-3.151-0.788-6.302,0-9.452c-2.363,0.394-4.332,1.182-6.695,2.363	l-16.148,9.452L329,382.031L240.779,56.714z M367.203,439.532h0.788v-0.394L367.203,439.532z"
-                    fill="#BB6F39" />
-                <path
-                    d="M367.203,439.532h0.788v-0.394L367.203,439.532z M312.853,322.56l-3.545,2.363L329,382.031	L312.853,322.56z"
-                    fill="#DBDBDB" />
-                <path
-                    d="M252.594,35.84l89.009-23.631c9.058-2.363,18.511,2.757,21.268,11.815L464.09,395.815	c2.363,9.058-3.151,18.511-12.209,20.874l-89.009,23.631c-9.058,2.363-18.511-2.757-21.268-11.815L240.779,56.714	C238.022,47.655,243.536,38.203,252.594,35.84z"
-                    fill="#F4B459" />
-                <path
-                    d="M362.871,0h81.526c11.422,0,20.48,9.058,20.48,20.48v384.394c0,11.422-9.058,20.48-20.48,20.48	h-81.526c-11.422,0-20.48-9.058-20.48-20.48V20.48C342.391,9.058,351.45,0,362.871,0z"
-                    fill="#F47422" />
-                <path
-                    d="M308.52,306.806l33.083,121.698c2.363,9.058,11.815,14.572,21.268,11.815l89.009-23.631	c9.059-2.363,14.572-11.815,12.209-20.874l-33.083-120.123L308.52,306.806z"
-                    fill="#E6E6E6" />
-                <path
-                    d="M342.391,20.48c0-3.151,0.788-5.908,1.969-8.271c-0.788,0-1.969,0-2.757,0.394l-20.874,5.514	l21.662,313.895V20.48z"
-                    fill="#30D1BD" />
-                <path
-                    d="M342.391,275.298v129.575c0,11.422,9.058,20.48,20.48,20.48h81.526c11.422,0,20.48-9.058,20.48-20.48	V275.298H342.391z"
-                    fill="#EFEFEF" />
-                <path d="M342.391,298.142l-2.363,0.788l2.363,33.083V298.142z" fill="#DDD" />
-                <path
-                    d="M362.083,295.385v19.692h66.954v-19.692H362.083z M362.083,397.785h27.569V385.97h-27.569V397.785z M362.083,370.215h27.569V358.4h-27.569V370.215z M362.083,342.646h27.569v-11.815h-27.569V342.646z M431.007,378.092	c5.514,0,9.846,4.332,9.846,9.846s-4.332,9.846-9.846,9.846s-9.846-4.332-9.846-9.846	C421.16,382.425,425.493,378.092,431.007,378.092z"
-                    fill="#BFBFBF" /></svg></h3>
+        <h3 class="ma0 pa0 mb2 mt8" id="button-tall">Tall <svg name="SG Propiteary" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="w5 h5" viewBox="0 0 504.065 504.065"><path d="M41.493,281.6l45.686-79.951c4.726-8.271,15.36-11.028,23.631-6.302l337.132,196.529	c8.271,4.726,11.028,15.36,6.302,23.631l-45.686,79.951c-4.726,8.271-15.36,11.028-23.631,6.302L47.794,305.231	C39.523,300.505,36.767,289.871,41.493,281.6z" fill="#F47422"/><path d="M87.573,203.225l-0.788-0.788l-9.058,16.148l258.757,230.794	C336.483,449.378,87.573,203.225,87.573,203.225z" fill="#AC3327"/><path d="M408.557,495.458l45.686-79.951c4.726-8.271,1.969-18.905-6.302-23.631L341.21,329.649	l-66.56,107.914l110.277,64.197C393.197,506.486,403.831,503.729,408.557,495.458z" fill="#D6D6D6"/><path d="M293.554,406.843l-1.969,2.757l44.505,39.778L293.554,406.843z" fill="#CACACA"/><path d="M87.573,179.2l64.591-64.197c6.695-6.695,17.723-6.695,24.418,0l274.905,272.148	c6.695,6.695,6.695,17.329,0,24.025l-64.591,64.197c-6.695,6.695-17.723,6.695-24.418,0L87.573,203.225	C80.877,196.529,80.877,185.895,87.573,179.2z" fill="#76B6B5"/><path d="M147.831,119.335l-14.966,14.572l173.292,259.938C306.157,393.846,147.831,119.335,147.831,119.335z" fill="#0B80B7"/><path d="M451.486,411.175c6.695-6.695,6.695-17.329,0-24.025l-93.342-92.16l-89.797,87.04l94.129,93.342	c6.695,6.695,17.723,6.695,24.418,0C386.896,475.372,451.486,411.175,451.486,411.175z" fill="#E0E0E0"/><path d="M154.133,95.705l79.951-46.08c8.271-4.726,18.905-1.969,23.631,6.302L453.85,396.209	c4.726,8.271,1.969,18.905-6.302,23.631l-79.951,46.08c-8.271,4.726-18.905,1.969-23.631-6.302L147.831,119.335	C143.105,111.065,145.862,100.431,154.133,95.705z" fill="#D4D6DB"/><path d="M288.04,362.732l-1.575,1.575l19.692,29.538L288.04,362.732z" fill="#D1D1D1"/><path d="M367.991,466.314l79.951-46.08c8.271-4.726,11.028-15.36,6.302-23.631l-68.529-118.942	l-108.308,66.954l66.56,115.397C349.087,468.283,359.72,471.04,367.991,466.314z" fill="#EBEBEB"/><path d="M240.779,56.714c-0.788-3.151-0.788-6.302,0-9.452c-2.363,0.394-4.332,1.182-6.695,2.363	l-16.148,9.452L329,382.031L240.779,56.714z M367.203,439.532h0.788v-0.394L367.203,439.532z" fill="#BB6F39"/><path d="M367.203,439.532h0.788v-0.394L367.203,439.532z M312.853,322.56l-3.545,2.363L329,382.031	L312.853,322.56z" fill="#DBDBDB"/><path d="M252.594,35.84l89.009-23.631c9.058-2.363,18.511,2.757,21.268,11.815L464.09,395.815	c2.363,9.058-3.151,18.511-12.209,20.874l-89.009,23.631c-9.058,2.363-18.511-2.757-21.268-11.815L240.779,56.714	C238.022,47.655,243.536,38.203,252.594,35.84z" fill="#F4B459"/><path d="M362.871,0h81.526c11.422,0,20.48,9.058,20.48,20.48v384.394c0,11.422-9.058,20.48-20.48,20.48	h-81.526c-11.422,0-20.48-9.058-20.48-20.48V20.48C342.391,9.058,351.45,0,362.871,0z" fill="#F47422"/><path d="M308.52,306.806l33.083,121.698c2.363,9.058,11.815,14.572,21.268,11.815l89.009-23.631	c9.059-2.363,14.572-11.815,12.209-20.874l-33.083-120.123L308.52,306.806z" fill="#E6E6E6"/><path d="M342.391,20.48c0-3.151,0.788-5.908,1.969-8.271c-0.788,0-1.969,0-2.757,0.394l-20.874,5.514	l21.662,313.895V20.48z" fill="#30D1BD"/><path d="M342.391,275.298v129.575c0,11.422,9.058,20.48,20.48,20.48h81.526c11.422,0,20.48-9.058,20.48-20.48	V275.298H342.391z" fill="#EFEFEF"/><path d="M342.391,298.142l-2.363,0.788l2.363,33.083V298.142z" fill="#DDD"/><path d="M362.083,295.385v19.692h66.954v-19.692H362.083z M362.083,397.785h27.569V385.97h-27.569V397.785z M362.083,370.215h27.569V358.4h-27.569V370.215z M362.083,342.646h27.569v-11.815h-27.569V342.646z M431.007,378.092	c5.514,0,9.846,4.332,9.846,9.846s-4.332,9.846-9.846,9.846s-9.846-4.332-9.846-9.846	C421.16,382.425,425.493,378.092,431.007,378.092z" fill="#BFBFBF"/></svg></h3>
         <div class="flex mt2">
             <button class="ui button tall">Tall Standard</button>
             <button class="ui button tall primary">Tall Primary</button>
             <button class="ui button tall basic">Tall Basic</button>
         </div>
-        <p class="mt6 fw3 f6 lh-solid">Don't use Semantic UI <a
-                href="https://react.semantic-ui.com/elements/button/#size" target="_blank">size variations</a> since
-            these does not represent our vision of the UI. If you need a button with a different height than the default
-            one [40px] add <em>tall</em> [48px] to the button.</p>
+        <p class="mt6 fw3 f6 lh-solid">Don't use Semantic UI <a href="https://react.semantic-ui.com/elements/button/#size" target="_blank">size variations</a> since these does not represent our vision of the UI. If you need a button with a different height than the default one [40px] add <em>tall</em> [48px] to the button.</p>
         <pre><code class="language-html">&lt;Button className="tall"&gt;Tall&lt;/Button&gt;</code></pre>
         <h2>Unsupported</h2>
         <h3 class="ma0 pa0 mb2 mt8" id="button-positive">Colored</h3>
@@ -621,8 +347,8 @@
         <div class="flex items-center mt8">
             <h2 class="ma0 pa0 fw6 f3">Input</h2>
             <div class="ml2 w4">
-                <a href="https://react.semantic-ui.com/elements/input/" target="_blank" title="Semantic Doc"><svg
-                        id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
+                <a href="https://react.semantic-ui.com/elements/input/" target="_blank" title="Semantic Doc"><svg id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
                         <g>
                             <g>
                                 <path
@@ -645,32 +371,21 @@
         <h3 class="ma0 pa0 mb2 mt8" id="input-error">Error</h3>
         <div class="ui error input"><input type="text" placeholder="Search..." /></div>
         <h3 class="ma0 pa0 mb2 mt8" id="input-success">Success</h3>
-        <div class="ui success icon input"><input type="text" placeholder="Search..." /><i class="icon"><svg width="20"
-                    height="20" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                        <circle cx="10" cy="10" r="10" />
-                        <path
-                            d="M8.18 12.876L5.146 9.843a.652.652 0 0 0-.944 0 .652.652 0 0 0 0 .944l3.978 3.977 7.618-7.618a.652.652 0 0 0 0-.944.652.652 0 0 0-.944 0L8.18 12.876z"
-                            fill="#FFF" />
-                    </g>
-                </svg></i></div>
+        <div class="ui success icon input"><input type="text" placeholder="Search..." /><i class="icon"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><g><circle cx="10" cy="10" r="10"/><path d="M8.18 12.876L5.146 9.843a.652.652 0 0 0-.944 0 .652.652 0 0 0 0 .944l3.978 3.977 7.618-7.618a.652.652 0 0 0 0-.944.652.652 0 0 0-.944 0L8.18 12.876z" fill="#FFF"/></g></svg></i></div>
         <h3 class="ma0 pa0 mb2 mt8" id="input-fluid">Fluid</h3>
         <div class="ui fluid icon input"><input type="text" placeholder="Search..." /></div>
         <h3 class="ma0 pa0 mb2 mt8" id="input-transparent">Transparent</h3>
         <div class="ui transparent input"><input type="text" placeholder="Search..." /></div>
         <h3 class="ma0 pa0 mb2 mt8" id="input-icon">Icon</h3>
         <div>
-            <div class="ui icon input"><input type="text" placeholder="Search..." /><i aria-hidden="true"
-                    class="search icon"></i></div>
-            <p class="mt6 fw3 f6 lh-solid">Prefer passing input icons as <a
-                    href="https://react.semantic-ui.com/elements/input/#variations-icon-child"
-                    target="_blank">children</a>.</p>
+            <div class="ui icon input"><input type="text" placeholder="Search..." /><i aria-hidden="true" class="search icon"></i></div>
+            <p class="mt6 fw3 f6 lh-solid">Prefer passing input icons as <a href="https://react.semantic-ui.com/elements/input/#variations-icon-child" target="_blank">children</a>.</p>
         </div>
         <div class="flex items-center mt8">
             <h2 class="ma0 pa0 fw6 f3">Form</h2>
             <div class="ml2 w4">
-                <a href="https://react.semantic-ui.com/collections/form" target="_blank" title="Semantic Doc"><svg
-                        id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
+                <a href="https://react.semantic-ui.com/collections/form" target="_blank" title="Semantic Doc"><svg id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
                         <g>
                             <g>
                                 <path
@@ -686,15 +401,15 @@
         <form class="ui form">
             <div class="field">
                 <label>First Name</label>
-                <input placeholder="First Name" />
+                <input placeholder="First Name"/>
             </div>
             <div class="field">
                 <label>Last Name</label>
-                <input placeholder="Last Name" />
+                <input placeholder="Last Name"/>
             </div>
             <div class="field">
                 <div class="ui checkbox">
-                    <input type="checkbox" checked class="hidden" readonly="" tabindex="0" />
+                    <input type="checkbox" checked class="hidden" readonly="" tabindex="0"/>
                     <label>I agree to the Terms and Conditions</label>
                 </div>
             </div>
@@ -703,8 +418,8 @@
         <div class="flex items-center mt8">
             <h2 class="ma0 pa0 fw6 f3">Dropdown Select</h2>
             <div class="ml2 w4">
-                <a href="https://react.semantic-ui.com/modules/dropdown/" target="_blank" title="Semantic Doc"><svg
-                        id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
+                <a href="https://react.semantic-ui.com/modules/dropdown/" target="_blank" title="Semantic Doc"><svg id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
                         <g>
                             <g>
                                 <path
@@ -729,8 +444,8 @@
         <div class="flex items-center mt8">
             <h2 class="ma0 pa0 fw6 f3">Label</h2>
             <div class="ml2 w4">
-                <a href="https://react.semantic-ui.com/elements/label/" target="_blank" title="Semantic Doc"><svg
-                        id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
+                <a href="https://react.semantic-ui.com/elements/label/" target="_blank" title="Semantic Doc"><svg id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
                         <g>
                             <g>
                                 <path
@@ -754,8 +469,8 @@
         <div class="flex items-center mt8">
             <h2 class="ma0 pa0 fw6 f3">Loader</h2>
             <div class="ml2 w4">
-                <a href="https://react.semantic-ui.com/elements/loader/" target="_blank" title="Semantic Doc"><svg
-                        id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
+                <a href="https://react.semantic-ui.com/elements/loader/" target="_blank" title="Semantic Doc"><svg id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
                         <g>
                             <g>
                                 <path
@@ -806,8 +521,7 @@
         </div>
         <h3 class="ma0 pa0 mb2 mt8">Inverted</h3>
         <div class="ui inverted segment">
-            <div class="ui active inverted loader"></div><img
-                src="https://react.semantic-ui.com/images/wireframe/short-paragraph.png" class="ui image" />
+            <div class="ui active inverted loader"></div><img src="https://react.semantic-ui.com/images/wireframe/short-paragraph.png" class="ui image" />
         </div>
         <div>
             <div class="ui segment">
@@ -821,8 +535,8 @@
         <div class="flex items-center mt8">
             <h2 class="ma0 pa0 fw6 f3">Checkbox</h2>
             <div class="ml2 w4">
-                <a href="https://react.semantic-ui.com/modules/checkbox/" target="_blank" title="Semantic Doc"><svg
-                        id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
+                <a href="https://react.semantic-ui.com/modules/checkbox/" target="_blank" title="Semantic Doc"><svg id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
                         <g>
                             <g>
                                 <path
@@ -864,8 +578,8 @@
         <div class="flex items-center mt8">
             <h2 class="ma0 pa0 fw6 f3">Popup</h2>
             <div class="ml2 w4">
-                <a href="https://react.semantic-ui.com/modules/popup/" target="_blank" title="Semantic Doc"><svg
-                        id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
+                <a href="https://react.semantic-ui.com/modules/popup/" target="_blank" title="Semantic Doc"><svg id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.8 482.8">
                         <g>
                             <g>
                                 <path
@@ -975,34 +689,33 @@
                 },
                 position: 'bottom center',
             });
-        $('.activate.wide')
-            .popup({
-                delay: {
-                    show: 300,
-                    hide: 300
-                },
-                position: 'right center',
-                variation: 'wide'
-            });
-        $('.activate.very-wide')
-            .popup({
-                delay: {
-                    show: 300,
-                    hide: 300
-                },
-                position: 'right center',
-                variation: 'very wide'
-            });
-        $('.activate.dark')
-            .popup({
-                delay: {
-                    show: 300,
-                    hide: 300
-                },
-                position: 'right center',
-                variation: 'inverted'
-            });
+         $('.activate.wide')
+                .popup({
+                    delay: {
+                        show: 300,
+                        hide: 300
+                    },
+                    position: 'right center',
+                    variation: 'wide'
+                });
+            $('.activate.very-wide')
+                .popup({
+                    delay: {
+                        show: 300,
+                        hide: 300
+                    },
+                    position: 'right center',
+                    variation: 'very wide'
+                });
+            $('.activate.dark')
+                .popup({
+                    delay: {
+                        show: 300,
+                        hide: 300
+                    },
+                    position: 'right center',
+                    variation: 'inverted'
+                });
     </script>
 </body>
-
 </html>
