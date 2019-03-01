@@ -77,7 +77,6 @@
 /*-------------------
     Focused Input
 --------------------*/
-
 /* Used on inputs, textarea etc */
 @focusedFormBorderColor: @jetDark;
 
