@@ -1,6 +1,9 @@
 /*******************************
     User Variable Overrides
 *******************************/
+@selectedTextColor: @cloudDarkest;
+@hoveredItemColor: @jetDark;
+@itemColor: @cloudDarkest;
 
 /*******************************
             Dropdown
@@ -54,6 +57,11 @@
 --------------*/
 @selectionMinHeight: 2.5em;
 @selectionBorder: 1px solid @cloud;
+@selectionHoverBorderColor: @jetDark;
+@selectionVisibleBorderColor: @white;
+@selectionActiveHoverBorderColor: @white;
+// @selectionActiveHoverBoxShadow;
+
 
 /* <select> */
 
@@ -62,6 +70,7 @@
 /* Derived */
 
 /* Hover */
+@hoveredItemBackground: @cloudLightest;
 
 /* Focus */
 

@@ -81,7 +81,7 @@
 @focusedFormBorderColor: @jetDark;
 
 /* Used on dropdowns, other larger blocks */
-@focusedFormMutedBorderColor: @jetDark;
+@focusedFormMutedBorderColor: transparent; // weird behaviour with dropdown select might me the cause here
 
 /*-------------------
         Sizes
@@ -216,9 +216,11 @@
 @alert: var(--alert);
 
 /*--- Cloud--*/
-@cloud: var(--cloud);
+@cloudLightest: var(--cloud-lightest);
 @cloudLight: var(--cloud-light);
+@cloud: var(--cloud);
 @cloudDark: var(--cloud-dark);
+@cloudDarkest: var(--cloud-darkest);
 
 /*--- Marine --**/
 @marineLightest: var(--marine-lightest);

@@ -10,7 +10,7 @@
 }
 
 .ui.dropdown > .dropdown.icon {
-    background: url("@{iconsPath}/down-arrow-apricot.svg") center center no-repeat!important;
+    background: url("@{iconsPath}/down-arrow.svg") center center no-repeat!important;
 }
 
 .ui.selection.dropdown > .dropdown.icon {
@@ -18,10 +18,29 @@
     width: 32px;
 }
 
-.ui.selection.dropdown .menu > .item {
-  background-color: @primaryColorLightest;
+.ui.dropdown.selected,
+.ui.dropdown .menu .selected.item {
+    background-color: @cloudLightest;
+    position: relative;
+}
+
+.ui.dropdown.selected::before,
+.ui.dropdown .menu .selected.item::before {
+    background-color: @cloudLightest;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 42px;
+    width: .25rem;
+    background-color: @primaryColor;
+    top: 0;
+    left: 0;
+}
+
+.ui.selection.active.dropdown .menu {
+    border-color: @white;
 }
 
 .ui.dropdown.selected, .ui.dropdown .menu .selected.item {
-    background-color: #C8E2E1;
+    font-weight: 400;
 }
