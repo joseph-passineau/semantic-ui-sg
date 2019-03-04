@@ -55,13 +55,17 @@
 /*------------
    Selection
 --------------*/
+@selectionMenuBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
 @selectionMinHeight: 2.5em;
 @selectionBorder: 1px solid @cloud;
 @selectionHoverBorderColor: @jetDark;
 @selectionVisibleBorderColor: @white;
 @selectionActiveHoverBorderColor: @white;
-// @selectionActiveHoverBoxShadow;
-
+@selectionActiveHoverBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionFocusMenuBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionVisibleBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionVisibleMenuBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionFocusBorderColor: @white;
 
 /* <select> */
 

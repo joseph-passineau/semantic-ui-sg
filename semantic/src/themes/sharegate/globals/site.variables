@@ -81,7 +81,7 @@
 @focusedFormBorderColor: @jetDark;
 
 /* Used on dropdowns, other larger blocks */
-@focusedFormMutedBorderColor: transparent; // weird behaviour with dropdown select might me the cause here
+@focusedFormMutedBorderColor: @jetDark; // weird behaviour with dropdown select might me the cause here
 
 /*-------------------
         Sizes
