@@ -18,3 +18,12 @@
     background-size: 12px 8px;
     background-color: @white;
 }
+
+.ui.toggle.disabled label::before,
+.ui.toggle.disabled label:hover::before,
+.ui.toggle.disabled label:focus::before,
+.ui.toggle.disabled label:active::before,
+.ui.toggle.disabled label:checked::before,
+.ui.toggle.disabled.checkbox input:focus ~ label:before {
+    background-color: @cloudLight;
+}

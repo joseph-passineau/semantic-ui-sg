@@ -44,3 +44,10 @@
 .ui.dropdown.selected, .ui.dropdown .menu .selected.item {
     font-weight: 400;
 }
+
+.ui.dropdown > .text > img,
+.ui.dropdown > .text > .image,
+.ui.dropdown .menu > .item > .image,
+.ui.dropdown .menu > .item > img {
+    width: 24px;
+}

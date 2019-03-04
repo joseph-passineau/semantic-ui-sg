@@ -111,3 +111,8 @@
 .ui.button.basic.primary:disabled svg {
     fill: var(--primary-light);
 }
+
+.ui.button.icon:hover svg,
+.ui.button.icon:focus svg {
+    fill: var(--white);
+}

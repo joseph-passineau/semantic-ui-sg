@@ -70,6 +70,8 @@
 @selectionVisibleMenuBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
 @selectionFocusBorderColor: @white;
 @selectionFocusBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionItemDivider: '';
+@itemVerticalPadding: 0.75rem;
 
 /* <select> */
 

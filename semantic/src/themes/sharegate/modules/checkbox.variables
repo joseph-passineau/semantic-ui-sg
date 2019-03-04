@@ -22,6 +22,7 @@
 ;
 
 @checkboxFocusBorderColor: @focusedFormMutedBorderColor;
+@disabledCheckboxOpacity: 1;
 
 /* Checkmark */
 @checkboxCheckFontSize: 1em;
