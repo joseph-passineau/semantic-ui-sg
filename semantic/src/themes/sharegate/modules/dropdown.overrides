@@ -10,10 +10,44 @@
 }
 
 .ui.dropdown > .dropdown.icon {
-    background: url("@{iconsPath}/down-arrow-apricot.svg") center center no-repeat!important;
+    background: url("@{iconsPath}/down-arrow.svg") center center no-repeat!important;
 }
 
 .ui.selection.dropdown > .dropdown.icon {
     height: 100%;
     width: 32px;
+}
+
+.ui.dropdown.selected,
+.ui.dropdown .menu .selected.item {
+    background-color: @cloudLightest;
+    position: relative;
+}
+
+.ui.dropdown.selected::before,
+.ui.dropdown .menu .selected.item::before {
+    background-color: @cloudLightest;
+    position: absolute;
+    content: "";
+    display: block;
+    width: .25rem;
+    height: 100%;
+    background-color: @primaryColor;
+    top: 0;
+    left: 0;
+}
+
+.ui.selection.active.dropdown .menu {
+    border-color: @white;
+}
+
+.ui.dropdown.selected, .ui.dropdown .menu .selected.item {
+    font-weight: 400;
+}
+
+.ui.dropdown > .text > img,
+.ui.dropdown > .text > .image,
+.ui.dropdown .menu > .item > .image,
+.ui.dropdown .menu > .item > img {
+    width: 24px;
 }

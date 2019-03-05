@@ -1,6 +1,9 @@
 /*******************************
     User Variable Overrides
 *******************************/
+@selectedTextColor: @cloudDarkest;
+@hoveredItemColor: @jetDark;
+@itemColor: @cloudDarkest;
 
 /*******************************
             Dropdown
@@ -9,7 +12,6 @@
 /*-------------------
        Element
 --------------------*/
-
 
 /*-------------------
        Content
@@ -24,6 +26,7 @@
 /* Text */
 
 /* Menu Item */
+@itemLineHeight: 1.5em;
 
 /* Sub Menu */
 
@@ -34,6 +37,9 @@
 /* Menu Input */
 
 /* Menu Image */
+@menuImageMaxHeight: 2em;
+@menuImageVerticalMargin: 0;
+
 
 /* Item Sub-Element */
 
@@ -52,7 +58,20 @@
 /*------------
    Selection
 --------------*/
+@selectionMenuBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
 @selectionMinHeight: 2.5em;
+@selectionBorder: 1px solid @cloud;
+@selectionHoverBorderColor: @jetDark;
+@selectionVisibleBorderColor: @white;
+@selectionActiveHoverBorderColor: @white;
+@selectionActiveHoverBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionFocusMenuBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionVisibleBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionVisibleMenuBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionFocusBorderColor: @white;
+@selectionFocusBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionItemDivider: '';
+@itemVerticalPadding: 0.75rem;
 
 /* <select> */
 
@@ -61,6 +80,7 @@
 /* Derived */
 
 /* Hover */
+@hoveredItemBackground: @cloudLightest;
 
 /* Focus */
 

@@ -2,3 +2,11 @@
     User Variable Overrides
 *******************************/
 
+@medium: .875em;
+
+/*-------------------
+       Element
+--------------------*/
+
+@backgroundColor: @black;
+@color: @white;
