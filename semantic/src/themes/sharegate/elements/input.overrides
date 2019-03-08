@@ -5,14 +5,14 @@
 .ui.input > input {
     font-size: 1.125rem;
     line-height: 1.5rem;
-    height: 3em;
+    height: 48px; // avoid rem conversion
     width: 240px;
 }
 
 // making sure that the inputs all share the same height
 .input,
 form input {
-    height: 3em;
+    height: 48px;
 }
 
 .ui.disabled.input,
