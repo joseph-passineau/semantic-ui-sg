@@ -5,6 +5,7 @@
 .ui.input > input {
     font-size: 1.125rem;
     line-height: 1.5rem;
+    height: 3em;
     width: 240px;
 }
 
@@ -13,19 +14,6 @@
 form input {
     height: 3em;
 }
-
-// inputs shoul always have the same font size
-// lets set the width of the small inputs
-// .ui.small.input {
-//     font-size: 1em;
-//     width: 2.5em;
-//     text-align: center;
-// }
-
-// .ui.small.input.center-text input {
-//     text-align: center;
-//     line-height: 40px;
-// }
 
 .ui.disabled.input,
 .ui.input:not(.disabled) input[disabled] {
