@@ -10,3 +10,4 @@
 
 @backgroundColor: @black;
 @color: @white;
+@mini    : @8px;
