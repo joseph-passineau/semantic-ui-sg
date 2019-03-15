@@ -958,9 +958,9 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 ---------------*/
 
 .ui.button > .icon:not(.button) {
-  height: 0.875em;
+  height: auto;
   opacity: 0.8;
-  margin: 0em 0.375em 0em -0.1875em;
+  margin: 0 0.35em 0 0;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
   vertical-align: '';
@@ -968,7 +968,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 }
 
 .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
-  margin: 0em 0.375em 0em -0.1875em;
+  margin: 0 0.35em 0 0;
 }
 
 .ui.button:not(.icon) > .right.icon:not(.button):not(.dropdown) {
@@ -6613,7 +6613,7 @@ i.icons .inverted.corner.icon {
          Site Overrides
 *******************************/
 
-i.icon {
+.input i.icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6625,8 +6625,24 @@ i.icon {
   justify-content: center;
 }
 
+.ui.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
+  margin: 0 0.35em 0 0;
+}
+
+.ui.button > .icon:not(.button) {
+  opacity: 1;
+  height: auto;
+}
+
 i.icon.search:before {
   content: "";
+  display: block;
   height: 17px;
   width: 16px;
   top: 0;
@@ -6634,35 +6650,19 @@ i.icon.search:before {
   background: url("themes/sharegate/assets/icons/magnifier.svg") center center no-repeat !important;
 }
 
-i.icon.loading.search:before {
-  -webkit-animation: rotate 2s linear infinite;
-  animation: rotate 2s linear infinite;
-  -webkit-transform-origin: center center;
-  transform-origin: center center;
+i.icon.handshake {
+  height: 16px;
+  width: 24px;
 }
 
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
+i.icon.handshake:before {
+  content: "";
+  display: block;
+  height: 16px;
+  width: 24px;
+  top: 0;
+  margin-top: 0;
+  background: url("themes/sharegate/assets/icons/handshake.svg") center center no-repeat !important;
 }
 
 /*******************************
@@ -7562,12 +7562,13 @@ img.ui.bordered.image {
 .ui.input > input {
   font-size: 1.125rem;
   line-height: 1.5rem;
+  height: 48px;
   width: 240px;
 }
 
 .input,
 form input {
-  height: 3em;
+  height: 48px;
 }
 
 .ui.disabled.input,
@@ -8973,7 +8974,7 @@ a.ui.basic.label:hover {
 
 .ui.mini.labels .label,
 .ui.mini.label {
-  font-size: 0.5625rem;
+  font-size: 0.5rem;
 }
 
 .ui.tiny.labels .label,
@@ -10135,7 +10136,7 @@ ol.ui.horizontal.list li:before,
   width: 100%;
   height: 100%;
   border-radius: 500rem;
-  border: 0.2em solid rgba(0, 0, 0, 0.1);
+  border: 0.2em solid #d4d6db;
 }
 
 /* Active Shape */
@@ -10152,7 +10153,7 @@ ol.ui.horizontal.list li:before,
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   border-radius: 500rem;
-  border-color: #767676 transparent transparent;
+  border-color: #828a9e transparent transparent;
   border-style: solid;
   border-width: 0.2em;
   -webkit-box-shadow: 0px 0px 0px 1px transparent;
@@ -10274,11 +10275,11 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.inverted.dimmer .ui.loader:before {
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: #d4d6db;
 }
 
 .ui.inverted.dimmer .ui.loader:after {
-  border-color: #767676 transparent transparent;
+  border-color: #828a9e transparent transparent;
 }
 
 /*******************************
@@ -24601,7 +24602,7 @@ a.ui.card:hover,
   box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
   width: 0.875rem;
   height: 0.875rem;
-  top: 0.175rem;
+  top: 0.185rem;
   left: 0em;
   border-radius: 500rem;
   -webkit-transition: background 0.3s ease, left 0.3s ease;
@@ -28467,6 +28468,11 @@ a.ui.nag {
   line-height: 1.16;
 }
 
+.ui.popup.basic.flush,
+.ui.popup.flush {
+  padding: 0;
+}
+
 /*******************************
         User Overrides
 *******************************/
@@ -28516,7 +28522,7 @@ a.ui.nag {
   line-height: 1;
   position: relative;
   width: 0%;
-  min-width: 2em;
+  min-width: 0.5em;
   background: #888888;
   border-radius: 0.25rem;
   -webkit-transition: width 0.1s ease, background-color 0.1s ease;
@@ -28720,7 +28726,7 @@ a.ui.nag {
 
 .ui.active.progress .bar {
   position: relative;
-  min-width: 2em;
+  min-width: 0.5em;
 }
 
 .ui.active.progress .bar::after {
@@ -28874,7 +28880,7 @@ a.ui.nag {
 /* Red */
 
 .ui.red.progress .bar {
-  background-color: #DB2828;
+  background-color: #db012d;
 }
 
 .ui.red.inverted.progress .bar {
@@ -28894,7 +28900,7 @@ a.ui.nag {
 /* Yellow */
 
 .ui.yellow.progress .bar {
-  background-color: #FBBD08;
+  background-color: #fcb736;
 }
 
 .ui.yellow.inverted.progress .bar {
@@ -28914,7 +28920,7 @@ a.ui.nag {
 /* Green */
 
 .ui.green.progress .bar {
-  background-color: #21BA45;
+  background-color: #2bbcaa;
 }
 
 .ui.green.inverted.progress .bar {
@@ -29010,7 +29016,7 @@ a.ui.nag {
 }
 
 .ui.tiny.progress .bar {
-  height: 0.5em;
+  height: 0.3em;
 }
 
 .ui.small.progress {
@@ -29494,7 +29500,7 @@ a.ui.nag {
 
 .ui.search > .results .result:hover,
 .ui.category.search > .results .category .result:hover {
-  background: #F9FAFB;
+  background: #F5F7F8;
 }
 
 .ui.search .action:hover {
@@ -29732,7 +29738,7 @@ a.ui.nag {
 }
 
 .ui.search .prompt {
-  height: 40px;
+  height: 48px;
   width: 100%;
 }
 
