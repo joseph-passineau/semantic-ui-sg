@@ -298,7 +298,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   color: var(--white);
   font-family: 'Calibre', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0em 0 0em 0em;
-  padding: 0.6875em 2em 0.6875em;
+  padding: 0.5625em 2em 0.5625em;
   text-transform: none;
   text-shadow: none;
   font-weight: 500;
@@ -1003,17 +1003,17 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .ui.compact.buttons .button,
 .ui.compact.button {
-  padding: 0.515625em 1.5em 0.515625em;
+  padding: 0.421875em 1.5em 0.421875em;
 }
 
 .ui.compact.icon.buttons .button,
 .ui.compact.icon.button {
-  padding: 0.515625em 0.515625em 0.515625em;
+  padding: 0.421875em 0.421875em 0.421875em;
 }
 
 .ui.compact.labeled.icon.buttons .button,
 .ui.compact.labeled.icon.button {
-  padding: 0.515625em 3.875em 0.515625em;
+  padding: 0.421875em 3.625em 0.421875em;
 }
 
 /*-------------------
@@ -1041,7 +1041,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .ui.buttons .button,
 .ui.buttons .or,
 .ui.button {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 .ui.large.buttons .button,
@@ -1074,7 +1074,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .ui.icon.buttons .button,
 .ui.icon.button {
-  padding: 0.6875em 0.6875em 0.6875em;
+  padding: 0.5625em 0.5625em 0.5625em;
 }
 
 .ui.icon.buttons .button > .icon,
@@ -1241,7 +1241,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .ui.labeled.icon.buttons .button,
 .ui.labeled.icon.button {
   position: relative;
-  padding-left: 4.375em !important;
+  padding-left: 4.125em !important;
   padding-right: 2em !important;
 }
 
@@ -1257,7 +1257,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   border-bottom-left-radius: inherit;
   text-align: center;
   margin: 0em;
-  width: 2.375em;
+  width: 2.125em;
   background-color: rgba(0, 0, 0, 0.05);
   color: '';
   -webkit-box-shadow: -1px 0px 0px 0px transparent inset;
@@ -1275,7 +1275,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 /* Right Labeled */
 
 .ui[class*="right labeled"].icon.button {
-  padding-right: 4.375em !important;
+  padding-right: 4.125em !important;
   padding-left: 2em !important;
 }
 
@@ -1376,7 +1376,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .ui.buttons .or {
   position: relative;
   width: 0.3em;
-  height: 2.375em;
+  height: 2.125em;
   z-index: 3;
 }
 
@@ -1389,11 +1389,11 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   left: 50%;
   background-color: var(--white);
   text-shadow: none;
-  margin-top: -0.84375em;
-  margin-left: -0.84375em;
-  width: 1.6875em;
-  height: 1.6875em;
-  line-height: 1.6875em;
+  margin-top: -0.78125em;
+  margin-left: -0.78125em;
+  width: 1.5625em;
+  height: 1.5625em;
+  line-height: 1.5625em;
   color: rgba(0, 0, 0, 0.4);
   font-style: 300;
   font-weight: 500;
