@@ -58,18 +58,18 @@
 /*------------
    Selection
 --------------*/
-@selectionMenuBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionMenuBoxShadow: var(--shadow-4);
 @selectionMinHeight: 2.5em;
 @selectionBorder: 1px solid @cloud;
 @selectionHoverBorderColor: @jetDark;
 @selectionVisibleBorderColor: @white;
 @selectionActiveHoverBorderColor: @white;
-@selectionActiveHoverBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
-@selectionFocusMenuBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
-@selectionVisibleBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
-@selectionVisibleMenuBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionActiveHoverBoxShadow: var(--shadow-4);
+@selectionFocusMenuBoxShadow: var(--shadow-4);
+@selectionVisibleBoxShadow: var(--shadow-4);
+@selectionVisibleMenuBoxShadow: var(--shadow-4);
 @selectionFocusBorderColor: @white;
-@selectionFocusBoxShadow: 0 8px 16px 0 rgba(10,20,43,0.14);
+@selectionFocusBoxShadow: var(--shadow-4);
 @selectionItemDivider: '';
 @itemVerticalPadding: 0.75rem;
 
@@ -137,6 +137,14 @@
 /* Scrolling */
 
 /* Upward */
+@upwardMenuBoxShadow: 0 -4px 12px 0 rgba( 130, 138, 158, .32 );
+@upwardSelectionMenuBoxShadow: 0 -4px 12px 0 rgba( 130, 138, 158, .32 );
+@upwardMenuBorderRadius: @borderRadius @borderRadius 0em 0em;
+@upwardSelectionHoverBoxShadow: 0;
+@upwardSelectionVisibleBoxShadow: 0 -4px 12px 0 rgba( 130, 138, 158, .32 );
+@upwardSelectionActiveHoverBoxShadow: 0 -4px 12px 0 rgba( 130, 138, 158, .32 );
+@upwardSelectionActiveHoverMenuBoxShadow: 0 -4px 12px 0 rgba( 130, 138, 158, .32 );
+
 
 /* Flyout Direction */
 
