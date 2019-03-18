@@ -3,6 +3,8 @@
 *******************************/
 
 @disabledOpacity: 1;
+@medium: 1.125rem;
+@inputVerticalPadding: @relative9px;
 
 /*******************************
             Button
