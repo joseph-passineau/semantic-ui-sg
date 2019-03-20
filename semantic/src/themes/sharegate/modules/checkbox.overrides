@@ -27,3 +27,14 @@
 .ui.toggle.disabled.checkbox input:focus ~ label:before {
     background-color: @cloudLight;
 }
+
+.ui.ui.toggle.checked.disabled label::before,
+.ui.ui.toggle.checked.disabled label:hover::before,
+.ui.ui.toggle.checked.disabled label:focus::before,
+.ui.ui.toggle.checked.disabled label:active::before,
+.ui.ui.toggle.checked.disabled label:checked::before,
+.ui.ui.toggle.checked.disabled.checkbox input:focus ~ label:before {
+    background-color: @primaryColorLightest!important;
+}
+
+// sorry for the !important it's how semantic is set

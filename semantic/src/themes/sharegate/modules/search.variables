@@ -16,6 +16,9 @@
 
 
 /* Result */
+@resultDivider: 0;
+@resultsBorder: 0;
+@resultHoverBackground: @cloudLightest;
 
 
 /* Result Image */
@@ -42,10 +45,9 @@
 
 /* Focus */
 @promptFocusBackground: @promptBackground;
-@promptFocusBorderColor: @primaryColor;
+@promptFocusBorderColor: @jetDark;
 
 /* Hover */
-@resultHoverBackground: #F5F7F8;
 
 
 /* Loading */
@@ -53,6 +55,7 @@
 /* Active Category */
 
 /* Active Result */
+@resultsBoxShadow: var(--shadow-4);
 
 
 /*******************************

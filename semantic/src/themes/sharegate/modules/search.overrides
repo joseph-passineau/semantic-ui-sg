@@ -10,7 +10,3 @@
     height: 48px;
     width: 100%;
 }
-
-.ui.search > .prompt {
-    background-color: @primaryColorLightest;
-}

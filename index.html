@@ -381,6 +381,14 @@
             <div class="ui icon input"><input type="text" placeholder="Search..." /><i aria-hidden="true" class="search icon"></i></div>
             <p class="mt6 fw3 f6 lh-solid">Prefer passing input icons as <a href="https://react.semantic-ui.com/elements/input/#variations-icon-child" target="_blank">children</a>.</p>
         </div>
+        <h3 class="ma0 pa0 mb2 mt8" id="input-search">Search</h3>
+        <div class="ui search">
+            <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="Search countries...">
+                <i class="search icon"></i>
+            </div>
+            <div class="results"></div>
+        </div>
         <div class="flex items-center mt8">
             <h2 class="jet ma0 pa0 fw6 f3">Form</h2>
             <div class="ml2 w4">
@@ -614,6 +622,12 @@
         <div class="flex mb2 pv3">
             <div class="ui fitted toggle checkbox">
                 <input type="checkbox" name="public" />
+                <label></label>
+            </div>
+        </div>
+        <div class="flex mb2">
+            <div class="ui checked disabled fitted toggle checkbox">
+                <input class="hidden" disabled="" readonly="" tabindex="-1" type="checkbox" value="" checked="">
                 <label></label>
             </div>
         </div>
@@ -870,6 +884,37 @@
                     position: 'right center',
                     variation: 'inverted'
                 });
+                var content = [
+                        { title: 'Andorra' },
+                        { title: 'United Arab Emirates' },
+                        { title: 'Afghanistan' },
+                        { title: 'Antigua' },
+                        { title: 'Anguilla' },
+                        { title: 'Albania' },
+                        { title: 'Armenia' },
+                        { title: 'Netherlands Antilles' },
+                        { title: 'Angola' },
+                        { title: 'Argentina' },
+                        { title: 'American Samoa' },
+                        { title: 'Austria' },
+                        { title: 'Australia' },
+                        { title: 'Aruba' },
+                        { title: 'Aland Islands' },
+                        { title: 'Azerbaijan' },
+                        { title: 'Bosnia' },
+                        { title: 'Barbados' },
+                        { title: 'Bangladesh' },
+                        { title: 'Belgium' },
+                        { title: 'Burkina Faso' },
+                        { title: 'Bulgaria' },
+                        { title: 'Bahrain' },
+                        { title: 'Burundi' }
+                    ];
+            $('.ui.search')
+            .search({
+                source: content
+            });
+
     </script>
 </body>
 </html>
