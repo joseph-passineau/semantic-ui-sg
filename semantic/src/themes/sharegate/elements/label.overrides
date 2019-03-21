@@ -4,6 +4,6 @@
 
 .ui.empty.circular.labels .label,
 .ui.empty.circular.label {
-    width: 6px;
-    height: 6px;
+    width: 6Px;
+    height: 6Px;
 }
