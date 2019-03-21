@@ -11,4 +11,3 @@
 @backgroundColor: @black;
 @color: @white;
 @mini : 6px;
-@emptyCircleSize: 6px;

@@ -4,6 +4,9 @@
 
 .ui.empty.circular.labels .label,
 .ui.empty.circular.label {
-    width: 6Px;
-    height: 6Px;
+    font-size: 0.43.rem;
+}
+
+.ui.mini.labels .label, .ui.mini.label {
+    font-size: .375rem;
 }
