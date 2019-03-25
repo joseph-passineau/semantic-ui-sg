@@ -455,15 +455,15 @@
      Neutral Text
 --------------------*/
 
-@darkTextColor               : rgba(0, 0, 0, 0.85);
-@mutedTextColor              : rgba(0, 0, 0, 0.6);
-@lightTextColor              : rgba(0, 0, 0, 0.4);
+@darkTextColor               : var(--black-80);
+@mutedTextColor              : var(--black-60);
+@lightTextColor              : var(--black-40);
 
-@unselectedTextColor         : rgba(0, 0, 0, 0.4);
-@hoveredTextColor            : rgba(0, 0, 0, 0.8);
-@pressedTextColor            : rgba(0, 0, 0, 0.9);
-@selectedTextColor           : rgba(0, 0, 0, 0.95);
-@disabledTextColor           : rgba(0, 0, 0, 0.2);
+@unselectedTextColor         : var(--black-40);
+@hoveredTextColor            : var(--black-80);
+@pressedTextColor            : var(--black-90);
+@selectedTextColor           : var(--black-90);
+@disabledTextColor           : var(--black-20);
 
 @invertedTextColor           : rgba(255, 255, 255, 0.9);
 @invertedMutedTextColor      : rgba(255, 255, 255, 0.8);
@@ -483,7 +483,7 @@
 @borderColor               : rgba(34, 36, 38, 0.15);
 @strongBorderColor         : rgba(34, 36, 38, 0.22);
 @internalBorderColor       : rgba(34, 36, 38, 0.1);
-@selectedBorderColor       : rgba(34, 36, 38, 0.35);
+@selectedBorderColor       : var(--black-40);
 @strongSelectedBorderColor : rgba(34, 36, 38, 0.5);
 @disabledBorderColor       : rgba(34, 36, 38, 0.5);
 
@@ -751,6 +751,7 @@
 @secondaryColorHover      : @secondaryColor;
 @lightPrimaryColorHover   : @lightPrimaryColor;
 @lightSecondaryColorHover : @lightSecondaryColor;
+@white                    : var(--white);
 
 @redHover                 : @red;
 @orangeHover              : @orange;

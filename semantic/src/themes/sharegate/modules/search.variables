@@ -19,7 +19,7 @@
 @resultDivider: 0;
 @resultsBorder: 0;
 @resultHoverBackground: @cloudLightest;
-
+@resultsBackground: var(--white);
 
 /* Result Image */
 
