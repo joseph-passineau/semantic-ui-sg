@@ -14,6 +14,7 @@
 
 .ui.button.short {
     min-height: 32px;
+    padding: 0.5em 1em;
 } 
 
 .ui.buttons .disabled.button,
