@@ -117,3 +117,19 @@
 .ui.button.icon:focus svg {
     fill: var(--white);
 }
+
+/*  */
+.ui.loading.button:before,
+.ui.loading.button:after {
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes button-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
