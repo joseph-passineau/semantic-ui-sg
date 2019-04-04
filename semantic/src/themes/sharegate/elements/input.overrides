@@ -30,7 +30,7 @@ form input {
     fill: var(--success);
 }
 
-// center the loadeng pseudo element on inputs
+// center the loading pseudo element on inputs
 .ui.loading.loading.input > i.icon:after {
     margin: 0;
 }
