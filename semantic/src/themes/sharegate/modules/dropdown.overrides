@@ -16,6 +16,7 @@
 .ui.selection.dropdown > .dropdown.icon {
     height: 100%;
     width: 32px;
+    padding: 0;
 }
 
 .ui.dropdown.selected,
