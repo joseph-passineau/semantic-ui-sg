@@ -122,7 +122,7 @@ npm login
 
 and follow the instructions.
 
-When it's run the following command and let the magic happen
+Run the following command and let the magic happen
 
 ```bash
 npm version major | minor | patch --otp=[YOU_AUTHENTICATOR_CODE]
