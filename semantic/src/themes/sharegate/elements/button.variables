@@ -16,10 +16,10 @@
 
 /* Button */
 @horizontalMargin: 0;
-@backgroundColor: @black;
+@backgroundColor: @jet;
 
 /* Button defaults to using same height as input globally */
-@horizontalPadding: 2em;
+@horizontalPadding: 1.5rem;
 
 /* Text */
 @borderRadius: 2em;
@@ -51,7 +51,7 @@
 --------------------*/
 
 /* Hovered */
-@hoverBackgroundColor: @marineLight;
+@hoverBackgroundColor: @black;
 @hoverColor: @white;
 
 /* Focused */
@@ -62,7 +62,7 @@
 @downColor: @white;
 
 /* Active */
-@activeBackgroundColor: @marineLight;
+@activeBackgroundColor: @black;
 @activeColor: @white;
 
 /* Active + Hovered */
@@ -87,27 +87,27 @@
 @basicBackground: transparent none;
 @basicFontWeight: @bold;
 @basicTextColor: @black;
-@basicBoxShadow: 0px 0px 0px @basicBorderSize @jetDark inset;
+@basicBoxShadow: 0px 0px 0px @basicBorderSize @cloud inset;
 
 /* Basic Hover */
-@basicHoverBackground: @marineLight!important;
+@basicHoverBackground: @black!important;
 @basicHoverTextColor: @white;
 @basicHoverBoxShadow:
-  0px 0px 0px @basicBorderSize @marineLight inset
+  0px 0px 0px @basicBorderSize @black inset
 ;
 
 /* Basic Focus */
-@basicFocusBackground: @marineLight!important;
+@basicFocusBackground: @black!important;
 @basicFocusTextColor: @white;
 @basicFocusBoxShadow:
-  0px 0px 0px @basicBorderSize @marineLight inset
+  0px 0px 0px @basicBorderSize @black inset
 ;
 
 /* Basic Down */
 
 /* Basic Active */
-@basicActiveBackground: @marineLight;
-@basicActiveBoxShadow: 0px 0px 0px @basicBorderSize @marineLight inset;
+@basicActiveBackground: @black;
+@basicActiveBoxShadow: 0px 0px 0px @basicBorderSize @black inset;
 @basicActiveTextColor: @white;
 
 /* Basic Inverted */
