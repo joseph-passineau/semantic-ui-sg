@@ -36,3 +36,8 @@
 .ui.label.large.icon {
     padding: 12px calc(@horizontalPadding/2) 12px @horizontalPadding;
 }
+
+.ui.label {
+    display: inline-flex!important;
+    align-items: center;
+}

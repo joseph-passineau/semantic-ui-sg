@@ -90,15 +90,6 @@
     background: @cloud !important;
 }
 
-// Making sure that svg icons are behaving
-.ui.button svg {
-    margin-right: var(--scale-bravo);
-}
-
-.ui.button.icon svg {
-    margin-right: 0;
-}
-
 .ui.button svg {
     fill: var(--white);
 }
