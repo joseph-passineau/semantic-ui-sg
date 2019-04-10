@@ -4,9 +4,35 @@
 
 .ui.empty.circular.labels .label,
 .ui.empty.circular.label {
-    font-size: 0.43.rem;
+    font-size: 0.5rem;
 }
 
 .ui.mini.labels .label, .ui.mini.label {
     font-size: .375rem;
+}
+
+.ui.label .ui.empty.circular.label {
+    margin-right: 8px!important;
+}
+
+.ui.label.icon {
+  padding: 8px calc(@horizontalPadding/2) 8px @horizontalPadding;
+}
+
+/* small */
+.ui.label.small{
+  padding: 7px @horizontalPadding;
+}
+
+.ui.label.small.icon {
+  padding: 4px calc(@horizontalPadding/2) 4px @horizontalPadding;
+}
+
+// large
+.ui.label.large{
+  padding: 15px @horizontalPadding;
+}
+
+.ui.label.large.icon {
+    padding: 12px calc(@horizontalPadding/2) 12px @horizontalPadding;
 }

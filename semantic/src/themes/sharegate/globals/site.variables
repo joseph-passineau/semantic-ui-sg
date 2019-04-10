@@ -206,6 +206,7 @@
 
 /*---  SG Colors  ---*/
 /*---  Jet  ---*/
+@jet: var(--jet);
 @jetDarkest: var(--jet-darkest);
 @jetDark: var(--jet-dark);
 

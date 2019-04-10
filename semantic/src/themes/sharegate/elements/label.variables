@@ -2,12 +2,19 @@
     User Variable Overrides
 *******************************/
 
-@medium: .875em;
+@small: 1em;
+@medium: 1.125em;
+@fontWeight: 400;
+@borderRadius: 999px;
+@verticalPadding: 11px;
+@horizontalPadding: 1em;
+@verticalMargin: 0;
+@horizontalMargin: 0;
 
 /*-------------------
        Element
 --------------------*/
 
-@backgroundColor: @black;
-@color: @white;
+@backgroundColor: @lightGrey;
+@color: @jetDark;
 @mini : 6px;

@@ -8,6 +8,13 @@
     align-items: center;
 }
 
+.ui.button.mini.circular {
+    min-height: 24px;
+    min-width: 24px;
+    padding: 0.5em 0.5em 0.5em;
+    justify-content: center;
+}
+
 .ui.button.tall {
     min-height: 48px;
 }
@@ -16,6 +23,12 @@
     min-height: 32px;
     padding: 0.5em 1em;
 } 
+
+// transparent button
+.ui.transparent.button {
+    background-color: transparent;
+    border: none;
+}
 
 .ui.buttons .disabled.button,
 .ui.disabled.button,
@@ -71,6 +84,12 @@
     color: @white !important;
 }
 
+.ui.transparent.buttons .button:hover,
+.ui.transparent.button:hover,
+.ui.transparent.button:focus {
+    background: @cloud !important;
+}
+
 // Making sure that svg icons are behaving
 .ui.button svg {
     margin-right: var(--scale-bravo);
@@ -88,14 +107,12 @@
     fill: var(--jet-black);
 }
 
-.ui.button.basic.primary svg {
-    fill: var(--primary);
+.ui.button.transparent svg {
+    fill: var(--jet-black);
 }
 
-.ui.button.basic:hover svg,
-.ui.button.basic.active svg,
-.ui.button.basic:focus svg {
-    fill: var(--white);
+.ui.button.basic.primary svg {
+    fill: var(--primary);
 }
 
 .ui.button.disabled svg,
@@ -118,7 +135,18 @@
     fill: var(--white);
 }
 
-/*  */
+.ui.button.basic:hover svg,
+.ui.button.basic.active svg,
+.ui.button.basic:focus svg {
+    fill: var(--white);
+}
+
+.ui.button.transparent:hover svg,
+.ui.button.transparent.active svg,
+.ui.button.transparent:focus svg {
+    fill: var(--jet-black);
+}
+
 .ui.loading.button:before,
 .ui.loading.button:after {
   margin: 0;
