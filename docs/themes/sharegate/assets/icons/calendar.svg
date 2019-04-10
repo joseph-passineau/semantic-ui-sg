@@ -1,0 +1,13 @@
+<svg viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="icon-small-calendar" fill="#5B7083">
+        <rect id="Rectangle" x="4" y="9" width="4" height="3" rx="1"></rect>
+        <rect id="Rectangle-Copy-4" x="4" y="14" width="4" height="3" rx="1"></rect>
+        <rect id="Rectangle-Copy" x="10" y="9" width="4" height="3" rx="1"></rect>
+        <rect id="Rectangle-Copy-5" x="10" y="14" width="4" height="3" rx="1"></rect>
+        <rect id="Rectangle-Copy-3" x="16" y="9" width="4" height="3" rx="1"></rect>
+        <rect id="Rectangle-Copy-6" x="16" y="14" width="4" height="3" rx="1"></rect>
+        <path d="M20,4 C19.4477153,4 19,3.55228475 19,3 C19,2.44771525 19.4477153,2 20,2 L21,2 C22.6568542,2 24,3.34314575 24,5 L24,19 C24,20.6568542 22.6568542,22 21,22 L3,22 C1.34314575,22 0,20.6568542 0,19 L0,5 C0,3.34314575 1.34314575,2 3,2 L4,2 C4.55228475,2 5,2.44771525 5,3 C5,3.55228475 4.55228475,4 4,4 L3,4 C2.44771525,4 2,4.44771525 2,5 L2,19 C2,19.5522847 2.44771525,20 3,20 L21,20 C21.5522847,20 22,19.5522847 22,19 L22,5 C22,4.44771525 21.5522847,4 21,4 L20,4 Z M10,4 C9.44771525,4 9,3.55228475 9,3 C9,2.44771525 9.44771525,2 10,2 L14.0028076,2 C14.5550924,2 15.0028076,2.44771525 15.0028076,3 C15.0028076,3.55228475 14.5550924,4 14.0028076,4 L10,4 Z" id="Shape"></path>
+        <rect id="Rectangle" x="6" y="0" width="2" height="6" rx="1"></rect>
+        <rect id="Rectangle-Copy-2" x="16" y="0" width="2" height="6" rx="1"></rect>
+    </g>
+</svg>
