@@ -34,3 +34,9 @@ form input {
 .ui.loading.loading.input > i.icon:after {
     margin: 0;
 }
+
+// Input Colored
+.ui.input.colored input {
+    background-color: @cloudLightest;
+    border: none;
+}
