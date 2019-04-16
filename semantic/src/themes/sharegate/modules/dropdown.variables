@@ -76,6 +76,7 @@
 
 /* Header */
 // @menuHeaderPadding: ;
+@menuInputMargin: 1.5rem 1.5rem 1rem 1.5rem;
 @menuHeaderMargin: 1rem 0 0.5rem 0;
 @menuHeaderColor: @cloudDark;
 @menuHeaderFontSize: 12px;
