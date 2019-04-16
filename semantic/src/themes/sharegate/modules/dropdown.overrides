@@ -19,8 +19,20 @@
     padding: 0;
 }
 
+.ui.dropdown .menu {
+    border: 0;
+}
+
+.ui.dropdown .scrolling.menu {
+    border-top: 0;
+}
+
 .ui.dropdown .menu > .input:not(.transparent) .icon {
     padding: 0;
+}
+
+.ui.dropdown .menu > .header {
+    line-height: 1;
 }
 
 .ui.dropdown.selected,

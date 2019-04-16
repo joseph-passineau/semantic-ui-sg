@@ -27,6 +27,7 @@
 
 /* Menu Item */
 @itemLineHeight: 1.5em;
+@itemFontWeight: 400;
 
 /* Sub Menu */
 
@@ -74,11 +75,11 @@
 @itemVerticalPadding: 0.75rem;
 
 /* Header */
-// @menuHeaderMargin: ;
 // @menuHeaderPadding: ;
+@menuHeaderMargin: 1rem 0 0.5rem 0;
 @menuHeaderColor: @cloudDark;
 @menuHeaderFontSize: 12px;
-@menuHeaderFontWeight: 400;
+@menuHeaderFontWeight: 500;
 @menuHeaderTextTransform: uppercase;
 
 
