@@ -1,9 +1,9 @@
 /*******************************
     User Variable Overrides
 *******************************/
-@selectedTextColor: @cloudDarkest;
+@selectedTextColor: @jetDark;
 @hoveredItemColor: @jetDark;
-@itemColor: @cloudDarkest;
+@itemColor: @jetDark;
 
 /*******************************
             Dropdown
@@ -72,6 +72,15 @@
 @selectionFocusBoxShadow: var(--shadow-4);
 @selectionItemDivider: '';
 @itemVerticalPadding: 0.75rem;
+
+/* Header */
+// @menuHeaderMargin: ;
+// @menuHeaderPadding: ;
+@menuHeaderColor: @cloudDark;
+@menuHeaderFontSize: 12px;
+@menuHeaderFontWeight: 400;
+@menuHeaderTextTransform: uppercase;
+
 
 /* <select> */
 

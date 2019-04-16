@@ -19,14 +19,18 @@
     padding: 0;
 }
 
+.ui.dropdown .menu > .input:not(.transparent) .icon {
+    padding: 0;
+}
+
 .ui.dropdown.selected,
 .ui.dropdown .menu .selected.item {
     background-color: @cloudLightest;
     position: relative;
 }
 
-.ui.dropdown.selected::before,
-.ui.dropdown .menu .selected.item::before {
+.ui.selection.dropdown.selected::before,
+.ui.selection.dropdown .menu .selected.item::before {
     background-color: @cloudLightest;
     position: absolute;
     content: "";
