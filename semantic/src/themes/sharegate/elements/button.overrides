@@ -96,11 +96,11 @@
 }
 
 .ui.button.basic svg {
-    fill: var(--jet-black);
+    fill: var(--jet-dark);
 }
 
 .ui.button.transparent svg {
-    fill: var(--jet-black);
+    fill: var(--jet-dark);
 }
 
 .ui.button.basic.primary svg {
@@ -136,7 +136,7 @@
 .ui.button.transparent:hover svg,
 .ui.button.transparent.active svg,
 .ui.button.transparent:focus svg {
-    fill: var(--jet-black);
+    fill: var(--jet-dark);
 }
 
 .ui.loading.button:before,
