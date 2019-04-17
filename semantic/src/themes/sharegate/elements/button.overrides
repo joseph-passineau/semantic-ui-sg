@@ -31,6 +31,39 @@
     border: none;
 }
 
+// ghost button - takes the same size of common buttons but doesn't have a background
+.ui.ghost.button {
+    background-color: transparent;
+    border: none;
+    color: @jetDark;
+}
+
+.ui.ghost.button {
+    background-color: transparent;
+    border: none;
+    color: @jetDark;
+}
+
+.ui.ghost.buttons .button:hover,
+.ui.ghost.button:hover,
+.ui.ghost.button:focus,
+.ui.ghost.button.active {
+    background-color: transparent;
+    border: none;
+    color: @cloudDarkest;
+}
+
+.ui.buttons .disabled.button.ghost,
+.ui.disabled.button.ghost,
+.ui.button.ghost:disabled,
+.ui.disabled.button.ghost:hover,
+.ui.disabled.ghost.active.button {
+    background-color: transparent!important;
+    border: none;
+    color: @cloudDarkest;
+    cursor: pointer;
+}
+
 .ui.buttons .disabled.button,
 .ui.disabled.button,
 .ui.button:disabled,
