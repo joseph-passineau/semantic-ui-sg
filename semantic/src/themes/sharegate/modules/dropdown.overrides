@@ -1,10 +1,6 @@
 /*******************************
         User Overrides
 *******************************/
-.dropdown {
-    width: 100%;
-}
-
 .ui.selection.dropdown {
   line-height: 1.5em;
 }
