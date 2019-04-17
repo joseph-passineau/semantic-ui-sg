@@ -15,6 +15,10 @@
     padding: 0;
 }
 
+.ui.dropdown.no-icon > .dropdown.icon {
+    display: none!important;
+}
+
 .ui.dropdown .menu {
     border: 0;
 }
