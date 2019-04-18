@@ -68,6 +68,16 @@
 @bulletTop: 0px;
 @bulletScale: (8 / 16); /* 8px as unitless value from radio size */
 
+@bulletColor: @primaryColor;
+
+@radioFocusBackground: @white;
+@radioActiveBackground: @white;
+@radioActiveFocusBackground: @white;
+
+@radioFocusBulletColor: @bulletColor;
+@radioActiveBulletColor: @bulletColor;
+@radioActiveFocusBulletColor: @bulletColor;
+
 /* Slider & Toggle Handle */
 
 /* Slider */
