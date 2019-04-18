@@ -83,6 +83,13 @@
 
 /* Slider */
 
+@sliderHandleSize: 1.25rem;
+@sliderLineHeight: 0.25rem;
+@sliderLineVerticalOffset: 0.375rem;
+@sliderLineColor: @primaryColor;
+@sliderHoverLaneBackground: @sliderLineColor;
+@sliderOnLineColor: @sliderLineColor;
+@sliderOnFocusLineColor: @sliderLineColor;
 /* Slider States */
 
 

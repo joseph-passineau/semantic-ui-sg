@@ -39,4 +39,26 @@
     background-color: @primaryColorLightest!important;
 }
 
+		
+.ui.slider.checkbox .box:after,
+.ui.slider.checkbox label:after {
+    background: @white;
+    border: @sliderLineHeight solid @primaryColor;
+}
+
+.ui.slider.checkbox input:not([type=radio]):checked ~ .box:before,
+.ui.slider.checkbox input:not([type=radio]):checked ~ label:before {
+	background: none;
+}
+
+.ui.slider.checkbox input:focus ~ .box:before,
+.ui.slider.checkbox input:focus ~ label:before {
+    background-color: @primaryColor;
+}
+
+.ui.slider.checkbox {
+    padding-left: @toggleHandleSize;
+}
+
+
 // sorry for the !important it's how semantic is set
