@@ -69,10 +69,11 @@
 @bulletScale: (8 / 16); /* 8px as unitless value from radio size */
 
 @bulletColor: @primaryColor;
+@radioBackground: @white;
 
-@radioFocusBackground: @white;
-@radioActiveBackground: @white;
-@radioActiveFocusBackground: @white;
+@radioFocusBackground: @radioBackground;
+@radioActiveBackground: @radioBackground;
+@radioActiveFocusBackground: @radioBackground;
 
 @radioFocusBulletColor: @bulletColor;
 @radioActiveBulletColor: @bulletColor;
