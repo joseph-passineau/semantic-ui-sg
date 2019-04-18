@@ -426,52 +426,6 @@
             <button class="ui button short primary">Short Primary</button>
             <button class="ui button short basic">Short Basic</button>
         </div>
-        <p class="mt6 fw3 f6 lh-solid">Don't use Semantic UI <a href="https://react.semantic-ui.com/elements/button/#size" target="_blank">size variations</a> since these does not represent our vision of the UI. If you need a button with a different height than the default one [40px] add <em>tall</em> [48px] to the button.</p>
-        <pre><code class="language-html">&lt;Button className="tall"&gt;Tall&lt;/Button&gt;</code></pre>
-        <h2>Unsupported</h2>
-        <h3 class="ma0 pa0 mb2 mt8" id="button-positive">Colored</h3>
-        <p class="mt6 fw3 f6 lh-solid">Prefer primary or secondary buttons, as well as positive/negative variations</p>
-        <div class="o-40 flex flex-wrap w-100">
-            <div class="mb2 mr2">
-                <button class="ui red button">Red</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui orange button">Orange</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui yellow button">Yellow</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui olive button">Olive</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui green button">Green</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui teal button">Teal</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui blue button">Blue</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui violet button">Violet</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui purple button">Purple</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui pink button">Pink</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui brown button">Brown</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui grey button">Grey</button>
-            </div>
-            <div class="mb2 mr2">
-                <button class="ui black button">Black</button>
-            </div>
-        </div>
         <div class="flex items-center mt8">
             <h2 class="jet ma0 pa0 fw6 f3">Input</h2>
             <div class="ml2 w4">
@@ -645,52 +599,54 @@
             </div>
         </div>
         <div class="flex">
-            <div class="ui multiple dropdown">
-                <input type="hidden" name="filters">
-                <i class="filter icon"></i>
-                <span class="text">Filter Posts</span>
-                <div class="menu">
-                    <div class="ui icon search input">
-                        <i class="search icon"></i>
-                        <input type="text" placeholder="Search tags...">
-                    </div>
-                    <div class="divider"></div>
-                    <div class="header">
-                        <i class="tags icon"></i>
-                        Tag Label
-                    </div>
-                    <div class="scrolling menu">
-                        <div class="item" data-value="important">
-                            <div class="ui red empty circular label"></div>
-                            Important
+            <div class="mt4">
+                <div class="ui multiple dropdown no-icon">
+                    <input type="hidden" name="filters">
+                    <i class="filter icon"></i>
+                    <span class="text"><button class="mt4 button ui primary">Filter Posts</button></span>
+                    <div class="menu">
+                        <div class="ui icon search input">
+                            <i class="search icon"></i>
+                            <input type="text" placeholder="Search tags...">
                         </div>
-                        <div class="item" data-value="announcement">
-                            <div class="ui blue empty circular label"></div>
-                            Announcement
+                        <div class="divider"></div>
+                        <div class="header">
+                            <i class="tags icon"></i>
+                            Tag Label
                         </div>
-                        <div class="item" data-value="cannotfix">
-                            <div class="ui black empty circular label"></div>
-                            Cannot Fix
-                        </div>
-                        <div class="item" data-value="news">
-                            <div class="ui purple empty circular label"></div>
-                            News
-                        </div>
-                        <div class="item" data-value="enhancement">
-                            <div class="ui orange empty circular label"></div>
-                            Enhancement
-                        </div>
-                        <div class="item" data-value="off-topic">
-                            <div class="ui yellow empty circular label"></div>
-                            Off Topic
-                        </div>
-                        <div class="item" data-value="interesting">
-                            <div class="ui pink empty circular label"></div>
-                            Interesting
-                        </div>
-                        <div class="item" data-value="discussion">
-                            <div class="ui green empty circular label"></div>
-                            Discussion
+                        <div class="scrolling menu">
+                            <div class="item" data-value="important">
+                                <div class="ui red empty circular label"></div>
+                                Important
+                            </div>
+                            <div class="item" data-value="announcement">
+                                <div class="ui blue empty circular label"></div>
+                                Announcement
+                            </div>
+                            <div class="item" data-value="cannotfix">
+                                <div class="ui black empty circular label"></div>
+                                Cannot Fix
+                            </div>
+                            <div class="item" data-value="news">
+                                <div class="ui purple empty circular label"></div>
+                                News
+                            </div>
+                            <div class="item" data-value="enhancement">
+                                <div class="ui orange empty circular label"></div>
+                                Enhancement
+                            </div>
+                            <div class="item" data-value="off-topic">
+                                <div class="ui yellow empty circular label"></div>
+                                Off Topic
+                            </div>
+                            <div class="item" data-value="interesting">
+                                <div class="ui pink empty circular label"></div>
+                                Interesting
+                            </div>
+                            <div class="item" data-value="discussion">
+                                <div class="ui green empty circular label"></div>
+                                Discussion
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1067,7 +1023,7 @@
         </div>
         <h3 class="ma0 pa0 mb2 mt8">Standard</h3>
         <div class="flex mb2 pv3">
-            <div class="ui checkbox focus">
+            <div class="ui checkbox">
                 <input type="checkbox" name="example" checked />
                 <label>Click me once, fool me twice</label>
             </div>
@@ -1157,6 +1113,14 @@
                 <p>Myrtie Ryan</p>
                 <p>Pauline Wong</p>
                 <p>Gerald Gibson</p>
+            </div>
+        </div>
+        <h3 class="ma0 pa0 mb2 mt8">Flush</h3>
+        <p>Add the class <code>flush</code> to remove all borders from a popup, you'll be responsible to put a decent amount of padding following the Brand Guidelines.</p>
+        <div class="flex mb4">
+            <button class="ui button activate light">Flush (no internal padding)</button>
+            <div class="ui popup flush">
+                <p>Myrtie Ryan</p>
             </div>
         </div>
         <div class="flex items-center mt8">

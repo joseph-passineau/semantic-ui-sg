@@ -15,7 +15,8 @@
     padding: 0;
 }
 
-.ui.dropdown.no-icon > .dropdown.icon {
+.ui.dropdown.no-icon > .dropdown.icon,
+.ui.dropdown.no-icon > .filter.icon {
     display: none!important;
 }
 
@@ -25,6 +26,10 @@
 
 .ui.dropdown .scrolling.menu {
     border-top: 0;
+}
+
+.ui.dropdown .menu > .divider {
+    display: none;
 }
 
 .ui.dropdown .menu > .input:not(.transparent) .icon {

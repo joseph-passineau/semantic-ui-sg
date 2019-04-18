@@ -39,12 +39,17 @@
 /* Pressed */
 
 /* Focus */
+@checkboxFocusBackground: @white;
+@checkboxFocusBorderColor: @cloud;
 
 /* Active */
-@checkboxActiveCheckColor: @primaryColor;
+@checkboxActiveBackground: @primaryColor;
+@checkboxActiveBorderColor: @primaryColor;
 
 /* Active Focus */
-@checkboxActiveFocusCheckColor: @primaryColor;
+@checkboxActiveFocusBackground: @primaryColor;
+@checkboxActiveFocusBorderColor: @primaryColor;
+
 
 /* Indeterminate */
 
