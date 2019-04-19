@@ -48,7 +48,7 @@
 
 .ui.slider.checkbox input:not([type=radio]):checked ~ .box:before,
 .ui.slider.checkbox input:not([type=radio]):checked ~ label:before {
-	background: none;
+    background: none;
 }
 
 .ui.slider.checkbox input:focus ~ .box:before,
