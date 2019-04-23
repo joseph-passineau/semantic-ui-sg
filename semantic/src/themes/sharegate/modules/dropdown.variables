@@ -37,6 +37,8 @@
 
 /* Menu Input */
 
+@selectionMenuBoxShadow: var(--shadow-4);
+
 /* Menu Image */
 @menuImageMaxHeight: 2em;
 @menuImageVerticalMargin: 0;

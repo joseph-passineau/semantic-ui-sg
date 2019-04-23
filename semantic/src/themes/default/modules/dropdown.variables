@@ -12,7 +12,7 @@
 ;
 @borderRadius: @defaultBorderRadius;
 
-@raisedShadow: 0px 2px 3px 0px @borderColor;
+@raisedShadow: var(--shadow-4);
 
 /*-------------------
        Content
