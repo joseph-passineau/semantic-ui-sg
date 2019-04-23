@@ -9203,6 +9203,18 @@ a.ui.basic.label:hover {
   align-items: center;
 }
 
+.ui.label.large {
+  min-height: 48px;
+}
+
+.ui.label {
+  min-height: 40px;
+}
+
+.ui.label.small {
+  min-height: 32px;
+}
+
 /*******************************
          Site Overrides
 *******************************/
