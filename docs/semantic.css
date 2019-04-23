@@ -25267,8 +25267,8 @@ body.dimmable > .dimmer {
   font-size: 1em;
   text-shadow: none;
   text-align: left;
-  -webkit-box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
-  box-shadow: 0px 2px 3px 0px rgba(34, 36, 38, 0.15);
+  -webkit-box-shadow: var(--shadow-4);
+  box-shadow: var(--shadow-4);
   border: 1px solid rgba(34, 36, 38, 0.15);
   border-radius: 0.25rem;
   -webkit-transition: opacity 0.1s ease;
