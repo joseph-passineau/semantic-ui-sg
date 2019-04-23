@@ -93,6 +93,16 @@
     box-shadow: 0px 0px 0px @basicBorderSize @primaryColorLight inset!important;
 }
 
+disabled.button.secondary,
+.ui.disabled.button.secondary,
+.ui.button.secondary:disabled,
+.ui.disabled.button.secondary:hover,
+.ui.disabled.secondary.active.button {
+    background-color: @secondaryColorLight!important;
+    color: @cloudDark!important;
+    box-shadow: 0px 0px 0px @basicBorderSize @secondaryColorLight inset!important;
+}
+
 .ui.buttons .disabled.button.basic.primary,
 .ui.disabled.button.basic.primary,
 .ui.button.basic.primary:disabled,
@@ -126,6 +136,10 @@
 
 .ui.button svg {
     fill: var(--white);
+}
+
+.ui.button.secondary svg {
+    fill: var(--jet-dark);
 }
 
 .ui.button.basic svg {

@@ -41,7 +41,9 @@
 @primaryColorLightest   :  var(--primary-lightest);
 @primaryColorDark       :  var(--primary-dark);
 @primaryColorLight      :  var(--primary-light);
-@secondaryColor         :  var(--jet);
+@secondaryColor         :  var(--cloud-light);
+@secondaryColorLight    :  var(--cloud-lightest);
+
 
 /*--------------
   Page Heading
@@ -749,7 +751,7 @@
 
 /*---  Colors  ---*/
 @primaryColorHover        : var(--primary-dark);
-@secondaryColorHover      : @secondaryColor;
+@secondaryColorHover      : var(--cloud);
 @lightPrimaryColorHover   : @lightPrimaryColor;
 @lightSecondaryColorHover : @lightSecondaryColor;
 @white                    : var(--white);
@@ -932,7 +934,7 @@
 
 /*---  Colors  ---*/
 @primaryColorActive        : @primaryColorDark;
-@secondaryColorActive      : @secondaryColor;
+@secondaryColorActive      : @cloud;
 @lightPrimaryColorActive   : @lightPrimaryColor;
 @lightSecondaryColorActive : @lightSecondaryColor;
 

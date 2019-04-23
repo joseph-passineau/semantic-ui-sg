@@ -15,6 +15,7 @@
        Element
 --------------------*/
 
-@backgroundColor: @lightGrey;
+@backgroundColor: transparent;
+@border: 2px solid @cloud;
 @color: @jetDark;
 @mini : 6px;

@@ -124,6 +124,7 @@
 /* Colored */
 
 /* Inverted */
+@secondaryTextColor: @jetDark;
 
 /* Ordinality */
 

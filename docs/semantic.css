@@ -4172,8 +4172,8 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  background-color: var(--jet);
-  color: var(--white);
+  background-color: var(--cloud-light);
+  color: var(--jet-dark);
   text-shadow: none;
   background-image: none;
 }
@@ -4185,22 +4185,22 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
-  background-color: var(--jet);
-  color: var(--white);
+  background-color: var(--cloud);
+  color: var(--jet-dark);
   text-shadow: none;
 }
 
 .ui.secondary.buttons .button:focus,
 .ui.secondary.button:focus {
-  background-color: var(--jet);
-  color: var(--white);
+  background-color: var(--cloud-light);
+  color: var(--jet-dark);
   text-shadow: none;
 }
 
 .ui.secondary.buttons .button:active,
 .ui.secondary.button:active {
-  background-color: var(--jet);
-  color: var(--white);
+  background-color: var(--cloud-light);
+  color: var(--jet-dark);
   text-shadow: none;
 }
 
@@ -4208,8 +4208,8 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .ui.secondary.buttons .active.button:active,
 .ui.secondary.active.button,
 .ui.secondary.button .active.button:active {
-  background-color: var(--jet);
-  color: var(--white);
+  background-color: var(--cloud);
+  color: var(--jet-dark);
   text-shadow: none;
 }
 
@@ -4217,40 +4217,40 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .ui.basic.secondary.buttons .button,
 .ui.basic.secondary.button {
-  -webkit-box-shadow: 0px 0px 0px 2px var(--jet) inset !important;
-  box-shadow: 0px 0px 0px 2px var(--jet) inset !important;
-  color: var(--jet) !important;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--cloud-light) inset !important;
+  box-shadow: 0px 0px 0px 2px var(--cloud-light) inset !important;
+  color: var(--cloud-light) !important;
 }
 
 .ui.basic.secondary.buttons .button:hover,
 .ui.basic.secondary.button:hover {
   background: transparent !important;
-  -webkit-box-shadow: 0px 0px 0px 2px var(--jet) inset !important;
-  box-shadow: 0px 0px 0px 2px var(--jet) inset !important;
-  color: var(--jet) !important;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--cloud) inset !important;
+  box-shadow: 0px 0px 0px 2px var(--cloud) inset !important;
+  color: var(--cloud) !important;
 }
 
 .ui.basic.secondary.buttons .button:focus,
 .ui.basic.secondary.button:focus {
   background: transparent !important;
-  -webkit-box-shadow: 0px 0px 0px 2px var(--jet) inset !important;
-  box-shadow: 0px 0px 0px 2px var(--jet) inset !important;
-  color: var(--jet) !important;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--cloud-light) inset !important;
+  box-shadow: 0px 0px 0px 2px var(--cloud-light) inset !important;
+  color: var(--cloud) !important;
 }
 
 .ui.basic.secondary.buttons .active.button,
 .ui.basic.secondary.active.button {
   background: transparent !important;
-  -webkit-box-shadow: 0px 0px 0px 2px var(--jet) inset !important;
-  box-shadow: 0px 0px 0px 2px var(--jet) inset !important;
-  color: var(--jet) !important;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--cloud) inset !important;
+  box-shadow: 0px 0px 0px 2px var(--cloud) inset !important;
+  color: var(--cloud-light) !important;
 }
 
 .ui.basic.secondary.buttons .button:active,
 .ui.basic.secondary.button:active {
-  -webkit-box-shadow: 0px 0px 0px 2px var(--jet) inset !important;
-  box-shadow: 0px 0px 0px 2px var(--jet) inset !important;
-  color: var(--jet) !important;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--cloud-light) inset !important;
+  box-shadow: 0px 0px 0px 2px var(--cloud-light) inset !important;
+  color: var(--cloud-light) !important;
 }
 
 .ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
@@ -4728,6 +4728,17 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   box-shadow: 0px 0px 0px 2px var(--primary-light) inset !important;
 }
 
+disabled.button.secondary,
+.ui.disabled.button.secondary,
+.ui.button.secondary:disabled,
+.ui.disabled.button.secondary:hover,
+.ui.disabled.secondary.active.button {
+  background-color: var(--cloud-lightest) !important;
+  color: var(--cloud-dark) !important;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--cloud-lightest) inset !important;
+  box-shadow: 0px 0px 0px 2px var(--cloud-lightest) inset !important;
+}
+
 .ui.buttons .disabled.button.basic.primary,
 .ui.disabled.button.basic.primary,
 .ui.button.basic.primary:disabled,
@@ -4764,6 +4775,10 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .ui.button svg {
   fill: var(--white);
+}
+
+.ui.button.secondary svg {
+  fill: var(--jet-dark);
 }
 
 .ui.button.basic svg {
@@ -7718,13 +7733,13 @@ form input {
   line-height: 1;
   vertical-align: baseline;
   margin: 0 0;
-  background-color: #EDF0F2;
+  background-color: transparent;
   background-image: none;
   padding: 11px 1em;
   color: var(--jet-dark);
   text-transform: none;
   font-weight: 400;
-  border: 0px solid transparent;
+  border: 2px solid var(--cloud);
   border-radius: 999px;
   -webkit-transition: background 0.1s ease;
   transition: background 0.1s ease;
@@ -7863,7 +7878,7 @@ a.ui.label {
   max-width: 9999px;
   vertical-align: baseline;
   text-transform: none;
-  background: #EDF0F2;
+  background: transparent;
   padding: 11px 1em 11px 0.5em;
   border-radius: 999px;
   -webkit-box-shadow: none;
@@ -7942,7 +7957,7 @@ a.ui.label {
   margin: 0em;
   padding: 0em;
   text-align: center;
-  border-color: #EDF0F2;
+  border-color: transparent;
   width: 4em;
   height: 4em;
   z-index: 1;
