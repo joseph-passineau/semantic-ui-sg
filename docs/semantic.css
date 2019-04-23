@@ -7733,13 +7733,13 @@ form input {
   line-height: 1;
   vertical-align: baseline;
   margin: 0 0;
-  background-color: transparent;
+  background-color: #EDF0F2;
   background-image: none;
   padding: 11px 1em;
   color: var(--jet-dark);
   text-transform: none;
   font-weight: 400;
-  border: 2px solid var(--cloud);
+  border: 0px solid transparent;
   border-radius: 999px;
   -webkit-transition: background 0.1s ease;
   transition: background 0.1s ease;
@@ -7878,7 +7878,7 @@ a.ui.label {
   max-width: 9999px;
   vertical-align: baseline;
   text-transform: none;
-  background: transparent;
+  background: #EDF0F2;
   padding: 11px 1em 11px 0.5em;
   border-radius: 999px;
   -webkit-box-shadow: none;
@@ -7957,7 +7957,7 @@ a.ui.label {
   margin: 0em;
   padding: 0em;
   text-align: center;
-  border-color: transparent;
+  border-color: #EDF0F2;
   width: 4em;
   height: 4em;
   z-index: 1;
@@ -8866,7 +8866,7 @@ a.ui.basic.black.label:hover {
 
 .ui.basic.label {
   background: none var(--white);
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: 2px solid var(--cloud);
   color: var(--jet-dark);
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -8878,8 +8878,8 @@ a.ui.basic.label:hover {
   text-decoration: none;
   background: none var(--white);
   color: #4183C4;
-  -webkit-box-shadow: 1px solid rgba(34, 36, 38, 0.15);
-  box-shadow: 1px solid rgba(34, 36, 38, 0.15);
+  -webkit-box-shadow: 2px solid var(--cloud);
+  box-shadow: 2px solid var(--cloud);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -9174,8 +9174,24 @@ a.ui.basic.label:hover {
   padding: 15px 1em;
 }
 
+.ui.label.basic.large {
+  padding: 7px 1em;
+}
+
+.ui.label.basic {
+  padding: 9px 1em;
+}
+
+.ui.label.basic.short {
+  padding: 5px 1em;
+}
+
 .ui.label.large.icon {
   padding: 12px calc(1em/2) 12px 1em;
+}
+
+.ui.label.large.basic.icon {
+  padding: 10px calc(1em/2) 10px 1em;
 }
 
 .ui.label {

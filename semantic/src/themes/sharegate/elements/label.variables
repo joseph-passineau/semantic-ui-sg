@@ -6,16 +6,18 @@
 @medium: 1.125em;
 @fontWeight: 400;
 @borderRadius: 999px;
+@basicBorderWidth: 2px;
 @verticalPadding: 11px;
 @horizontalPadding: 1em;
 @verticalMargin: 0;
 @horizontalMargin: 0;
+@borderColor: @cloud;
 
 /*-------------------
        Element
 --------------------*/
 
-@backgroundColor: transparent;
-@border: 2px solid @cloud;
+@backgroundColor: @lightGrey;
 @color: @jetDark;
+@basicBorder: @basicBorderWidth solid @borderColor;
 @mini : 6px;

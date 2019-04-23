@@ -20,7 +20,7 @@
 }
 
 /* small */
-.ui.label.small{
+.ui.label.small {
   padding: 7px @horizontalPadding;
 }
 
@@ -33,8 +33,24 @@
   padding: 15px @horizontalPadding;
 }
 
+.ui.label.basic.large {
+  padding: 7px @horizontalPadding;
+}
+
+.ui.label.basic {
+  padding: 9px @horizontalPadding;
+}
+
+.ui.label.basic.short {
+  padding: 5px @horizontalPadding;
+}
+
 .ui.label.large.icon {
     padding: 12px calc(@horizontalPadding/2) 12px @horizontalPadding;
+}
+
+.ui.label.large.basic.icon {
+    padding: 10px calc(@horizontalPadding/2) 10px @horizontalPadding;
 }
 
 .ui.label {
