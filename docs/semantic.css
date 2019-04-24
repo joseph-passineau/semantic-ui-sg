@@ -9182,8 +9182,16 @@ a.ui.basic.label:hover {
   padding: 9px 1em;
 }
 
-.ui.label.basic.short {
+.ui.label.basic.icon {
+  padding: 6px calc(1em/2) 6px 1em;
+}
+
+.ui.label.basic.small {
   padding: 5px 1em;
+}
+
+.ui.label.small.basic.icon {
+  padding: 1px calc(1em/2) 1px 1em;
 }
 
 .ui.label.large.icon {
