@@ -41,8 +41,16 @@
   padding: 9px @horizontalPadding;
 }
 
-.ui.label.basic.short {
+.ui.label.basic.icon {
+    padding: 6px calc(@horizontalPadding/2) 6px @horizontalPadding;
+}
+
+.ui.label.basic.small {
   padding: 5px @horizontalPadding;
+}
+
+.ui.label.small.basic.icon {
+    padding: 1px calc(@horizontalPadding/2) 1px @horizontalPadding;
 }
 
 .ui.label.large.icon {
