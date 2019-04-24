@@ -56,6 +56,9 @@
 
 /* Floated Content */
 
+@floatingMenuDistance: 0.5em;
+@floatingMenuBoxShadow: var(--shadow-4);
+
 /*-------------------
         Types
 --------------------*/

@@ -25335,7 +25335,7 @@ body.dimmable > .dimmer {
   border-top: none;
   line-height: 1.5em;
   color: var(--jet-dark);
-  padding: 0.75rem 1.125rem !important;
+  padding: 0.75rem 1.5rem !important;
   font-size: 1rem;
   text-transform: none;
   font-weight: 400;
@@ -25379,7 +25379,7 @@ body.dimmable > .dimmer {
 
 .ui.dropdown .menu > .header {
   margin: 1rem 0 0.5rem 0;
-  padding: 0em 1.125rem;
+  padding: 0 1.5rem;
   color: var(--cloud-dark);
   font-size: 12px;
   font-weight: 500;
@@ -25432,7 +25432,7 @@ body.dimmable > .dimmer {
 -------------------*/
 
 .ui.dropdown .menu > .message {
-  padding: 0.75rem 1.125rem;
+  padding: 0.75rem 1.5rem;
   font-weight: 300;
 }
 
@@ -25667,7 +25667,7 @@ select.ui.dropdown {
 ---------------*/
 
 .ui.selection.dropdown .menu > .message {
-  padding: 0.75rem 1.125rem;
+  padding: 0.75rem 1.5rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -25698,7 +25698,7 @@ select.ui.dropdown {
 
 .ui.selection.dropdown .menu > .item {
   border-top: '';
-  padding: 0.75rem 1.125rem !important;
+  padding: 0.75rem 1.5rem !important;
   white-space: normal;
   word-wrap: normal;
 }
@@ -26570,8 +26570,8 @@ select.ui.dropdown {
 .ui.floating.dropdown .menu {
   left: 0;
   right: auto;
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15) !important;
-  box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15) !important;
+  -webkit-box-shadow: var(--shadow-4) !important;
+  box-shadow: var(--shadow-4) !important;
   border-radius: 0.25rem !important;
 }
 
@@ -26886,6 +26886,10 @@ select.ui.dropdown {
 .ui.dropdown .menu > .item > .image,
 .ui.dropdown .menu > .item > img {
   width: 24px;
+}
+
+.ui.floating.dropdown > .menu {
+  margin-bottom: 0.5em !important;
 }
 
 /*******************************

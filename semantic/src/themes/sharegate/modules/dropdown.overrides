@@ -73,3 +73,7 @@
 .ui.dropdown .menu > .item > img {
     width: 24px;
 }
+
+.ui.floating.dropdown > .menu {
+  margin-bottom: @floatingMenuDistance !important;
+}
