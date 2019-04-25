@@ -26900,6 +26900,11 @@ select.ui.dropdown {
   margin-bottom: 0.5em !important;
 }
 
+.ui.floating.dropdown .menu > .menu {
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+}
+
 /*******************************
         User Overrides
 *******************************/
