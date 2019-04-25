@@ -77,3 +77,7 @@
 .ui.floating.dropdown > .menu {
   margin-bottom: @floatingMenuDistance !important;
 }
+
+.ui.floating.dropdown .menu > .menu {
+    box-shadow: none!important;
+}
