@@ -112,6 +112,12 @@ You should never do the followings:
 
 ### Publish
 
+#### Semantic Versioning
+
+Before you publish, make sure you understand [semantic versioning](https://semver.org/).
+
+#### Go
+
 First thing first... make sure you're logged in to NPM.
 
 If you're not, run the following command
