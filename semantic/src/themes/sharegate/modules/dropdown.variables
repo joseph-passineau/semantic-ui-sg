@@ -73,9 +73,9 @@
 @selectionVisibleBorderColor: @white;
 @selectionActiveHoverBorderColor: @white;
 @selectionActiveHoverBoxShadow: var(--shadow-4);
-@selectionFocusMenuBoxShadow: var(--shadow-4);
+@selectionFocusMenuBoxShadow: rgba(130, 138, 158, 0.32) 0px 12px 12px 0px;
 @selectionVisibleBoxShadow: var(--shadow-4);
-@selectionVisibleMenuBoxShadow: var(--shadow-4);
+@selectionVisibleMenuBoxShadow: rgba(130, 138, 158, 0.32) 0px 12px 12px 0px;
 @selectionFocusBorderColor: @white;
 @selectionFocusBoxShadow: var(--shadow-4);
 @selectionItemDivider: '';
