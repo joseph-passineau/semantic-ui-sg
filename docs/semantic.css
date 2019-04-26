@@ -1395,7 +1395,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   height: 1.5625em;
   line-height: 1.5625em;
   color: var(--black-40);
-  font-style: 300;
+  font-style: 400;
   font-weight: 500;
   -webkit-box-shadow: 0px 0px 0px 1px transparent inset;
   box-shadow: 0px 0px 0px 1px transparent inset;
@@ -5369,7 +5369,7 @@ i.flag:not(.icon):before {
 
 .ui.header .sub.header {
   display: block;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0em;
   margin: 0em;
   font-size: 1rem;
@@ -6173,7 +6173,7 @@ a.ui.inverted.grey.header:hover {
   font-family: 'Icons';
   src: "";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-variant: normal;
   text-decoration: inherit;
   text-transform: none;
@@ -6187,7 +6187,7 @@ i.icon {
   height: 1em;
   font-family: 'Icons';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: inherit;
   text-align: center;
   speak: none;
@@ -7149,7 +7149,7 @@ img.ui.bordered.image {
 
 .ui.input {
   position: relative;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -9178,6 +9178,12 @@ a.ui.basic.label:hover {
   margin-right: 8px!important;
 }
 
+.ui.circular.label {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .ui.label.icon {
   padding: 8px calc(1em/2) 8px 1em;
 }
@@ -9867,7 +9873,7 @@ ul.ui.list li:before,
   position: absolute;
   top: auto;
   left: auto;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: -1.25rem;
   content: '•';
   opacity: 1;
@@ -12582,7 +12588,7 @@ ol.ui.horizontal.list li:before,
 /* Description */
 
 .ui.steps .step .description {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.9375em;
   color: var(--jet-dark);
 }
@@ -16756,7 +16762,7 @@ ol.ui.horizontal.list li:before,
   margin: 1rem 0em;
   font-family: 'Calibre', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   background: #FFFFFF;
-  font-weight: 300;
+  font-weight: 400;
   border: 1px solid rgba(34, 36, 38, 0.15);
   -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
@@ -16824,7 +16830,7 @@ ol.ui.horizontal.list li:before,
   padding: 0.9375em 1.125em;
   text-transform: none;
   color: var(--jet-dark);
-  font-weight: 300;
+  font-weight: 400;
   -webkit-transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: background 0.1s ease, box-shadow 0.1s ease, color 0.1s ease;
@@ -16938,7 +16944,7 @@ ol.ui.horizontal.list li:before,
 .ui.vertical.menu .header.item {
   margin: 0em;
   background: '';
-  text-transform: 300;
+  text-transform: 400;
   font-weight: 500;
 }
 
@@ -16985,7 +16991,7 @@ ol.ui.horizontal.list li:before,
   background: transparent !important;
   color: var(--jet-dark) !important;
   text-transform: none !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   -webkit-transition: none !important;
@@ -17203,7 +17209,7 @@ ol.ui.horizontal.list li:before,
 .ui.menu .active.item {
   background: rgba(0, 0, 0, 0.05);
   color: var(--black-90);
-  font-weight: 300;
+  font-weight: 400;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -17903,7 +17909,7 @@ Floated Menu / Item
   align-self: center;
   margin: 0em 0em;
   padding: 0.3125em 0.4375em;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--black-60);
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
@@ -17993,7 +17999,7 @@ Floated Menu / Item
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--black-90);
 }
 
@@ -19697,8 +19703,8 @@ Floated Menu / Item
   color: var(--jet-dark);
   padding: 0.8125em 0.8125em;
   vertical-align: middle;
-  font-style: 300;
-  font-weight: 300;
+  font-style: 400;
+  font-weight: 400;
   text-transform: none;
 }
 
@@ -19874,7 +19880,7 @@ Floated Menu / Item
 .ui.definition.table thead:not(.full-width) th:first-child {
   pointer-events: none;
   background: transparent;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--black-40);
   -webkit-box-shadow: -1px -1px 0px 1px var(--white);
   box-shadow: -1px -1px 0px 1px var(--white);
@@ -19884,7 +19890,7 @@ Floated Menu / Item
   pointer-events: none;
   background: transparent;
   font-weight: var(--black-40);
-  color: 300;
+  color: 400;
   -webkit-box-shadow: 1px 1px 0px 1px var(--white);
   box-shadow: 1px 1px 0px 1px var(--white);
 }
@@ -20624,7 +20630,7 @@ Floated Menu / Item
 .ui.sortable.table thead th:after {
   display: none;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: inherit;
   content: '';
   height: 1em;
@@ -22701,9 +22707,9 @@ a.ui.card:hover,
 .ui.feed > .event > .content .date {
   margin: -0.5rem 0em 0em;
   padding: 0em;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1em;
-  font-style: 300;
+  font-style: 400;
   color: var(--black-40);
 }
 
@@ -22756,9 +22762,9 @@ a.ui.card:hover,
 .ui.feed > .event > .content .summary > .date {
   display: inline-block;
   float: none;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.875em;
-  font-style: 300;
+  font-style: 400;
   margin: 0em 0em 0em 0.5em;
   padding: 0em;
   color: var(--black-40);
@@ -23516,7 +23522,7 @@ a.ui.card:hover,
 .ui.statistic > .value {
   font-family: 'Calibre', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1em;
   color: var(--jet-dark);
   text-transform: uppercase;
@@ -25463,7 +25469,7 @@ body.dimmable > .dimmer {
 
 .ui.dropdown .menu > .message {
   padding: 0.75rem 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .ui.dropdown .menu > .message:not(.ui) {
@@ -25757,8 +25763,8 @@ select.ui.dropdown {
 
 .ui.selection.active.dropdown .menu {
   border-color: var(--white);
-  -webkit-box-shadow: var(--shadow-4);
-  box-shadow: var(--shadow-4);
+  -webkit-box-shadow: rgba(130, 138, 158, 0.32) 0px 12px 12px 0px;
+  box-shadow: rgba(130, 138, 158, 0.32) 0px 12px 12px 0px;
 }
 
 /* Focus */
@@ -25771,14 +25777,14 @@ select.ui.dropdown {
 
 .ui.selection.dropdown:focus .menu {
   border-color: var(--white);
-  -webkit-box-shadow: var(--shadow-4);
-  box-shadow: var(--shadow-4);
+  -webkit-box-shadow: rgba(130, 138, 158, 0.32) 0px 12px 12px 0px;
+  box-shadow: rgba(130, 138, 158, 0.32) 0px 12px 12px 0px;
 }
 
 /* Visible */
 
 .ui.selection.visible.dropdown > .text:not(.default) {
-  font-weight: 300;
+  font-weight: 400;
   color: var(--black-80);
 }
 
@@ -25792,8 +25798,8 @@ select.ui.dropdown {
 
 .ui.selection.active.dropdown:hover .menu {
   border-color: var(--white);
-  -webkit-box-shadow: var(--shadow-4);
-  box-shadow: var(--shadow-4);
+  -webkit-box-shadow: rgba(130, 138, 158, 0.32) 0px 12px 12px 0px;
+  box-shadow: rgba(130, 138, 158, 0.32) 0px 12px 12px 0px;
 }
 
 /* Dropdown Icon */
@@ -26906,6 +26912,10 @@ select.ui.dropdown {
   border-color: var(--white);
 }
 
+.ui.selection.dropdown.small {
+  padding: 0.4375em 1.975em 0.4375em 0.875em;
+}
+
 .ui.dropdown.selected,
 .ui.dropdown .menu .selected.item {
   font-weight: 400;
@@ -27951,8 +27961,8 @@ a.ui.nag {
   max-width: 250px;
   background: var(--white);
   padding: 1.5em 1.5em;
-  font-weight: 300;
-  font-style: 300;
+  font-weight: 400;
+  font-style: 400;
   color: var(--jet-dark);
   border-radius: 0.25rem;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
@@ -28030,8 +28040,8 @@ a.ui.nag {
   max-width: none;
   background: var(--white);
   padding: 1.5em 1.5em;
-  font-weight: 300;
-  font-style: 300;
+  font-weight: 400;
+  font-style: 400;
   color: var(--jet-dark);
   border-radius: 0.25rem;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
@@ -29384,7 +29394,7 @@ a.ui.nag {
   padding: 0em;
   margin: 0em;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
@@ -29579,7 +29589,7 @@ a.ui.nag {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   text-shadow: none;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.21428571em;
   padding: 0.58035714em 0.875em;
   font-size: 1em;
