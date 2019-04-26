@@ -63,6 +63,10 @@
     border-color: @white;
 }
 
+.ui.selection.dropdown.small {
+    padding: 0.4375em 1.975em 0.4375em 0.875em;
+}
+
 .ui.dropdown.selected, .ui.dropdown .menu .selected.item {
     font-weight: 400;
 }
