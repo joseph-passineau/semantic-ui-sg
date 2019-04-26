@@ -15,6 +15,10 @@
     margin-right: 8px!important;
 }
 
+.ui.circular.label {
+    justify-content: center;
+}
+
 .ui.label.icon {
   padding: 8px calc(@horizontalPadding/2) 8px @horizontalPadding;
 }
