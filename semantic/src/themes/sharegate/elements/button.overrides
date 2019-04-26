@@ -200,3 +200,26 @@ disabled.button.secondary,
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+// Inverted
+.ui.button.inverted {
+    background-color: @white;
+}
+
+.ui.inverted.primary.buttons .button,
+.ui.inverted.primary.button {
+     background-color: @white;
+     color: @primaryColor;
+}
+
+.ui.inverted.primary.buttons .active.button,
+.ui.inverted.primary.active.button {
+    color: @white;
+    background-color: @primaryColor;
+}
+
+.ui.inverted.primary.buttons .button:hover,
+.ui.inverted.primary.button:hover {
+    color: @white;
+    background-color: @primaryColor;
+}

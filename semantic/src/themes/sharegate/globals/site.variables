@@ -754,7 +754,6 @@
 @secondaryColorHover      : var(--cloud);
 @lightPrimaryColorHover   : @lightPrimaryColor;
 @lightSecondaryColorHover : @lightSecondaryColor;
-@white                    : var(--white);
 
 @redHover                 : @red;
 @orangeHover              : @orange;

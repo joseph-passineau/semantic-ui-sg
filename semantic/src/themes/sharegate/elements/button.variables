@@ -82,6 +82,12 @@
 /* Labeled Icon */
 
 /* Inverted */
+@invertedBorderSize: 0;
+@invertedTextColor: @black;
+@invertedTextHoverColor: @jetDark;
+@invertedGroupButtonOffset: 0px 0px 0px -(@invertedBorderSize);
+@invertedVerticalGroupButtonOffset: 0px 0px -(@invertedBorderSize) 0px;
+
 
 /* Basic */
 @basicBackground: transparent none;
@@ -124,9 +130,13 @@
 /* Colored */
 
 /* Inverted */
-@secondaryTextColor: @jetDark;
 
 /* Ordinality */
+
+@primaryTextColor: @white;
+@secondaryTextColor: @jetDark;
+@positiveTextColor: @white;
+@negativeTextColor: @white;
 
 /* Compact */
 
