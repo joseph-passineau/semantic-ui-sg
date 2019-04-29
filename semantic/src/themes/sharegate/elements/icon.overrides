@@ -38,6 +38,11 @@ i.icon.search:before {
     background: url("@{iconsPath}/magnifier.svg") center center no-repeat !important;
 }
 
+.ui.disabled i.icon.search:before {
+    background: url("@{iconsPath}/magnifier-disabled.svg") center center no-repeat !important;
+}
+
+
 // Handshake icon
 i.icon.handshake {
     height: 16px;

@@ -219,7 +219,13 @@ disabled.button.secondary,
 }
 
 .ui.inverted.primary.buttons .button:hover,
-.ui.inverted.primary.button:hover {
+.ui.inverted.primary.button:hover,
+.ui.inverted.primary.buttons .button:focus,
+.ui.inverted.primary.button:focus,
+.ui.inverted.primary.buttons .button.active,
+.ui.inverted.primary.button.active,
+.ui.inverted.primary.buttons .button:active,
+.ui.inverted.primary.button:active {
     color: @white;
     background-color: @primaryColor;
 }

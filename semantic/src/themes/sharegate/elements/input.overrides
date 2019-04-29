@@ -15,10 +15,15 @@ form input {
     height: 48px;
 }
 
-.ui.disabled.input,
-.ui.input:not(.disabled) input[disabled] {
+.ui.input:not(.disabled) input[disabled],
+.ui.disabled.input > input {
     border-color: @cloudLight;
     background-color: @cloudLight;
+}
+
+.ui.input:not(.disabled) input[disabled] > input::-webkit-input-placeholder,
+.ui.disabled.input input::-webkit-input-placeholder {
+    color: @cloudDark;
 }
 
 // Success Variation

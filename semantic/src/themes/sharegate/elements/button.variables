@@ -135,6 +135,7 @@
 
 @primaryTextColor: @white;
 @secondaryTextColor: @jetDark;
+@secondaryColorFocus: @cloud;
 @positiveTextColor: @white;
 @negativeTextColor: @white;
 
