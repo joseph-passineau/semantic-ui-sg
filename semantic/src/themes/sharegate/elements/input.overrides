@@ -22,7 +22,9 @@ form input {
 }
 
 .ui.input:not(.disabled) input[disabled] > input::-webkit-input-placeholder,
-.ui.disabled.input input::-webkit-input-placeholder {
+.ui.disabled.input input::-webkit-input-placeholder,
+.ui.input:not(.disabled) input[disabled] > input ,
+.ui.disabled.input input {
     color: @cloudDark;
 }
 
