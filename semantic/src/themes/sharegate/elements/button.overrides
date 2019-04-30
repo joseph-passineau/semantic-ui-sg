@@ -150,6 +150,10 @@ disabled.button.secondary,
     fill: var(--jet-dark);
 }
 
+.ui.button.transparent.primary svg {
+    fill: var(--primary);
+}
+
 .ui.button.basic.primary svg {
     fill: var(--primary);
 }
@@ -184,6 +188,12 @@ disabled.button.secondary,
 .ui.button.transparent.active svg,
 .ui.button.transparent:focus svg {
     fill: var(--jet-dark);
+}
+
+.ui.button.transparent.primary:hover svg,
+.ui.button.transparent.primary.active svg,
+.ui.button.transparent.primary:focus svg {
+    fill: var(--primary);
 }
 
 .ui.loading.button:before,
