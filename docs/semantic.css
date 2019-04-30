@@ -4192,7 +4192,7 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 
 .ui.secondary.buttons .button:focus,
 .ui.secondary.button:focus {
-  background-color: var(--cloud-light);
+  background-color: var(--cloud);
   color: var(--jet-dark);
   text-shadow: none;
 }
@@ -4233,8 +4233,8 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .ui.basic.secondary.buttons .button:focus,
 .ui.basic.secondary.button:focus {
   background: transparent !important;
-  -webkit-box-shadow: 0px 0px 0px 2px var(--cloud-light) inset !important;
-  box-shadow: 0px 0px 0px 2px var(--cloud-light) inset !important;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--cloud) inset !important;
+  box-shadow: 0px 0px 0px 2px var(--cloud) inset !important;
   color: var(--cloud) !important;
 }
 
@@ -4789,6 +4789,10 @@ disabled.button.secondary,
   fill: var(--jet-dark);
 }
 
+.ui.button.transparent.primary svg {
+  fill: var(--primary);
+}
+
 .ui.button.basic.primary svg {
   fill: var(--primary);
 }
@@ -4823,6 +4827,12 @@ disabled.button.secondary,
 .ui.button.transparent.active svg,
 .ui.button.transparent:focus svg {
   fill: var(--jet-dark);
+}
+
+.ui.button.transparent.primary:hover svg,
+.ui.button.transparent.primary.active svg,
+.ui.button.transparent.primary:focus svg {
+  fill: var(--primary);
 }
 
 .ui.loading.button:before,
@@ -4861,7 +4871,13 @@ disabled.button.secondary,
 }
 
 .ui.inverted.primary.buttons .button:hover,
-.ui.inverted.primary.button:hover {
+.ui.inverted.primary.button:hover,
+.ui.inverted.primary.buttons .button:focus,
+.ui.inverted.primary.button:focus,
+.ui.inverted.primary.buttons .button.active,
+.ui.inverted.primary.button.active,
+.ui.inverted.primary.buttons .button:active,
+.ui.inverted.primary.button:active {
   color: var(--white);
   background-color: var(--primary);
 }
@@ -6769,6 +6785,10 @@ i.icon.search:before {
   background: url("themes/sharegate/assets/icons/magnifier.svg") center center no-repeat !important;
 }
 
+.ui.disabled i.icon.search:before {
+  background: url("themes/sharegate/assets/icons/magnifier-disabled.svg") center center no-repeat !important;
+}
+
 i.icon.handshake {
   height: 16px;
   width: 24px;
@@ -7710,10 +7730,17 @@ form input {
   height: 48px;
 }
 
-.ui.disabled.input,
-.ui.input:not(.disabled) input[disabled] {
+.ui.input:not(.disabled) input[disabled],
+.ui.disabled.input > input {
   border-color: var(--cloud-light);
   background-color: var(--cloud-light);
+}
+
+.ui.input:not(.disabled) input[disabled] > input::-webkit-input-placeholder,
+.ui.disabled.input input::-webkit-input-placeholder,
+.ui.input:not(.disabled) input[disabled] > input,
+.ui.disabled.input input {
+  color: var(--cloud-dark);
 }
 
 .ui.input.success input {
