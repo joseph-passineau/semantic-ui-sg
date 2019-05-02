@@ -102,17 +102,17 @@
 }
 .ui.large.labels .label,
 .ui.large.label {
-  font-size: @large;
+  font-size: 1.5rem;
 }
 .ui.big.labels .label,
 .ui.big.label {
-  font-size: @big;
+  font-size: 1.75rem;
 }
 .ui.huge.labels .label,
 .ui.huge.label {
-  font-size: @huge;
+  font-size: 2rem;
 }
 .ui.massive.labels .label,
 .ui.massive.label {
-  font-size: @massive;
+  font-size: 2.5rem;
 }
