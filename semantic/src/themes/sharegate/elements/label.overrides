@@ -2,8 +2,8 @@
          Site Overrides
 *******************************/
 
-.ui.empty.circular.labels .label,
-.ui.empty.circular.label {
+.ui.empty.circular.labels .label.mini,
+.ui.empty.circular.label.mini {
     font-size: 0.5rem;
 }
 
@@ -70,14 +70,49 @@
     align-items: center;
 }
 
-.ui.label.large {
+.ui.label.large:not(.circular) {
     min-height: 48px
 }
 
-.ui.label {
+.ui.label:not(.circular) {
     min-height: 40px
 }
 
-.ui.label.small {
+.ui.label.small:not(.circular) {
     min-height: 32px
+}
+
+/* Circular Labels */
+
+.ui.mini.labels .label,
+.ui.mini.label {
+  font-size: 0.5rem;
+}
+.ui.tiny.labels .label,
+.ui.tiny.label {
+  font-size: 0.75rem;
+}
+.ui.small.labels .label,
+.ui.small.label {
+  font-size: 1rem;
+}
+.ui.labels .label,
+.ui.label {
+  font-size: 1.25rem;
+}
+.ui.large.labels .label,
+.ui.large.label {
+  font-size: @large;
+}
+.ui.big.labels .label,
+.ui.big.label {
+  font-size: @big;
+}
+.ui.huge.labels .label,
+.ui.huge.label {
+  font-size: @huge;
+}
+.ui.massive.labels .label,
+.ui.massive.label {
+  font-size: @massive;
 }

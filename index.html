@@ -43,6 +43,20 @@
         pre {
             display: none;
         }
+        .debugg {
+            position: relative;
+            outline: 1px solid pink!important;
+        }
+        .debugg::before {
+            content: attr(data-height);
+            top: -16px;
+            position: absolute;
+            z-index: 12;
+            font-size: 12px;
+            background: pink;
+            padding: 0;
+            line-height: 1;
+        }
     </style>
 </head>
 <body>
@@ -53,10 +67,9 @@
             <div class="flex">
                 <h3 class="ma0 pv1 pointer ph2 br4 jet mr2 ba b--jet hover-bg-overcast theme-overcast">Overcast</h3>
                 <h3 class="ma0 pv1 pointer ph2 br4 jet mr2 ba b--jet hover-bg-apricot theme-apricot">Apricot</h3>
-                <h3 class="ma0 pv1 pointer ph2 br4 jet mr2 ba b--jet hover-bg-jet theme-marketing">Marketing</h3>
-                <h3 class="ma0 pv1 pointer ph2 br4 jet mr2 ba b--jet hover-bg-desktop hover-white theme-desktop">Desktop</h3>
             </div>
             <div class="flex">
+                <h3 class="ma0 pv1 pointer ph2 br4 jet mr2 ba b--jet debugger">Debug Mode</h3>
                 <h3 class="ma0 pv1 pointer ph2 br4 theme-light bg-white jet">Light</h3>
                 <h3 class="ma0 pv1 pointer ph2 br4 mr2 theme-dark bg-jet white">Dark</h3>
             </div>
@@ -1077,8 +1090,15 @@
                 </div>
             </div>
         </div>
-        <h3 class="ma0 pa0 mb2 mt8">Circular</h3>
-        <div class="ui circular label">23</div>
+        <div class="flex items-center mt3 justify-between w-30">
+            <div class="ui circular mini label">23</div>
+            <div class="ui circular tiny label">12</div>
+            <div class="ui circular small label">42</div>
+            <div class="ui circular medium label">83</div>
+            <div class="ui circular label large">99</div>
+            <div class="ui circular label huge">99</div>
+            <div class="ui circular label massive">99</div>
+        </div>
         <h3 class="ma0 pa0 mb2 mt8">Empty</h3>
         <div class="ui circular red empty mini label"></div>
         <h3 class="ma0 pa0 mb2 mt8">Basic</h3>
@@ -1471,18 +1491,6 @@
             root.style.setProperty('--primary-lightest', 'var(--apricot-lightest)');
             root.style.setProperty('--primary-light', 'var(--apricot-light)');
         });
-        marketing.addEventListener('click', () => {
-            root.style.setProperty('--primary', 'var(--jet)');
-            root.style.setProperty('--primary-dark', 'var(--jet-dark)');
-            root.style.setProperty('--primary-lightest', 'var(--jet-lightest)');
-            root.style.setProperty('--primary-light', 'var(--jet-light)');
-        });
-        desktop.addEventListener('click', () => {
-            root.style.setProperty('--primary', 'var(--desktop)');
-            root.style.setProperty('--primary-dark', 'var(--desktop-dark)');
-            root.style.setProperty('--primary-lightest', 'var(--desktop-lightest)');
-            root.style.setProperty('--primary-light', 'var(--desktop-light)');
-        });
         dark.addEventListener('click', () => {
             root.style.setProperty('--white', '#24242a');
             root.style.setProperty('--jet', '#FFF');
@@ -1560,7 +1568,13 @@
             .search({
                 source: content
             });
-
+            $(".debugger").click(function() {
+                $(".ui").toggleClass("debugg");
+                $(".ui").each(function (index) {
+                    var height = $(this).outerHeight();
+                    $(this).attr('data-height', height + "px");
+                });
+            });
     </script>
 </body>
 </html>
