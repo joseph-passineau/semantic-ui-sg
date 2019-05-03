@@ -4671,20 +4671,18 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   color: var(--jet-dark);
 }
 
-.ui.ghost.button {
-  background-color: transparent;
-  border: none;
-  color: var(--jet-dark);
-}
+/* Ghost hover */
 
 .ui.ghost.buttons .button:hover,
 .ui.ghost.button:hover,
 .ui.ghost.button:focus,
 .ui.ghost.button.active {
-  background-color: transparent;
+  background-color: var(--cloud-light);
   border: none;
-  color: var(--cloud-darkest);
+  color: var(--jet-dark);
 }
+
+/* Ghost disabled */
 
 .ui.buttons .disabled.button.ghost,
 .ui.disabled.button.ghost,
@@ -4696,6 +4694,14 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
   color: var(--cloud-darkest);
   cursor: pointer;
 }
+
+/* Ghost Primary */
+
+.ui.ghost.primary.button {
+  color: var(--primary);
+}
+
+/* Disabled */
 
 .ui.buttons .disabled.button,
 .ui.disabled.button,
@@ -4724,19 +4730,19 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 .ui.disabled.primary.active.button {
   background-color: var(--primary-light) !important;
   color: var(--white) !important;
-  -webkit-box-shadow: 0px 0px 0px 2px var(--primary-light) inset !important;
-  box-shadow: 0px 0px 0px 2px var(--primary-light) inset !important;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--primary-light) inset;
+  box-shadow: 0px 0px 0px 2px var(--primary-light) inset;
 }
 
-disabled.button.secondary,
+.ui.disabled.button.secondary,
 .ui.disabled.button.secondary,
 .ui.button.secondary:disabled,
 .ui.disabled.button.secondary:hover,
 .ui.disabled.secondary.active.button {
   background-color: var(--cloud-lightest) !important;
   color: var(--cloud-dark) !important;
-  -webkit-box-shadow: 0px 0px 0px 2px var(--cloud-lightest) inset !important;
-  box-shadow: 0px 0px 0px 2px var(--cloud-lightest) inset !important;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--cloud-lightest) inset;
+  box-shadow: 0px 0px 0px 2px var(--cloud-lightest) inset;
 }
 
 .ui.buttons .disabled.button.basic.primary,
@@ -4750,20 +4756,34 @@ disabled.button.secondary,
   box-shadow: 0px 0px 0px 2px var(--primary-light) inset !important;
 }
 
+/* Ghost Primary Disabled */
+
+.ui.buttons .disabled.button.ghost.primary,
+.ui.disabled.button.ghost.primary,
+.ui.button.ghost.primary:disabled,
+.ui.disabled.button.ghost.primary:hover,
+.ui.disabled.ghost.primary.active.button {
+  background-color: transparent!important;
+  border: none!important;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+  color: var(--primary-light) !important;
+}
+
 .ui.basic.primary.buttons .button:hover,
 .ui.basic.primary.button:hover,
 .ui.basic.primary.button:focus {
-  background: var(--primary) !important;
-  -webkit-box-shadow: 0px 0px 0px 2px var(--primary) inset !important;
-  box-shadow: 0px 0px 0px 2px var(--primary) inset !important;
+  background: var(--primary-dark) !important;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--primary-dark) inset;
+  box-shadow: 0px 0px 0px 2px var(--primary-dark) inset;
   color: var(--white) !important;
 }
 
 .ui.basic.primary.buttons .active.button,
 .ui.basic.primary.active.button {
-  background: var(--primary) !important;
-  -webkit-box-shadow: 0px 0px 0px 2px var(--primary) inset !important;
-  box-shadow: 0px 0px 0px 2px var(--primary) inset !important;
+  background: var(--primary-dark) !important;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--primary-dark) inset;
+  box-shadow: 0px 0px 0px 2px var(--primary-dark) inset;
   color: var(--white) !important;
 }
 
@@ -9191,8 +9211,8 @@ a.ui.basic.label:hover {
          Site Overrides
 *******************************/
 
-.ui.empty.circular.labels .label,
-.ui.empty.circular.label {
+.ui.empty.circular.labels .label.mini,
+.ui.empty.circular.label.mini {
   font-size: 0.5rem;
 }
 
@@ -9266,16 +9286,58 @@ a.ui.basic.label:hover {
   align-items: center;
 }
 
-.ui.label.large {
+.ui.label.large:not(.circular) {
   min-height: 48px;
 }
 
-.ui.label {
+.ui.label:not(.circular) {
   min-height: 40px;
 }
 
-.ui.label.small {
+.ui.label.small:not(.circular) {
   min-height: 32px;
+}
+
+/* Circular Labels */
+
+.ui.mini.labels .label,
+.ui.mini.label {
+  font-size: 0.5rem;
+}
+
+.ui.tiny.labels .label,
+.ui.tiny.label {
+  font-size: 0.75rem;
+}
+
+.ui.small.labels .label,
+.ui.small.label {
+  font-size: 1rem;
+}
+
+.ui.labels .label,
+.ui.label {
+  font-size: 1.25rem;
+}
+
+.ui.large.labels .label,
+.ui.large.label {
+  font-size: 1.5rem;
+}
+
+.ui.big.labels .label,
+.ui.big.label {
+  font-size: 1.75rem;
+}
+
+.ui.huge.labels .label,
+.ui.huge.label {
+  font-size: 2rem;
+}
+
+.ui.massive.labels .label,
+.ui.massive.label {
+  font-size: 2.5rem;
 }
 
 /*******************************
