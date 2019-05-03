@@ -31,28 +31,24 @@
     border: none;
 }
 
-// ghost button - takes the same size of common buttons but doesn't have a background
+// ghost button - takes the same size of common buttons but doesnt have a background when not hovered
 .ui.ghost.button {
     background-color: transparent;
     border: none;
     color: @jetDark;
 }
 
-.ui.ghost.button {
-    background-color: transparent;
-    border: none;
-    color: @jetDark;
-}
-
+/* Ghost hover */
 .ui.ghost.buttons .button:hover,
 .ui.ghost.button:hover,
 .ui.ghost.button:focus,
 .ui.ghost.button.active {
-    background-color: transparent;
+    background-color: @cloudLight;
     border: none;
-    color: @cloudDarkest;
+    color: @jetDark;
 }
 
+/* Ghost disabled */
 .ui.buttons .disabled.button.ghost,
 .ui.disabled.button.ghost,
 .ui.button.ghost:disabled,
@@ -64,6 +60,12 @@
     cursor: pointer;
 }
 
+/* Ghost Primary */
+.ui.ghost.primary.button {
+    color: @primaryColor;
+}
+
+/* Disabled */
 .ui.buttons .disabled.button,
 .ui.disabled.button,
 .ui.button:disabled,
@@ -90,17 +92,17 @@
 .ui.disabled.primary.active.button {
     background-color: @primaryColorLight!important;
     color: @white!important;
-    box-shadow: 0px 0px 0px @basicBorderSize @primaryColorLight inset!important;
+    box-shadow: 0px 0px 0px @basicBorderSize @primaryColorLight inset;
 }
 
-disabled.button.secondary,
+.ui.disabled.button.secondary,
 .ui.disabled.button.secondary,
 .ui.button.secondary:disabled,
 .ui.disabled.button.secondary:hover,
 .ui.disabled.secondary.active.button {
     background-color: @secondaryColorLight!important;
     color: @cloudDark!important;
-    box-shadow: 0px 0px 0px @basicBorderSize @secondaryColorLight inset!important;
+    box-shadow: 0px 0px 0px @basicBorderSize @secondaryColorLight inset;
 }
 
 .ui.buttons .disabled.button.basic.primary,
@@ -113,18 +115,30 @@ disabled.button.secondary,
     box-shadow: 0px 0px 0px @basicBorderSize @primaryColorLight inset!important;
 }
 
+/* Ghost Primary Disabled */
+.ui.buttons .disabled.button.ghost.primary,
+.ui.disabled.button.ghost.primary,
+.ui.button.ghost.primary:disabled,
+.ui.disabled.button.ghost.primary:hover,
+.ui.disabled.ghost.primary.active.button {
+    background-color: transparent!important;
+    border: none!important;
+    box-shadow: 0;
+    color: @primaryColorLight!important;
+}
+
 .ui.basic.primary.buttons .button:hover,
 .ui.basic.primary.button:hover,
 .ui.basic.primary.button:focus {
-    background: @primaryColor !important;
-    box-shadow: 0px 0px 0px @basicColoredBorderSize @primaryColor inset !important;
+    background: @primaryColorDark !important;
+    box-shadow: 0px 0px 0px @basicColoredBorderSize @primaryColorDark inset ;
     color: @white !important;
 }
 
 .ui.basic.primary.buttons .active.button,
 .ui.basic.primary.active.button {
-    background: @primaryColor !important;
-    box-shadow: 0px 0px 0px @basicColoredBorderSize @primaryColor inset !important;
+    background: @primaryColorDark !important;
+    box-shadow: 0px 0px 0px @basicColoredBorderSize @primaryColorDark inset ;
     color: @white !important;
 }
 
