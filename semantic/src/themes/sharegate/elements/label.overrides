@@ -84,35 +84,35 @@
 
 /* Circular Labels */
 
-.ui.mini.labels .label,
-.ui.mini.label {
+.ui.circular.mini.labels .label,
+.ui.circular.mini.label {
   font-size: 0.5rem;
 }
-.ui.tiny.labels .label,
-.ui.tiny.label {
+.ui.circular.tiny.labels .label,
+.ui.circular.tiny.label {
   font-size: 0.75rem;
 }
-.ui.small.labels .label,
-.ui.small.label {
+.ui.circular.small.labels .label,
+.ui.circular.small.label {
   font-size: 1rem;
 }
-.ui.labels .label,
-.ui.label {
+.ui.circular.labels .label,
+.ui.circular.label {
   font-size: 1.25rem;
 }
-.ui.large.labels .label,
-.ui.large.label {
+.ui.circular.large.labels .label,
+.ui.circular.large.label {
   font-size: 1.5rem;
 }
-.ui.big.labels .label,
-.ui.big.label {
+.ui.circular.big.labels .label,
+.ui.circular.big.label {
   font-size: 1.75rem;
 }
-.ui.huge.labels .label,
-.ui.huge.label {
+.ui.circular.huge.labels .label,
+.ui.circular.huge.label {
   font-size: 2rem;
 }
-.ui.massive.labels .label,
-.ui.massive.label {
+.ui.circular.massive.labels .label,
+.ui.circular.massive.label {
   font-size: 2.5rem;
 }
