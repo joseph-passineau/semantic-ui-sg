@@ -21,6 +21,13 @@
     background-color: @primaryColor;
 }
 
+// Toggle
+// Semantic wants a very high toggle but we don't let's position this
+.ui.toggle.checkbox .box:after,
+.ui.toggle.checkbox label:after {
+    top: 3px;
+}
+
 .ui.toggle.disabled label::before,
 .ui.toggle.disabled label:hover::before,
 .ui.toggle.disabled label:focus::before,
@@ -39,7 +46,6 @@
     background-color: @primaryColorLightest!important;
 }
 
-		
 .ui.slider.checkbox .box:after,
 .ui.slider.checkbox label:after {
     background: @white;
@@ -59,6 +65,3 @@
 .ui.slider.checkbox {
     padding-left: @toggleHandleSize;
 }
-
-
-// sorry for the !important it's how semantic is set

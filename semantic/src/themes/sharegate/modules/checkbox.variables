@@ -125,7 +125,7 @@
 
 @toggleLabelDistance: @toggleLaneWidth;
 @toggleLabelLineHeight: 1.5rem;
-@toggleLabelOffset: 0.15em;
+@toggleLabelOffset: 0;
 
 
 @toggleFocusColor: @cloudDark;
