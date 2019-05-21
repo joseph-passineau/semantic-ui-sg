@@ -253,3 +253,14 @@
     color: @white;
     background-color: @primaryColor;
 }
+
+// 
+.ui.basic.buttons .button.icon:active,
+.ui.basic.button.icon:active {
+    background-color: @jetDark!important;
+}
+
+.ui.basic.buttons .button.icon:active svg,
+.ui.basic.button.icon:active svg{
+    fill: @white!important;
+}
