@@ -18,6 +18,6 @@
 --------------------*/
 
 @backgroundColor: @lightGrey;
-@color: @jetDark;
+@color: @marineDark;
 @basicBorder: @basicBorderWidth solid @borderColor;
 @mini : 6px;

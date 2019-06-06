@@ -1,9 +1,9 @@
 /*******************************
     User Variable Overrides
 *******************************/
-@selectedTextColor: @jetDark;
-@hoveredItemColor: @jetDark;
-@itemColor: @jetDark;
+@selectedTextColor: @marineDark;
+@hoveredItemColor: @marineDark;
+@itemColor: @marineDark;
 
 /*******************************
             Dropdown
@@ -69,7 +69,7 @@
 @selectionMenuBoxShadow: var(--shadow-4);
 @selectionMinHeight: 2.5em;
 @selectionBorder: 1px solid @cloud;
-@selectionHoverBorderColor: @jetDark;
+@selectionHoverBorderColor: @marineDark;
 @selectionVisibleBorderColor: @white;
 @selectionActiveHoverBorderColor: @white;
 @selectionActiveHoverBoxShadow: var(--shadow-4);

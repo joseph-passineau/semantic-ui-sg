@@ -45,7 +45,7 @@
 
 /* Focus */
 @promptFocusBackground: @promptBackground;
-@promptFocusBorderColor: @jetDark;
+@promptFocusBorderColor: @marineDark;
 
 /* Hover */
 

@@ -37,12 +37,12 @@
     Brand Colors
 --------------------*/
 
-@primaryColor           :  var(--primary);
-@primaryColorLightest   :  var(--primary-lightest);
-@primaryColorDark       :  var(--primary-dark);
-@primaryColorLight      :  var(--primary-light);
-@secondaryColor         :  var(--cloud-light);
-@secondaryColorLight    :  var(--cloud-lightest);
+@primaryColorLightest   :  var(--primary-50);
+@primaryColorLight      :  var(--primary-200);
+@primaryColor           :  var(--primary-500);
+@primaryColorDark       :  var(--primary-600);
+@secondaryColorLight    :  var(--cloud-50);
+@secondaryColor         :  var(--cloud-200);
 
 
 /*--------------
@@ -80,10 +80,10 @@
     Focused Input
 --------------------*/
 /* Used on inputs, textarea etc */
-@focusedFormBorderColor: @jetDark;
+@focusedFormBorderColor: @marineDark;
 
 /* Used on dropdowns, other larger blocks */
-@focusedFormMutedBorderColor: @jetDark; // weird behaviour with dropdown select might me the cause here
+@focusedFormMutedBorderColor: @marineDark; // weird behaviour with dropdown select might me the cause here
 
 /*-------------------
         Sizes
@@ -112,7 +112,7 @@
 @pageOverflowX       : hidden;
 
 @lineHeight          : 1.4285em;
-@textColor           : @jetDark;
+@textColor           : @marineDark;
 
 /*-------------------
       Paragraph
@@ -207,27 +207,25 @@
 --------------------*/
 
 /*---  SG Colors  ---*/
-/*---  Jet  ---*/
-@jet: var(--jet);
-@jetDarkest: var(--jet-darkest);
-@jetDark: var(--jet-dark);
+/*---  marine  ---*/
+@marineLightest: var(--marine-50);
+@marineLight: var(--marine-200);
+@marine: var(--marine-500);
+@marineDark: var(--marine-600);
+@marineDarkest: var(--marine-900);
 
 /*--- Success --*/
-@success: var(--success);
+@success: var(--success-500);
 
 /*--- Alert--*/
-@alert: var(--alert);
+@alert: var(--alert-500);
 
 /*--- Cloud--*/
-@cloudLightest: var(--cloud-lightest);
-@cloudLight: var(--cloud-light);
-@cloud: var(--cloud);
-@cloudDark: var(--cloud-dark);
-@cloudDarkest: var(--cloud-darkest);
-
-/*--- Marine --**/
-@marineLightest: var(--marine-lightest);
-@marineLight: var(--marine-light);
+@cloudLightest: var(--cloud-50);
+@cloudLight: var(--cloud-100);
+@cloud: var(--cloud-200);
+@cloudDark: var(--cloud-400);
+@cloudDarkest: var(--cloud-900);
 
 /*---  Colors  ---*/
 @red              : #DB2828;
@@ -242,7 +240,7 @@
 @pink             : #E03997;
 @brown            : #A5673F;
 @grey             : #767676;
-@black            : var(--jet-dark);
+@black            : @marineDarkest;
 
 /*---  Light Colors  ---*/
 @lightRed         : #FF695E; // todo
@@ -257,7 +255,7 @@
 @lightPink        : #FF8EDF; // todo
 @lightBrown       : #D67C1C; // todo
 @lightGrey        : #EDF0F2; // cloud light
-@lightBlack       : #24242A; // jet dark light
+@lightBlack       : #24242A; // marine dark light
 
 /*--- Darkest Colors ---*/
 @darkestRed         : #FF695E; // todo
@@ -272,7 +270,7 @@
 @darkestPink        : #FF8EDF; // todo
 @darkestBrown       : #D67C1C; // todo
 @darkestGrey        : #EDF0F2; // cloud darkest
-@darkestBlack       : #24242A; // jet dark darkest
+@darkestBlack       : #24242A; // marine dark darkest
 
 /*---   Neutrals  ---*/
 @fullBlack        : var(--black);
@@ -381,8 +379,8 @@
 /* Negative */
 @negativeColor           : @alert;
 @negativeBackgroundColor : transparent;
-@negativeBorderColor     : var(--alert-dark);
-@negativeHeaderColor     : var(--alert-darkest);
+@negativeBorderColor     : var(--alert-800);
+@negativeHeaderColor     : var(--alert-900);
 @negativeTextColor       : @textColor;
 
 /* Info */
@@ -750,8 +748,8 @@
 ;
 
 /*---  Colors  ---*/
-@primaryColorHover        : var(--primary-dark);
-@secondaryColorHover      : var(--cloud);
+@primaryColorHover        : var(--primary-600);
+@secondaryColorHover      : var(--cloud-200);
 @lightPrimaryColorHover   : @lightPrimaryColor;
 @lightSecondaryColorHover : @lightSecondaryColor;
 

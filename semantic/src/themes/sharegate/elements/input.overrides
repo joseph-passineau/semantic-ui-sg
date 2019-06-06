@@ -34,7 +34,7 @@ form input {
 }
 
 .ui.input.success svg {
-    fill: var(--success);
+    fill: var(--success-500);
 }
 
 // center the loading pseudo element on inputs

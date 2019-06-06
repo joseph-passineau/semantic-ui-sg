@@ -35,7 +35,7 @@
 .ui.ghost.button {
     background-color: transparent;
     border: none;
-    color: @jetDark;
+    color: @marineDark;
 }
 
 /* Ghost hover */
@@ -45,7 +45,7 @@
 .ui.ghost.button.active {
     background-color: @cloudLight;
     border: none;
-    color: @jetDark;
+    color: @marineDark;
 }
 
 /* Ghost disabled */
@@ -149,65 +149,65 @@
 }
 
 .ui.button svg {
-    fill: var(--white);
+    fill: @white;
 }
 
 .ui.button.secondary svg {
-    fill: var(--jet-dark);
+    fill: @marineDark;
 }
 
 .ui.button.basic svg {
-    fill: var(--jet-dark);
+    fill: @marineDark;
 }
 
 .ui.button.transparent svg {
-    fill: var(--jet-dark);
+    fill: @marineDark;
 }
 
 .ui.button.transparent.primary svg {
-    fill: var(--primary);
+    fill: @primaryColor;
 }
 
 .ui.button.basic.primary svg {
-    fill: var(--primary);
+    fill: @primaryColor;
 }
 
 .ui.button.disabled svg,
 .ui.button:disabled svg {
-    fill: var(--cloud-dark);
+    fill: @cloudDark;
 }
 
 .ui.button.primary.disabled svg,
 .ui.button.primary:disabled svg {
-    fill: var(--white);
+    fill: @white;
 }
 
 .ui.button.basic.primary.disabled svg,
 .ui.button.basic.primary:disabled svg {
-    fill: var(--primary-light);
+    fill: @primaryColorLight;
 }
 
 .ui.button.icon:hover svg,
 .ui.button.icon:focus svg {
-    fill: var(--white);
+    fill: @white;
 }
 
 .ui.button.basic:hover svg,
 .ui.button.basic.active svg,
 .ui.button.basic:focus svg {
-    fill: var(--white);
+    fill: @white;
 }
 
 .ui.button.transparent:hover svg,
 .ui.button.transparent.active svg,
 .ui.button.transparent:focus svg {
-    fill: var(--jet-dark);
+    fill: @marineDark;
 }
 
 .ui.button.transparent.primary:hover svg,
 .ui.button.transparent.primary.active svg,
 .ui.button.transparent.primary:focus svg {
-    fill: var(--primary);
+    fill: @primaryColor;
 }
 
 .ui.loading.button:before,
@@ -257,7 +257,7 @@
 // 
 .ui.basic.buttons .button.icon:active,
 .ui.basic.button.icon:active {
-    background-color: @jetDark!important;
+    background-color: @marineDark!important;
 }
 
 .ui.basic.buttons .button.icon:active svg,
