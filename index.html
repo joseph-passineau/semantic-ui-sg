@@ -61,7 +61,7 @@
 </head>
 <body>
     <div class="mw8 mt4 center">
-        <h1 class="ma0 pa0 flex items-center marine">Semantic UI React</h1>
+        <h1 class="ma0 pa0 flex items-center marine">Semantic UI React 4.0</h1>
         <a href="https://react.semantic-ui.com" target="_blank" class="f5">https://react.semantic-ui.com</a>
         <diV class="flex mt3 justify-between">
             <div class="flex">
@@ -69,12 +69,12 @@
                 <h3 class="ma0 pv1 pointer ph2 br4 marine mr2 ba b--marine hover-bg-apricot-500 theme-apricot">Apricot</h3>
             </div>
             <div class="flex">
-                <h3 class="ma0 pv1 pointer ph2 br4 marine mr2 ba b--marine debugger">Debug Mode</h3>
-                <h3 class="ma0 pv1 pointer ph2 br4 theme-light bg-white marine">Light</h3>
-                <h3 class="ma0 pv1 pointer ph2 br4 mr2 theme-dark bg-marine white">Dark</h3>
+                <h3 class="ma0 pv1 pointer ph2 br4 marine-500 mr2 ba b--marine-500 debugger">Debug Mode</h3>
+                <h3 class="ma0 pv1 pointer ph2 br4 theme-light bg-white marine-500">Light</h3>
+                <h3 class="ma0 pv1 pointer ph2 br4 mr2 theme-dark bg-marine-500 white">Dark</h3>
             </div>
         </diV>
-        <p class="ma0 pa0 mt6 f5 fw3 lh-solid marine"><strong>Semantic UI</strong> should be used when you need complex controls(inputs, buttons, loading animations, etc). <strong>Pitfalls: </strong><em>Modals are not part of this since Apricot Modals are too specific. </em></p>
+        <p class="ma0 pa0 mt6 f5 fw3 lh-solid marine-500"><strong>Semantic UI</strong> should be used when you need complex controls(inputs, buttons, loading animations, etc). <strong>Pitfalls: </strong><em>Modals are not part of this since Apricot Modals are too specific. </em></p>
         <div class="flex items-center mt8">
             <h2 class="marine ma0 pa0 fw6 f3">Button</h2>
             <div class="ml2 w4">
@@ -1507,22 +1507,23 @@
         let root = document.documentElement;
         const overcast = document.querySelector('.theme-overcast');
         const apricot = document.querySelector('.theme-apricot');
-        const marketing = document.querySelector('.theme-marketing');
         const desktop = document.querySelector('.theme-desktop');
         // turn off the light
         const dark = document.querySelector('.theme-dark');
         const light = document.querySelector('.theme-light');
         overcast.addEventListener('click', () => {
-            root.style.setProperty('--primary', 'var(--overcast)');
-            root.style.setProperty('--primary-dark', 'var(--overcast-dark)');
-            root.style.setProperty('--primary-lightest', 'var(--overcast-lightest)');
-            root.style.setProperty('--primary-light', 'var(--overcast-light)');
+            root.style.setProperty('--primary-50', 'var(--overcast-50)');
+            root.style.setProperty('--primary-200', 'var(--overcast-200)');
+            root.style.setProperty('--primary-500', 'var(--overcast-500)');
+            root.style.setProperty('--primary-600', 'var(--overcast-700)');
+            root.style.setProperty('--primary-900', 'var(--overcast-900)');
         });
         apricot.addEventListener('click', () => {
-            root.style.setProperty('--primary', 'var(--apricot)');
-            root.style.setProperty('--primary-dark', 'var(--apricot-dark)');
-            root.style.setProperty('--primary-lightest', 'var(--apricot-lightest)');
-            root.style.setProperty('--primary-light', 'var(--apricot-light)');
+            root.style.setProperty('--primary-50', 'var(--apricot-50)');
+            root.style.setProperty('--primary-600', 'var(--apricot-600)');
+            root.style.setProperty('--primary-700', 'var(--apricot-700)');
+            root.style.setProperty('--primary-500', 'var(--apricot-500)');
+            root.style.setProperty('--primary-900', 'var(--apricot-900)');
         });
         dark.addEventListener('click', () => {
             root.style.setProperty('--white', '#24242a');

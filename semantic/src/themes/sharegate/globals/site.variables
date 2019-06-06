@@ -70,7 +70,7 @@
 
 /* Input Text Color */
 @inputColor: @textColor;
-@inputPlaceholderColor: @marineLightest;
+@inputPlaceholderColor: @marineLight;
 @inputPlaceholderFocusColor: @inputColor;
 
 /* Line Height Default For Inputs in Browser (Descenders are 17px at 14px base em) */
@@ -208,7 +208,7 @@
 
 /*---  SG Colors  ---*/
 /*---  marine  ---*/
-@marineLightest: var(--marine-50);
+@marineLightest: var(--marine-100);
 @marineLight: var(--marine-200);
 @marine: var(--marine-500);
 @marineDark: var(--marine-600);
@@ -780,8 +780,8 @@
 @lightBlackHover          : @fullBlack;
 
 /*---  Emotive  ---*/
-@positiveColorHover       : var(--success-darkest);
-@negativeColorHover       : var(--alert-darkest);
+@positiveColorHover       : var(--success-900);
+@negativeColorHover       : var(--alert-900);
 
 /*---  Brand   ---*/
 @facebookHoverColor       : @facebookColor;
