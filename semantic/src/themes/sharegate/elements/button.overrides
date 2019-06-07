@@ -145,7 +145,7 @@
 .ui.transparent.buttons .button:hover,
 .ui.transparent.button:hover,
 .ui.transparent.button:focus {
-    background: @cloud !important;
+    background: @cloudLight !important;
 }
 
 .ui.button svg {
