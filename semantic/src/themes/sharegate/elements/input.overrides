@@ -17,8 +17,8 @@ form input {
 
 .ui.input:not(.disabled) input[disabled],
 .ui.disabled.input > input {
-    border-color: @cloudLight;
-    background-color: @cloudLight;
+    border-color: var(--cloud-50);
+    background-color: var(--cloud-50);
 }
 
 .ui.input:not(.disabled) input[disabled] > input::-webkit-input-placeholder,
@@ -43,7 +43,7 @@ form input {
 }
 
 // Input Colored
-.ui.input.colored input {
-    background-color: @cloudLightest;
-    border: none;
-}
+// .ui.input.colored input {
+//     background-color: @cloudLightest;
+//     border: none;
+// }

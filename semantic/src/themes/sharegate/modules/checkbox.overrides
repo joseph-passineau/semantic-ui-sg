@@ -34,7 +34,7 @@
 .ui.toggle.disabled label:active::before,
 .ui.toggle.disabled label:checked::before,
 .ui.toggle.disabled.checkbox input:focus ~ label:before {
-    background-color: @cloudLight;
+    background-color: var(--cloud-50);
 }
 
 .ui.ui.toggle.checked.disabled label::before,

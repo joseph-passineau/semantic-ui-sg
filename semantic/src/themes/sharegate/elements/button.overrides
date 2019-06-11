@@ -71,7 +71,7 @@
 .ui.button:disabled,
 .ui.disabled.button:hover,
 .ui.disabled.active.button {
-    background-color: @cloudLight!important;
+    background-color: var(--cloud-50)!important;
     color: @cloudDark!important;
 }
 

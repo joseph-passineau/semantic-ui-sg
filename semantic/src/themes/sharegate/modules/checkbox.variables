@@ -115,7 +115,7 @@
   0 0 0 0 @borderColor inset
 ;
 
-@toggleLaneBackground: @cloudDark;
+@toggleLaneBackground: var(--cloud-200);
 /* cloud-dark */
 @toggleLaneHeight: 1.25rem;
 @toggleLaneBoxShadow: none;
@@ -128,7 +128,7 @@
 @toggleLabelOffset: 0;
 
 
-@toggleFocusColor: @cloudDark;
+@toggleFocusColor: var(--cloud-200);
 @toggleHoverColor: @toggleFocusColor; 
 
 @toggleOffLabelColor: @checkboxColor;
