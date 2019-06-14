@@ -17,7 +17,7 @@
        Element
 --------------------*/
 
-@backgroundColor: @lightGrey;
+@backgroundColor: var(--cloud-50);
 @color: @marineDark;
 @basicBorder: @basicBorderWidth solid @borderColor;
 @mini : 6px;

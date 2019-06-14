@@ -43,7 +43,7 @@
 .ui.ghost.button:hover,
 .ui.ghost.button:focus,
 .ui.ghost.button.active {
-    background-color: @cloudLight;
+    background-color: var(--cloud-50);
     border: none;
     color: @marineDark;
 }
