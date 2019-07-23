@@ -273,7 +273,7 @@
 @darkestBlack       : #24242A; // marine dark darkest
 
 /*---   Neutrals  ---*/
-@fullBlack        : var(--black);
+@fullBlack        : #000000;
 @offWhite         : #F9FAFB;
 @darkWhite        : #F3F4F5;
 @midWhite         : #DCDDDE;
