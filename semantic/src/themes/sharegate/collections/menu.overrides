@@ -1,3 +1,6 @@
 /*******************************
          Site Overrides
 *******************************/
+.ui.secondary.pointing.menu .active.item {
+    border-width: 4px;
+}
