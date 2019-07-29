@@ -776,6 +776,11 @@
         </div>
         <h3 class="ma0 pa0 mb2 mt8">Standard</h3>
         <div class="ui label">Notifications sent</div>
+        <h3 class="ma0 pa0 mb2 mt8">Primary</h3>
+        <div class="ui label primary">Notifications sent</div>
+        <h3 class="ma0 pa0 mb2 mt8">Tiny</h3>
+        <div class="ui label tiny">New</div>
+        <div class="ui label tiny primary">NEW</div>
         <h3 class="ma0 pa0 mb2 mt8">Icon</h3>
         <div class="ui label">Notifications sent <i class="search icon"></i></div>
         <h3 class="ma0 pa0 mb2 mt8">Tags</h3>
@@ -1224,7 +1229,19 @@
                 <label>Click me once, fool me twice</label>
             </div>
         </div>
-        <div class="flex mb2">
+        <div class="flex mb2 pv3">
+            <div class="ui checkbox indeterminate">
+                <input type="checkbox" name="example" />
+                <label>Indeterminate</label>
+            </div>
+        </div>
+        <div class="flex mb2 pv3">
+            <div class="ui checkbox indeterminate">
+                <input type="checkbox" disabled name="example" />
+                <label>Indeterminate</label>
+            </div>
+        </div>
+        <div class="flex mb2 pv3">
             <div class="ui checkbox">
                 <input type="checkbox" disabled name="example" />
                 <label>Disabled</label>

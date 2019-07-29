@@ -21,6 +21,16 @@
     background-color: @primaryColor;
 }
 
+.ui.checkbox.indeterminate:not(.toggle) input:not([type=radio]) ~ .box:before, .ui.checkbox.indeterminate:not(.toggle) input:not([type=radio]) ~ label:before {
+    background: @white url("@{iconsPath}/bar.svg") center center no-repeat;
+    background-size: 8px 2px;
+}
+
+.ui.checkbox.indeterminate:not(.toggle) input:not([type=radio]):disabled ~ .box:before, .ui.checkbox.indeterminate:not(.toggle) input:not([type=radio]):disabled ~ label:before {
+    background: @white url("@{iconsPath}/bar-disabled.svg") center center no-repeat;
+    background-size: 8px 2px;
+}
+
 // Toggle
 // Semantic wants a very high toggle but we don't let's position this
 .ui.toggle.checkbox .box:after,
@@ -44,6 +54,10 @@
 .ui.ui.toggle.checked.disabled label:checked::before,
 .ui.ui.toggle.checked.disabled.checkbox input:focus ~ label:before {
     background-color: @primaryColorLightest!important;
+}
+
+.ui.checkbox .box:hover::before, .ui.checkbox label:hover::before {
+    border: 1px solid var(--cloud-200);
 }
 
 .ui.slider.checkbox .box:after,
