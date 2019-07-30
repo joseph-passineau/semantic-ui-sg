@@ -1414,6 +1414,29 @@
             </div>
         </div>
         <div class="flex items-center mt8">
+            <h2 class="marine ma0 pa0 fw6 f3">Tab</h2>
+        </div>
+        <h3 class="ma0 pa0 mb2 mt8">Secondary</h3>
+        <div id="context-1">
+            <div class="ui pointing secondary menu">
+                <a class="item active" data-tab="first">Tab 1</a>
+                <a class="item" data-tab="second">Tab 2</a>
+            </div>
+            <div class="ui segment tab active" data-tab="first">Tab 1 Content</div>
+            <div class="ui segment tab" data-tab="second">Tab 2 Content</div>
+            </div>
+            <h3 class="ma0 pa0 mb2 mt8">Text</h3>
+            <div id="context-2">
+            <div class="ui text menu">
+                <a class="active item" data-tab="one">Tab 1</a>
+                <a class="item" data-tab="two">Tab 2</a>
+                <a class="item" data-tab="three">Tab 3</a>
+            </div>
+            <div class="ui segment active tab" data-tab="one">Tab 1 Content</div>
+            <div class="ui segment tab" data-tab="two">Tab 2 Content</div>
+            <div class="ui segment tab" data-tab="three">Tab 3 Content</div>
+        </div>
+        <div class="flex items-center mt8">
             <h2 class="marine ma0 pa0 fw6 f3">Placeholder</h2>
             <div class="ml2 w4">
                 <a href="https://react.semantic-ui.com/elements/placeholder/" target="_blank" title="Semantic Doc"><svg id="Capa_1"
@@ -1516,61 +1539,51 @@
         <div class="ui tiny active indicating progress" data-percent="26">
             <div class="bar" style="transition-duration: 300ms; width: 26%;"></div>
         </div>
-        <div class="flex items-center mt8">
-            <h2 class="marine ma0 pa0 fw6 f3">Tab</h2>
-        </div>
-        <h3 class="ma0 pa0 mb2 mt8">Secondary</h3>
-        <div id="context-1">
-            <div class="ui pointing secondary menu">
-              <a class="item active" data-tab="first">Tab 1</a>
-              <a class="item" data-tab="second">Tab 2</a>
-            </div>
-            <div class="ui segment tab active" data-tab="first">Tab 1 Content</div>
-            <div class="ui segment tab" data-tab="second">Tab 2 Content</div>
-          </div>
-          <h3 class="ma0 pa0 mb2 mt8">Text</h3>
-          <div id="context-2">
-            <div class="ui text menu">
-              <a class="active item" data-tab="one">Tab 1</a>
-              <a class="item" data-tab="two">Tab 2</a>
-              <a class="item" data-tab="three">Tab 3</a>
-            </div>
-            <div class="ui segment active tab" data-tab="one">Tab 1 Content</div>
-            <div class="ui segment tab" data-tab="two">Tab 2 Content</div>
-            <div class="ui segment tab" data-tab="three">Tab 3 Content</div>
-          </div>          
     </div>
     <script>
         // change primary color
         let root = document.documentElement;
         const overcast = document.querySelector('.theme-overcast');
         const apricot = document.querySelector('.theme-apricot');
-        const desktop = document.querySelector('.theme-desktop');
         // turn off the light
         const dark = document.querySelector('.theme-dark');
         const light = document.querySelector('.theme-light');
-        overcast.addEventListener('click', () => {
+        const triggerOvercast = () => {
             root.style.setProperty('--primary-50', 'var(--overcast-50)');
+            root.style.setProperty('--primary-100', 'var(--overcast-100)');
             root.style.setProperty('--primary-200', 'var(--overcast-200)');
             root.style.setProperty('--primary-500', 'var(--overcast-500)');
             root.style.setProperty('--primary-600', 'var(--overcast-700)');
             root.style.setProperty('--primary-900', 'var(--overcast-900)');
-        });
-        apricot.addEventListener('click', () => {
+        }
+        const triggerApricot = () => {
             root.style.setProperty('--primary-50', 'var(--apricot-50)');
+            root.style.setProperty('--primary-200', 'var(--apricot-200)');
             root.style.setProperty('--primary-600', 'var(--apricot-600)');
             root.style.setProperty('--primary-700', 'var(--apricot-700)');
             root.style.setProperty('--primary-500', 'var(--apricot-500)');
             root.style.setProperty('--primary-900', 'var(--apricot-900)');
-        });
-        dark.addEventListener('click', () => {
-            root.style.setProperty('--white', '#24242a');
-            root.style.setProperty('--marine', '#FFF');
-        });
-        light.addEventListener('click', () => {
-            root.style.setProperty('--white', '#FFF');
-            root.style.setProperty('--marine', '#24242a');
-        });
+        }
+        overcast.addEventListener('click', () => {
+            triggerOvercast();
+        })
+        apricot.addEventListener('click', () => {
+            triggerApricot();
+        })
+        const urlCurrent = window.location.href;
+        const url = new URL(urlCurrent);
+        const p = url.searchParams.get("p");
+        if (p == "overcast") {
+            triggerOvercast()
+        }
+        // dark.addEventListener('click', () => {
+        //     root.style.setProperty('--white', '#24242a');
+        //     root.style.setProperty('--marine', '#FFF');
+        // });
+        // light.addEventListener('click', () => {
+        //     root.style.setProperty('--white', '#FFF');
+        //     root.style.setProperty('--marine', '#24242a');
+        // });
         $('.ui.checkbox').checkbox();
         $('.ui.dropdown').dropdown();
         // Popup Examples
@@ -1582,7 +1595,7 @@
                 },
                 position: 'bottom center',
             });
-         $('.activate.wide')
+        $('.activate.wide')
                 .popup({
                     delay: {
                         show: 300,

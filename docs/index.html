@@ -1539,115 +1539,131 @@
           </div>
     </div>
     <script>
-        // change primary color
-        let root = document.documentElement;
-        const overcast = document.querySelector('.theme-overcast');
-        const apricot = document.querySelector('.theme-apricot');
-        const desktop = document.querySelector('.theme-desktop');
-        // turn off the light
-        const dark = document.querySelector('.theme-dark');
-        const light = document.querySelector('.theme-light');
-        overcast.addEventListener('click', () => {
-            root.style.setProperty('--primary-50', 'var(--overcast-50)');
-            root.style.setProperty('--primary-200', 'var(--overcast-200)');
-            root.style.setProperty('--primary-500', 'var(--overcast-500)');
-            root.style.setProperty('--primary-600', 'var(--overcast-700)');
-            root.style.setProperty('--primary-900', 'var(--overcast-900)');
-        });
-        apricot.addEventListener('click', () => {
-            root.style.setProperty('--primary-50', 'var(--apricot-50)');
-            root.style.setProperty('--primary-600', 'var(--apricot-600)');
-            root.style.setProperty('--primary-700', 'var(--apricot-700)');
-            root.style.setProperty('--primary-500', 'var(--apricot-500)');
-            root.style.setProperty('--primary-900', 'var(--apricot-900)');
-        });
-        dark.addEventListener('click', () => {
-            root.style.setProperty('--white', '#24242a');
-            root.style.setProperty('--marine', '#FFF');
-        });
-        light.addEventListener('click', () => {
-            root.style.setProperty('--white', '#FFF');
-            root.style.setProperty('--marine', '#24242a');
-        });
-        $('.ui.checkbox').checkbox();
-        $('.ui.checkbox').checkbox();
-        $('.ui.dropdown').dropdown();
-        // Popup Examples
-        $('.activate.light')
-            .popup({
-                delay: {
-                    show: 300,
-                    hide: 300
-                },
-                position: 'bottom center',
-            });
-         $('.activate.wide')
+            // change primary color
+            let root = document.documentElement;
+            const overcast = document.querySelector('.theme-overcast');
+            const apricot = document.querySelector('.theme-apricot');
+            // turn off the light
+            const dark = document.querySelector('.theme-dark');
+            const light = document.querySelector('.theme-light');
+            const triggerOvercast = () => {
+                root.style.setProperty('--primary-50', 'var(--overcast-50)');
+                root.style.setProperty('--primary-100', 'var(--overcast-100)');
+                root.style.setProperty('--primary-200', 'var(--overcast-200)');
+                root.style.setProperty('--primary-500', 'var(--overcast-500)');
+                root.style.setProperty('--primary-600', 'var(--overcast-700)');
+                root.style.setProperty('--primary-900', 'var(--overcast-900)');
+            }
+            const triggerApricot = () => {
+                root.style.setProperty('--primary-50', 'var(--apricot-50)');
+                root.style.setProperty('--primary-200', 'var(--apricot-200)');
+                root.style.setProperty('--primary-600', 'var(--apricot-600)');
+                root.style.setProperty('--primary-700', 'var(--apricot-700)');
+                root.style.setProperty('--primary-500', 'var(--apricot-500)');
+                root.style.setProperty('--primary-900', 'var(--apricot-900)');
+            }
+            overcast.addEventListener('click', () => {
+                triggerOvercast();
+            })
+            apricot.addEventListener('click', () => {
+                triggerApricot();
+            })
+            const urlCurrent = window.location.href;
+            const url = new URL(urlCurrent);
+            const p = url.searchParams.get("p");
+            if (p == "overcast") {
+                triggerOvercast()
+            }
+            // dark.addEventListener('click', () => {
+            //     root.style.setProperty('--white', '#24242a');
+            //     root.style.setProperty('--marine', '#FFF');
+            // });
+            // light.addEventListener('click', () => {
+            //     root.style.setProperty('--white', '#FFF');
+            //     root.style.setProperty('--marine', '#24242a');
+            // });
+            $('.ui.checkbox').checkbox();
+            $('.ui.dropdown').dropdown();
+            // Popup Examples
+            $('.activate.light')
                 .popup({
                     delay: {
                         show: 300,
                         hide: 300
                     },
-                    position: 'right center',
-                    variation: 'wide'
+                    position: 'bottom center',
                 });
-            $('.activate.very-wide')
-                .popup({
-                    delay: {
-                        show: 300,
-                        hide: 300
-                    },
-                    position: 'right center',
-                    variation: 'very wide'
+            $('.activate.wide')
+                    .popup({
+                        delay: {
+                            show: 300,
+                            hide: 300
+                        },
+                        position: 'right center',
+                        variation: 'wide'
+                    });
+                $('.activate.very-wide')
+                    .popup({
+                        delay: {
+                            show: 300,
+                            hide: 300
+                        },
+                        position: 'right center',
+                        variation: 'very wide'
+                    });
+                $('.activate.dark')
+                    .popup({
+                        delay: {
+                            show: 300,
+                            hide: 300
+                        },
+                        position: 'right center',
+                        variation: 'inverted'
+                    });
+                    var content = [
+                            { title: 'Andorra' },
+                            { title: 'United Arab Emirates' },
+                            { title: 'Afghanistan' },
+                            { title: 'Antigua' },
+                            { title: 'Anguilla' },
+                            { title: 'Albania' },
+                            { title: 'Armenia' },
+                            { title: 'Netherlands Antilles' },
+                            { title: 'Angola' },
+                            { title: 'Argentina' },
+                            { title: 'American Samoa' },
+                            { title: 'Austria' },
+                            { title: 'Australia' },
+                            { title: 'Aruba' },
+                            { title: 'Aland Islands' },
+                            { title: 'Azerbaijan' },
+                            { title: 'Bosnia' },
+                            { title: 'Barbados' },
+                            { title: 'Bangladesh' },
+                            { title: 'Belgium' },
+                            { title: 'Burkina Faso' },
+                            { title: 'Bulgaria' },
+                            { title: 'Bahrain' },
+                            { title: 'Burundi' }
+                        ];
+                $('.ui.search')
+                .search({
+                    source: content
                 });
-            $('.activate.dark')
-                .popup({
-                    delay: {
-                        show: 300,
-                        hide: 300
-                    },
-                    position: 'right center',
-                    variation: 'inverted'
+                $('#context-1 .menu .item')
+                    .tab()
+                ;
+                $('#context-2 .menu .item')
+                    .tab()
+                ;
+                $(".debugger").click(function() {
+                    $(".ui").toggleClass("debugg");
+                    $(".ui").each(function (index) {
+                        var height = $(this).outerHeight();
+                        $(this).attr('data-height', height + "px");
+                    });
                 });
-                var content = [
-                        { title: 'Andorra' },
-                        { title: 'United Arab Emirates' },
-                        { title: 'Afghanistan' },
-                        { title: 'Antigua' },
-                        { title: 'Anguilla' },
-                        { title: 'Albania' },
-                        { title: 'Armenia' },
-                        { title: 'Netherlands Antilles' },
-                        { title: 'Angola' },
-                        { title: 'Argentina' },
-                        { title: 'American Samoa' },
-                        { title: 'Austria' },
-                        { title: 'Australia' },
-                        { title: 'Aruba' },
-                        { title: 'Aland Islands' },
-                        { title: 'Azerbaijan' },
-                        { title: 'Bosnia' },
-                        { title: 'Barbados' },
-                        { title: 'Bangladesh' },
-                        { title: 'Belgium' },
-                        { title: 'Burkina Faso' },
-                        { title: 'Bulgaria' },
-                        { title: 'Bahrain' },
-                        { title: 'Burundi' }
-                    ];
-            $('.ui.search')
-            .search({
-                source: content
-            });
-            $('.menu .item')
-                .tab()
-            ;
-            $(".debugger").click(function() {
-                $(".ui").toggleClass("debugg");
-                $(".ui").each(function (index) {
-                    var height = $(this).outerHeight();
-                    $(this).attr('data-height', height + "px");
-                });
-            });
-    </script>
-</body>
-</html>
+        </script>
+    </body>
+    </html>
+    
