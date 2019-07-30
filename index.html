@@ -1519,7 +1519,8 @@
         <div class="flex items-center mt8">
             <h2 class="marine ma0 pa0 fw6 f3">Tab</h2>
         </div>
-        <div>
+        <h3 class="ma0 pa0 mb2 mt8">Secondary</h3>
+        <div id="context-1">
             <div class="ui pointing secondary menu">
               <a class="item active" data-tab="first">Tab 1</a>
               <a class="item" data-tab="second">Tab 2</a>
@@ -1527,6 +1528,17 @@
             <div class="ui segment tab active" data-tab="first">Tab 1 Content</div>
             <div class="ui segment tab" data-tab="second">Tab 2 Content</div>
           </div>
+          <h3 class="ma0 pa0 mb2 mt8">Text</h3>
+          <div id="context-2">
+            <div class="ui text menu">
+              <a class="active item" data-tab="one">Tab 1</a>
+              <a class="item" data-tab="two">Tab 2</a>
+              <a class="item" data-tab="three">Tab 3</a>
+            </div>
+            <div class="ui segment active tab" data-tab="one">Tab 1 Content</div>
+            <div class="ui segment tab" data-tab="two">Tab 2 Content</div>
+            <div class="ui segment tab" data-tab="three">Tab 3 Content</div>
+          </div>          
     </div>
     <script>
         // change primary color
@@ -1559,7 +1571,6 @@
             root.style.setProperty('--white', '#FFF');
             root.style.setProperty('--marine', '#24242a');
         });
-        $('.ui.checkbox').checkbox();
         $('.ui.checkbox').checkbox();
         $('.ui.dropdown').dropdown();
         // Popup Examples
@@ -1628,7 +1639,10 @@
             .search({
                 source: content
             });
-            $('.menu .item')
+            $('#context-1 .menu .item')
+                .tab()
+            ;
+            $('#context-2 .menu .item')
                 .tab()
             ;
             $(".debugger").click(function() {
