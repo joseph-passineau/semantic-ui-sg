@@ -17746,8 +17746,8 @@ Floated Menu / Item
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
-  padding: 0 1.5rem 1.25rem 0;
-  margin: 0;
+  padding: 0 0 1.25rem 0;
+  margin: 0 1.5rem 0 0;
   background: none;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
