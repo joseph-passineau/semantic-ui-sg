@@ -11609,8 +11609,8 @@ ol.ui.horizontal.list li:before,
   background: var(--white);
   -webkit-box-shadow: none;
   box-shadow: none;
-  margin: 1rem 0em;
-  padding: 1em 1em;
+  margin: 0;
+  padding: 0;
   border-radius: 0.25rem;
   border: 0px solid rgba(34, 36, 38, 0.15);
 }
@@ -11683,7 +11683,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.grid.segment {
-  margin: 1rem 0em;
+  margin: 0;
   border-radius: 0.25rem;
 }
 
@@ -11697,7 +11697,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui[class*="very basic"].table.segment {
-  padding: 1em 1em;
+  padding: 0;
 }
 
 /*******************************
@@ -11726,7 +11726,7 @@ ol.ui.horizontal.list li:before,
   -webkit-animation: none;
   animation: none;
   overflow: visible;
-  padding: 1em 1em;
+  padding: 0;
   min-height: 18rem;
   background: #F9FAFB;
   border-color: rgba(34, 36, 38, 0.15);
@@ -11969,7 +11969,7 @@ ol.ui.horizontal.list li:before,
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  margin: 1rem 0em;
+  margin: 0;
   border: 0px solid rgba(34, 36, 38, 0.15);
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -12056,7 +12056,7 @@ ol.ui.horizontal.list li:before,
   background-color: var(--white);
   -webkit-box-shadow: none;
   box-shadow: none;
-  margin: 1rem 0em;
+  margin: 0;
   border-radius: 0.25rem;
   border: 0px solid rgba(34, 36, 38, 0.15);
 }
@@ -16882,7 +16882,7 @@ ol.ui.horizontal.list li:before,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem 0em;
+  margin: 0;
   font-family: 'Calibre', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   background: #FFFFFF;
   font-weight: 400;
@@ -16890,7 +16890,7 @@ ol.ui.horizontal.list li:before,
   -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
   border-radius: 0.25rem;
-  min-height: 2.875em;
+  min-height: 0;
 }
 
 .ui.menu:after {
@@ -16952,7 +16952,7 @@ ol.ui.horizontal.list li:before,
   background: none;
   padding: 0.9375em 1.125em;
   text-transform: none;
-  color: var(--marine-600);
+  color: var(--cloud-300);
   font-weight: 400;
   -webkit-transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
@@ -17543,7 +17543,7 @@ Floated Menu / Item
   border-right: 1px solid transparent;
   border-top: 2px solid transparent;
   padding: 0.9375em 1.4375em;
-  color: var(--marine-600);
+  color: var(--cloud-300);
 }
 
 .ui.tabular.menu .item:before {
@@ -17730,8 +17730,8 @@ Floated Menu / Item
 
 .ui.secondary.menu {
   background: none;
-  margin-left: -0.3125em;
-  margin-right: -0.3125em;
+  margin-left: 0;
+  margin-right: 0;
   border-radius: 0em;
   border: none;
   -webkit-box-shadow: none;
@@ -17746,8 +17746,8 @@ Floated Menu / Item
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
-  padding: 0.8125em 0.9375em;
-  margin: 0em 0.3125em;
+  padding: 0 1.5rem 1.25rem 0;
+  margin: 0;
   background: none;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
@@ -17779,8 +17779,8 @@ Floated Menu / Item
 .ui.secondary.menu .dropdown.item:hover,
 .ui.secondary.menu .link.item:hover,
 .ui.secondary.menu a.item:hover {
-  background: rgba(0, 0, 0, 0.05);
-  color: var(--marine-900);
+  background: var(--white);
+  color: var(--marine-500);
 }
 
 /* Active */
@@ -17788,8 +17788,8 @@ Floated Menu / Item
 .ui.secondary.menu .active.item {
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: rgba(0, 0, 0, 0.05);
-  color: var(--marine-900);
+  background: var(--white);
+  color: var(--marine-500);
   border-radius: 0.25rem;
 }
 
@@ -17798,7 +17798,7 @@ Floated Menu / Item
 .ui.secondary.menu .active.item:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: rgba(0, 0, 0, 0.05);
+  background: var(--white);
   color: var(--marine-900);
 }
 
@@ -17854,7 +17854,7 @@ Floated Menu / Item
 
 .ui.secondary.vertical.menu > .item {
   border: none;
-  margin: 0em 0em 0.3125em;
+  margin: 0em 0em 0;
   border-radius: 0.25rem !important;
 }
 
@@ -17938,14 +17938,14 @@ Floated Menu / Item
   box-shadow: none;
   border-color: var(--primary-500);
   font-weight: 500;
-  color: var(--marine-900);
+  color: var(--marine-500);
 }
 
 /* Active Hover */
 
 .ui.secondary.pointing.menu .active.item:hover {
   border-color: var(--primary-500);
-  color: var(--marine-900);
+  color: var(--marine-500);
 }
 
 /* Active Dropdown */
@@ -19151,8 +19151,24 @@ Floated Menu / Item
          Site Overrides
 *******************************/
 
-.ui.secondary.pointing.menu .active.item {
-  border-width: 4px;
+.ui.menu {
+  font-size: 1.125rem;
+}
+
+.ui.secondary.menu {
+  border-bottom: 1px solid var(--cloud-50);
+}
+
+.ui.secondary.menu .item {
+  font-weight: 500;
+}
+
+.ui.secondary.menu .active.item {
+  border-width: 0;
+}
+
+.ui.secondary.menu {
+  position: relative;
 }
 
 /*******************************
