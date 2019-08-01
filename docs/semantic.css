@@ -17891,7 +17891,7 @@ Floated Menu / Item
   -ms-flex-item-align: end;
   align-self: flex-end;
   margin: 0em 0em -1px;
-  padding: 0.875em 1.125em;
+  padding: 1rem 0;
   border-bottom-width: 1px;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease;
@@ -19163,12 +19163,18 @@ Floated Menu / Item
   font-weight: 500;
 }
 
-.ui.secondary.menu .active.item {
+.ui.secondary.pointing.menu.animated .item {
   border-width: 0;
 }
 
-.ui.secondary.menu {
+.ui.secondary.menu.pointing.animated {
   position: relative;
+}
+
+.ui.secondary.pointing.menu .item {
+  margin-right: 1.25rem;
+  padding: 0 0 calc(1.25rem) 0;
+  border-width: 4px;
 }
 
 /*******************************

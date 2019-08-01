@@ -1427,13 +1427,22 @@
         </div>
         <h3 class="ma0 pa0 mb2 mt8">Secondary</h3>
         <div id="context-1">
-            <div class="ui secondary menu">
+            <div class="ui secondary pointing menu">
                 <a class="item active" data-tab="first">Tab 1</a>
                 <a class="item" data-tab="second">Tab 2</a>
             </div>
             <div class="ui segment tab active" data-tab="first"><div class="pa6">Tab 1 Content</div></div>
             <div class="ui segment tab" data-tab="second"><div class="pa6">Tab 2 Content</div></div>
+        </div>
+        <h3 class="ma0 pa0 mb2 mt8">Secondary Animated</h3>
+        <div id="context-2">
+            <div class="ui secondary pointing menu animated">
+                <a class="item active" data-tab="ttt">Tab 1</a>
+                <a class="item" data-tab="aa">Tab 2</a>
             </div>
+            <div class="ui segment tab active" data-tab="ttt"><div class="pa6">Tab 1 Content</div></div>
+            <div class="ui segment tab" data-tab="aa"><div class="pa6">Tab 2 Content</div></div>
+        </div>
         <div class="flex items-center mt8">
             <h2 class="marine ma0 pa0 fw6 f3">Placeholder</h2>
             <div class="ml2 w4">
@@ -1651,6 +1660,9 @@
                 source: content
             });
             $('#context-1 .menu .item')
+                .tab()
+            ;
+            $('#context-2 .menu .item')
                 .tab()
             ;
             $(".debugger").click(function() {
