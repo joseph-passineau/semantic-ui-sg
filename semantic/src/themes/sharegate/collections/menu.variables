@@ -16,3 +16,6 @@
 @secondaryPointingBorderColor: var(--cloud-50);
 @secondaryPointingActiveTextColor: var(--marine-500);
 @secondaryPointingActiveBorderColor: @primaryColor;
+@secondaryPointingBorderWidth: 1px;
+@secondaryPointingItemHorizontalPadding: 0;
+@secondaryPointingItemVerticalPadding: 1rem;
