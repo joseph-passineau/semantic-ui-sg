@@ -8,11 +8,24 @@
     align-items: center;
 }
 
+.ui.button.circular {
+    font-size: 1rem;
+    padding: 0.5em 0.5em 0.5em;
+}
+
 .ui.button.mini.circular {
     min-height: 24px;
     min-width: 24px;
+    padding: 0.25em 0.25em 0.25em;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.ui.button.tall.circular {
+    min-width: 48px;
     padding: 0.5em 0.5em 0.5em;
     justify-content: center;
+    font-size: 1rem;
 }
 
 .ui.button.tall {
