@@ -12,6 +12,11 @@
     background-size: 12px 8px;
 }
 
+.ui.checkbox:not(.toggle) input:not([type=radio]):checked:disabled ~ .box:before, .ui.checkbox:not(.toggle) input:not([type=radio]):checked:disabled ~ label:before {
+    background: @primaryColorLightest url("@{iconsPath}/checkmark.svg") center center no-repeat;
+    border-color: @primaryColorLightest;
+}
+
 .ui.checkbox:not(.toggle) input:not([type=radio]):indeterminate:focus ~ .box:before, .ui.checkbox:not(.toggle) input:not([type=radio]):indeterminate:focus ~ label:before {
     background: @white url("@{iconsPath}/checkmark.svg") center center no-repeat;
     background-size: 12px 8px;
@@ -55,6 +60,8 @@
 .ui.ui.toggle.checked.disabled.checkbox input:focus ~ label:before {
     background-color: @primaryColorLightest!important;
 }
+
+
 
 .ui.checkbox .box:hover::before, .ui.checkbox label:hover::before {
     border: 1px solid var(--cloud-200);
