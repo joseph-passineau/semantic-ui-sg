@@ -25100,6 +25100,12 @@ a.ui.card:hover,
   background-size: 12px 8px;
 }
 
+.ui.checkbox:not(.toggle) input:not([type=radio]):checked:disabled ~ .box:before,
+.ui.checkbox:not(.toggle) input:not([type=radio]):checked:disabled ~ label:before {
+  background: var(--primary-50) url("themes/sharegate/assets/icons/checkmark.svg") center center no-repeat;
+  border-color: var(--primary-50);
+}
+
 .ui.checkbox:not(.toggle) input:not([type=radio]):indeterminate:focus ~ .box:before,
 .ui.checkbox:not(.toggle) input:not([type=radio]):indeterminate:focus ~ label:before {
   background: var(--white) url("themes/sharegate/assets/icons/checkmark.svg") center center no-repeat;
