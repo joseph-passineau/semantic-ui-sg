@@ -10846,6 +10846,10 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 
+.ui.loader {
+  z-index: 3;
+}
+
 /*******************************
          Site Overrides
 *******************************/
