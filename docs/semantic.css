@@ -25177,6 +25177,17 @@ a.ui.card:hover,
   padding-left: 0.875rem;
 }
 
+.ui.checkbox label:active::before {
+  background: var(--white);
+}
+
+.ui.disabled.checkbox:not(.toggle) .box:after,
+.ui.disabled.checkbox:not(.toggle) label::before,
+.ui.checkbox:not(.toggle) input[disabled] ~ label::before {
+  background-color: var(--cloud-50);
+  border: 1px solid var(--cloud-100);
+}
+
 /*******************************
          Site Overrides
 *******************************/

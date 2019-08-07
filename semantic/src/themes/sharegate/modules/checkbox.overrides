@@ -61,8 +61,6 @@
     background-color: @primaryColorLightest!important;
 }
 
-
-
 .ui.checkbox .box:hover::before, .ui.checkbox label:hover::before {
     border: 1px solid var(--cloud-200);
 }
@@ -85,4 +83,14 @@
 
 .ui.slider.checkbox {
     padding-left: @toggleHandleSize;
+}
+
+.ui.checkbox label:active::before {
+    background: @white;
+}
+
+.ui.disabled.checkbox:not(.toggle) .box:after, .ui.disabled.checkbox:not(.toggle) label::before,
+.ui.checkbox:not(.toggle) input[disabled] ~ label::before {
+    background-color: var(--cloud-50);
+    border: 1px solid var(--cloud-100);
 }
